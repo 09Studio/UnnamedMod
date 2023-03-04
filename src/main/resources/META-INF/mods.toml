@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[44,)"
+license="All rights reserved"
+
+[[mods]]
+modId="nonamemod"
+version="0.0.1-1.19.2"
+displayName="Unnamed Mod"
+logoFile="examplemod.png"
+credits="Thanks for using my mod in your Minecraft world"
+authors="_09 Studio"
+description='''
+This mod will bring you:
+
+For a complete list of new things, and a guide, check:
+'''
+
+[[dependencies.nonamemod]]
+
+    modId="forge"
+    mandatory=true
+    versionRange="[44,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.nonamemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.3,1.20)"
+    ordering="NONE"
+    side="BOTH"
