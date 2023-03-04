@@ -3,7 +3,7 @@ loaderVersion="[44,)"
 license="All rights reserved"
 
 [[mods]]
-modId="nonamemod"
+modId="unnamedmod"
 version="0.0.1-1.19.2"
 displayName="Unnamed Mod"
 logoFile="examplemod.png"

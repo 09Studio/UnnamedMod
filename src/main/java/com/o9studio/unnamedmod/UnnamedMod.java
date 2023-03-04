@@ -1,4 +1,4 @@
-package com.o9studio.nonamemod;
+package com.o9studio.unnamedmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -13,13 +13,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(NoNameMod.MOD_ID)
-public class NoNameMod
+@Mod(UnnamedMod.MOD_ID)
+public class UnnamedMod
 {
-    public static final String MOD_ID = "nonamemod";
+    public static final String MOD_ID = "unnamedmod";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public NoNameMod()
+    public UnnamedMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
