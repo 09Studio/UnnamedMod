@@ -1,7 +1,7 @@
 package com.o9studio.unnamedmod.custom;
 
 import com.o9studio.unnamedmod.UnnamedMod;
-import com.o9studio.unnamedmod.core.ModCrystalItems;
+import com.o9studio.unnamedmod.core.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,10 +18,10 @@ public class ModTabs {
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
         GREENERY_TAB = event.registerCreativeModeTab(new ResourceLocation(UnnamedMod.MOD_ID, "greenery_tab"),
-                builder -> builder.icon(() -> new ItemStack(ModCrystalItems.AMBER.get())).title(Component.translatable("creativemodetab.greenery_tab")));
+                builder -> builder.icon(() -> new ItemStack(ModItems.WHAT_ITEM.get())).title(Component.translatable("creativemodetab.greenery_tab")));
 
         CRYSTALS_TAB = event.registerCreativeModeTab(new ResourceLocation(UnnamedMod.MOD_ID, "crystals_tab"),
-                builder -> builder.icon(() -> new ItemStack(ModCrystalItems.AMBER.get())).title(Component.translatable("creativemodetab.crystals_tab")));
+                builder -> builder.icon(() -> new ItemStack(ModItems.AMBER.get())).title(Component.translatable("creativemodetab.crystals_tab")));
 
     }
 }

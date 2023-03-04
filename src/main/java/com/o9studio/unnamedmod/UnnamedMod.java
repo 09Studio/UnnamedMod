@@ -1,10 +1,8 @@
 package com.o9studio.unnamedmod;
 
 import com.mojang.logging.LogUtils;
-import com.o9studio.unnamedmod.core.ModCrystalBlocks;
-import com.o9studio.unnamedmod.core.ModCrystalItems;
-import com.o9studio.unnamedmod.core.ModGreeneryBlocks;
-import com.o9studio.unnamedmod.core.ModGreeneryItems;
+import com.o9studio.unnamedmod.core.ModBlocks;
+import com.o9studio.unnamedmod.core.ModItems;
 import com.o9studio.unnamedmod.custom.ModTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,10 +26,8 @@ public class UnnamedMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModGreeneryItems.register(modEventBus);
-        ModGreeneryBlocks.register(modEventBus);
-        ModCrystalItems.register(modEventBus);
-        ModCrystalBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -46,14 +42,14 @@ public class UnnamedMod
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
         if (event.getTab() == ModTabs.GREENERY_TAB){
-            event.accept(ModGreeneryItems.WHAT_ITEM);
-            event.accept(ModGreeneryBlocks.NOP_BLOCK);
+            event.accept(ModItems.WHAT_ITEM);
+            event.accept(ModBlocks.NOP_BLOCK);
         }
 
         if (event.getTab() == ModTabs.CRYSTALS_TAB){
-            event.accept(ModCrystalItems.AMBER_FRAGMENT);
-            event.accept(ModCrystalItems.AMBER);
-            event.accept(ModCrystalBlocks.AMBER_BLOCK);
+            event.accept(ModItems.AMBER_FRAGMENT);
+            event.accept(ModItems.AMBER);
+            event.accept(ModBlocks.AMBER_BLOCK);
         }
     }
 
