@@ -1,6 +1,12 @@
 {
   "item.unnamedmod.amber_fragment": "Amber Fragment",
   "item.unnamedmod.amber": "Amber",
+  "block.unnamedmod.amber_block": "Block of Amber",
+
+
+  "item.unnamedmod.what_item": "What",
+  "block.unnamedmod.nop_block": "Nop",
+
 
   "creativemodetab.greenery_tab": "Greenery Tab",
   "creativemodetab.crystals_tab": "Crystals Tab"
