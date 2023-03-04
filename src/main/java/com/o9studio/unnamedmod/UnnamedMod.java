@@ -1,6 +1,8 @@
 package com.o9studio.unnamedmod;
 
 import com.mojang.logging.LogUtils;
+import com.o9studio.unnamedmod.core.ModCrystalItems;
+import com.o9studio.unnamedmod.custom.ModTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -23,8 +25,9 @@ public class UnnamedMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        modEventBus.addListener(this::commonSetup);
+        ModCrystalItems.register(modEventBus);
 
+        modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
@@ -36,6 +39,13 @@ public class UnnamedMod
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
+        if (event.getTab() == ModTabs.GREENERY_TAB){
+            event.accept(ModCrystalItems.AMBER);
+        }
+
+        if (event.getTab() == ModTabs.CRYSTALS_TAB){
+            event.accept(ModCrystalItems.AMBER_FRAGMENT);
+        }
     }
 
     @SubscribeEvent

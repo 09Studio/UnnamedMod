@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="unnamedmod"
-version="0.0.1-1.19.2"
+version="0.0.1-1.19.3"
 displayName="Unnamed Mod"
 logoFile="examplemod.png"
 credits="Thanks for using my mod in your Minecraft world"
