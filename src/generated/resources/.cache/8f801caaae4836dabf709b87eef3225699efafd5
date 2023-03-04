@@ -1,4 +1,20 @@
-// 1.19.3	2023-03-04T13:27:40.3864509	Item Models: unnamedmod
+// 1.19.3	2023-03-04T14:01:40.1901447	Item Models: unnamedmod
 d5884fa11caad4bae35505e3896ae3eea363994b assets/unnamedmod/models/item/amber.json
 2be8b6c0f7bcecabc53097e0555be7fc29e1faef assets/unnamedmod/models/item/amber_fragment.json
+d0f4043b6b16685545a8b5f28c1d2b66a2f2ea78 assets/unnamedmod/models/item/bronze_ingot.json
+379676dc92c8a3da9177ba8e9a32e225cd9f8b9d assets/unnamedmod/models/item/bronze_nugget.json
+19ca191e9951b52ba5b63f5de99d288733e3ce93 assets/unnamedmod/models/item/bronze_rod.json
+a3388337f3ab48f7e31a3dd90c928cdb080c59e7 assets/unnamedmod/models/item/peridot.json
+7b7f8af3cc0ca584d7e94009e5447cdc119d93b7 assets/unnamedmod/models/item/raw_diamond.json
+8894ca28f3b3f6ef7a4533b5f7811152e2afba53 assets/unnamedmod/models/item/raw_emerald.json
+4f4d76f58d382feb02cabb7de7d33c8af697afe4 assets/unnamedmod/models/item/raw_peridot.json
+a94d4e711bcd7fe6b896e16c71f9de73c17b9790 assets/unnamedmod/models/item/raw_quartz.json
+86c8785a9872316ad1c8ed7af97c784d70a5d318 assets/unnamedmod/models/item/raw_rq.json
+bd1091ffd6fa8952c7e842b13b54e849bc629c68 assets/unnamedmod/models/item/raw_ruby.json
+f9f867aab0efaa827079bf0529000058f8863696 assets/unnamedmod/models/item/raw_sapphire.json
+031589ebdbb52c243034dc6e213cc0831f94291a assets/unnamedmod/models/item/raw_topaz.json
+3f0087a8cf99ac90fe4474f3cad727c947e529c1 assets/unnamedmod/models/item/rq.json
+7ce89d8ddc1b3d11964df42c9d8de05262e18142 assets/unnamedmod/models/item/ruby.json
+43a1d6e6e2748b54460e3a53692da4f808e224ab assets/unnamedmod/models/item/sapphire.json
+2c825fdd0db9ceb1c286a8d22b4edd9913d1c163 assets/unnamedmod/models/item/topaz.json
 2051b0529451910a2af5271d3220adbd42ebc738 assets/unnamedmod/models/item/what_item.json

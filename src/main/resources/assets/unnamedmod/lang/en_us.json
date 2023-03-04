@@ -1,11 +1,27 @@
 {
+  "item.unnamedmod.what_item": "What",
+  "block.unnamedmod.nop_block": "Nop",
+
+
   "item.unnamedmod.amber_fragment": "Amber Fragment",
   "item.unnamedmod.amber": "Amber",
   "block.unnamedmod.amber_block": "Block of Amber",
-
-
-  "item.unnamedmod.what_item": "What",
-  "block.unnamedmod.nop_block": "Nop",
+  "item.unnamedmod.bronze_nugget": "Bronze Nugget",
+  "item.unnamedmod.bronze_ingot": "Bronze Ingot",
+  "item.unnamedmod.bronze_rod": "Bronze Rod",
+  "item.unnamedmod.raw_emerald": "Raw Emerald",
+  "item.unnamedmod.raw_diamond": "Raw Diamond",
+  "item.unnamedmod.raw_peridot": "Raw Peridot",
+  "item.unnamedmod.peridot": "Peridot",
+  "item.unnamedmod.raw_rq": "Raw Rainbow Quartz",
+  "item.unnamedmod.rq": "Rainbow Quartz",
+  "item.unnamedmod.raw_ruby": "Raw Ruby",
+  "item.unnamedmod.ruby": "Ruby",
+  "item.unnamedmod.raw_sapphire": "Raw Sapphire",
+  "item.unnamedmod.sapphire": "Sapphire",
+  "item.unnamedmod.raw_topaz": "Raw Topaz",
+  "item.unnamedmod.topaz": "Topaz",
+  "item.unnamedmod.raw_quartz": "Raw Quartz",
 
 
   "creativemodetab.greenery_tab": "Greenery Tab",

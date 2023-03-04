@@ -50,6 +50,22 @@ public class UnnamedMod
             event.accept(ModItems.AMBER_FRAGMENT);
             event.accept(ModItems.AMBER);
             event.accept(ModBlocks.AMBER_BLOCK);
+            event.accept(ModItems.BRONZE_NUGGET);
+            event.accept(ModItems.BRONZE_INGOT);
+            event.accept(ModItems.BRONZE_ROD);
+            event.accept(ModItems.RAW_EMERALD);
+            event.accept(ModItems.RAW_DIAMOND);
+            event.accept(ModItems.RAW_PERIDOT);
+            event.accept(ModItems.PERIDOT);
+            event.accept(ModItems.RAW_RQ);
+            event.accept(ModItems.RQ);
+            event.accept(ModItems.RAW_RUBY);
+            event.accept(ModItems.RUBY);
+            event.accept(ModItems.RAW_SAPPHIRE);
+            event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_TOPAZ);
+            event.accept(ModItems.TOPAZ);
+            event.accept(ModItems.RAW_QUARTZ);
         }
     }
 

@@ -21,6 +21,22 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.AMBER);
         simpleItem(ModItems.AMBER_FRAGMENT);
+        simpleItem(ModItems.BRONZE_NUGGET);
+        simpleItem(ModItems.BRONZE_INGOT);
+        simpleItem(ModItems.BRONZE_ROD);
+        simpleItem(ModItems.RAW_EMERALD);
+        simpleItem(ModItems.RAW_DIAMOND);
+        simpleItem(ModItems.RAW_PERIDOT);
+        simpleItem(ModItems.PERIDOT);
+        simpleItem(ModItems.RAW_RQ);
+        simpleItem(ModItems.RQ);
+        simpleItem(ModItems.RAW_RUBY);
+        simpleItem(ModItems.RUBY);
+        simpleItem(ModItems.RAW_SAPPHIRE);
+        simpleItem(ModItems.SAPPHIRE);
+        simpleItem(ModItems.RAW_TOPAZ);
+        simpleItem(ModItems.TOPAZ);
+        simpleItem(ModItems.RAW_QUARTZ);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

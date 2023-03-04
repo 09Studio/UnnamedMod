@@ -23,6 +23,38 @@ public class ModItems {
 
     public static final RegistryObject<Item> AMBER = ITEMS.register("amber", () -> new Item(new Item.Properties().fireResistant()));
 
+    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> BRONZE_ROD = ITEMS.register("bronze_rod", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RAW_EMERALD = ITEMS.register("raw_emerald", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RAW_DIAMOND = ITEMS.register("raw_diamond", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RAW_PERIDOT = ITEMS.register("raw_peridot", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> PERIDOT = ITEMS.register("peridot", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RAW_RQ = ITEMS.register("raw_rq", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RQ = ITEMS.register("rq", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RAW_RUBY = ITEMS.register("raw_ruby", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register("raw_sapphire", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RAW_TOPAZ = ITEMS.register("raw_topaz", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> TOPAZ = ITEMS.register("topaz", () -> new Item(new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> RAW_QUARTZ = ITEMS.register("raw_quartz", () -> new Item(new Item.Properties().fireResistant()));
+
 
     //FOOD ITEMS
 

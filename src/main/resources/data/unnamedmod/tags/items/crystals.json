@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:amethyst_shard",
+    "unnamedmod:amber_fragment",
+    "unnamedmod:amber",
+    "unnamedmod:raw_emerald",
+    "minecraft:emerald",
+    "unnamedmod:raw_diamond",
+    "minecraft:diamond",
+    "unnamedmod:raw_peridot",
+    "unnamedmod:peridot",
+    "unnamedmod:raw_rq",
+    "unnamedmod:rq",
+    "unnamedmod:raw_ruby",
+    "unnamedmod:ruby",
+    "unnamedmod:raw_sapphire",
+    "unnamedmod:sapphire",
+    "unnamedmod:raw_topaz",
+    "unnamedmod:topaz",
+    "unnamedmod:raw_quartz",
+    "minecraft:quartz"
+  ]
+}
