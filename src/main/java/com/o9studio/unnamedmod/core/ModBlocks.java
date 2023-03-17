@@ -1,6 +1,7 @@
 package com.o9studio.unnamedmod.core;
 
 import com.o9studio.unnamedmod.UnnamedMod;
+import com.o9studio.unnamedmod.custom.blocks.RQBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -31,6 +32,28 @@ public class ModBlocks {
 
     //CRYSTALS BLOCKS
     public static final RegistryObject<Block> AMBER_BLOCK = BLOCKS.register("amber_block", () -> new Block(
+            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block", () -> new Block(
+            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> CUT_BRONZE = registerBlock("cut_bronze", () -> new Block(
+            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlock("peridot_block", () -> new Block(
+            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> RQ_BLOCK = registerBlock("rq_block", () -> new RQBlock(
+            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
+                    .sound(SoundType.GLASS).lightLevel(state -> state.getValue(RQBlock.LIT) ? 0 : 15)));
+
+    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block", () -> new Block(
+            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block", () -> new Block(
+            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlock("topaz_block", () -> new Block(
             BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
 

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "unnamedmod:block/rq_block_off" },
+    "lit=true": { "model": "unnamedmod:block/rq_block_on" }
+  }
+}

@@ -18,6 +18,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.NOP_BLOCK.get());
 
         dropSelf(ModBlocks.AMBER_BLOCK.get());
+        dropSelf(ModBlocks.BRONZE_BLOCK.get());
+        dropSelf(ModBlocks.CUT_BRONZE.get());
+        dropSelf(ModBlocks.PERIDOT_BLOCK.get());
+        dropSelf(ModBlocks.RQ_BLOCK.get());
+        dropSelf(ModBlocks.RUBY_BLOCK.get());
+        dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
+        dropSelf(ModBlocks.TOPAZ_BLOCK.get());
     }
 
     @Override

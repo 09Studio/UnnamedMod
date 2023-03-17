@@ -3,25 +3,41 @@
   "block.unnamedmod.nop_block": "Nop",
 
 
+
   "item.unnamedmod.amber_fragment": "Amber Fragment",
   "item.unnamedmod.amber": "Amber",
   "block.unnamedmod.amber_block": "Block of Amber",
+
   "item.unnamedmod.bronze_nugget": "Bronze Nugget",
   "item.unnamedmod.bronze_ingot": "Bronze Ingot",
   "item.unnamedmod.bronze_rod": "Bronze Rod",
+  "block.unnamedmod.bronze_block": "Block of Bronze",
+  "block.unnamedmod.cut_bronze": "Cut Bronze",
+
   "item.unnamedmod.raw_emerald": "Raw Emerald",
   "item.unnamedmod.raw_diamond": "Raw Diamond",
+  "item.unnamedmod.raw_quartz": "Raw Quartz",
+
   "item.unnamedmod.raw_peridot": "Raw Peridot",
   "item.unnamedmod.peridot": "Peridot",
+  "block.unnamedmod.peridot_block": "Block of Peridot",
+
   "item.unnamedmod.raw_rq": "Raw Rainbow Quartz",
   "item.unnamedmod.rq": "Rainbow Quartz",
+  "block.unnamedmod.rq_block": "Block of Rainbow Quartz",
+
   "item.unnamedmod.raw_ruby": "Raw Ruby",
   "item.unnamedmod.ruby": "Ruby",
+  "block.unnamedmod.ruby_block": "Block of Ruby",
+
   "item.unnamedmod.raw_sapphire": "Raw Sapphire",
   "item.unnamedmod.sapphire": "Sapphire",
+  "block.unnamedmod.sapphire_block": "Block of Sapphire",
+
   "item.unnamedmod.raw_topaz": "Raw Topaz",
   "item.unnamedmod.topaz": "Topaz",
-  "item.unnamedmod.raw_quartz": "Raw Quartz",
+  "block.unnamedmod.topaz_block": "Block of Topaz",
+
 
 
   "creativemodetab.greenery_tab": "Greenery Tab",

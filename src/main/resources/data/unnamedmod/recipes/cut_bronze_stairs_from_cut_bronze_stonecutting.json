@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "unnamedmod:cut_bronze"
+  },
+  "result": "unnamedmod:cut_bronze_stairs"
+}

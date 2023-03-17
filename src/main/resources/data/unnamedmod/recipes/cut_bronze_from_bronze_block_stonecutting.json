@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "unnamedmod:bronze_block"
+  },
+  "result": "unnamedmod:cut_bronze"
+}

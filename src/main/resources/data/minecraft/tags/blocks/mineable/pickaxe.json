@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
-    "unnamedmod:amber_block"
+    "unnamedmod:amber_block",
+    "unnamedmod:bronze_block",
+    "unnamedmod:cut_bronze_block",
+    "unnamedmod:peridot_block",
+    "unnamedmod:rq_block",
+    "unnamedmod:ruby_block",
+    "unnamedmod:sapphire_block",
+    "unnamedmod:topaz_block"
   ]
 }

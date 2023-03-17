@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "unnamedmod:bronze_nugget"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:bronze_ingot",
+    "count": 1
+  }
+}
