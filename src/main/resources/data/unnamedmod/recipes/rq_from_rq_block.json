@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "unnamedmod:rq_block"
+    }
+  ],
+  "result": {
+    "item": "unnamedmod:rq",
+    "count": 9
+  }
+}
