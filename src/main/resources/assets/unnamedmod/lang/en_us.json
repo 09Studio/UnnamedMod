@@ -25,6 +25,8 @@
   "item.unnamedmod.raw_rq": "Raw Rainbow Quartz",
   "item.unnamedmod.rq": "Rainbow Quartz",
   "block.unnamedmod.rq_block": "Block of Rainbow Quartz",
+  "tooltip.unnamedmod.rq_block_shift_on": "Right click the block to lit it",
+  "tooltip.unnamedmod.rq_block_shift_off": "Hold §6SHIFT §rfor more information.",
 
   "item.unnamedmod.raw_ruby": "Raw Ruby",
   "item.unnamedmod.ruby": "Ruby",
