@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "unnamedmod:block/bronze_block_top",
+    "side": "unnamedmod:block/bronze_block"
+  }
+}
