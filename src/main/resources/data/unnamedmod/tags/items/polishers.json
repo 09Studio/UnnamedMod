@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "unnamedmod:copper_polisher",
+    "unnamedmod:iron_polisher",
+    "unnamedmod:diamond_polisher"
+  ]
+}

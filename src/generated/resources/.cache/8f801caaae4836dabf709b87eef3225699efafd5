@@ -1,9 +1,12 @@
-// 1.19.3	2023-03-04T14:01:40.1901447	Item Models: unnamedmod
+// 1.19.3	2023-03-18T16:26:59.8095771	Item Models: unnamedmod
 d5884fa11caad4bae35505e3896ae3eea363994b assets/unnamedmod/models/item/amber.json
 2be8b6c0f7bcecabc53097e0555be7fc29e1faef assets/unnamedmod/models/item/amber_fragment.json
 d0f4043b6b16685545a8b5f28c1d2b66a2f2ea78 assets/unnamedmod/models/item/bronze_ingot.json
 379676dc92c8a3da9177ba8e9a32e225cd9f8b9d assets/unnamedmod/models/item/bronze_nugget.json
 19ca191e9951b52ba5b63f5de99d288733e3ce93 assets/unnamedmod/models/item/bronze_rod.json
+52d6071611cb7e918f3557a73b072278e8d1c852 assets/unnamedmod/models/item/copper_polisher.json
+e2de8abd5a2ed99cd88d29bdef031ca435d01cf5 assets/unnamedmod/models/item/diamond_polisher.json
+dfe48e5dab93f3a1d0c0ba09ac603dd87c4b76e0 assets/unnamedmod/models/item/iron_polisher.json
 a3388337f3ab48f7e31a3dd90c928cdb080c59e7 assets/unnamedmod/models/item/peridot.json
 7b7f8af3cc0ca584d7e94009e5447cdc119d93b7 assets/unnamedmod/models/item/raw_diamond.json
 8894ca28f3b3f6ef7a4533b5f7811152e2afba53 assets/unnamedmod/models/item/raw_emerald.json

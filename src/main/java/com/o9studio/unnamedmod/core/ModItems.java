@@ -16,6 +16,12 @@ public class ModItems {
 
 
     //POLISHERS ITEMS
+    public static final RegistryObject<Item> COPPER_POLISHER = ITEMS.register("copper_polisher", () -> new Item(new Item.Properties().stacksTo(1).durability(25)));
+
+    public static final RegistryObject<Item> IRON_POLISHER = ITEMS.register("iron_polisher", () -> new Item(new Item.Properties().stacksTo(1).durability(50)));
+
+    public static final RegistryObject<Item> DIAMOND_POLISHER = ITEMS.register("diamond_polisher", () -> new Item(new Item.Properties().stacksTo(1).durability(100)));
+
 
 
     //CRYSTALS ITEMS

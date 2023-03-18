@@ -3,6 +3,9 @@
   "block.unnamedmod.nop_block": "Nop",
 
 
+  "item.unnamedmod.copper_polisher": "Copper Polisher",
+  "item.unnamedmod.iron_polisher": "Iron Polisher",
+  "item.unnamedmod.diamond_polisher": "Diamond Polisher",
 
   "item.unnamedmod.amber_fragment": "Amber Fragment",
   "item.unnamedmod.amber": "Amber",

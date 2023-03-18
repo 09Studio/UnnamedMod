@@ -47,6 +47,9 @@ public class UnnamedMod
         }
 
         if (event.getTab() == ModTabs.CRYSTALS_TAB){
+            event.accept(ModItems.COPPER_POLISHER);
+            event.accept(ModItems.IRON_POLISHER);
+            event.accept(ModItems.DIAMOND_POLISHER);
             event.accept(ModItems.AMBER_FRAGMENT);
             event.accept(ModItems.AMBER);
             event.accept(ModBlocks.AMBER_BLOCK);

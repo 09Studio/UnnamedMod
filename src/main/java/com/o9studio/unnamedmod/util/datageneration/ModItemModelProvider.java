@@ -19,6 +19,11 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.WHAT_ITEM);
 
+
+        simpleItem(ModItems.COPPER_POLISHER);
+        simpleItem(ModItems.IRON_POLISHER);
+        simpleItem(ModItems.DIAMOND_POLISHER);
+
         simpleItem(ModItems.AMBER);
         simpleItem(ModItems.AMBER_FRAGMENT);
         simpleItem(ModItems.BRONZE_NUGGET);
