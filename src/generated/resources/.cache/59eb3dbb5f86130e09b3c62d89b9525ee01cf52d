@@ -1,5 +1,6 @@
-// 1.19.3	2023-03-17T23:01:56.2021729	Loot Tables
+// 1.19.3	2023-03-18T19:30:19.418245	Loot Tables
 a36db3f35c9d1ddaf541495849bd103c5c75dd00 data/unnamedmod/loot_tables/blocks/amber_block.json
+7bc64f6136843bacec21fa82b532442a6ca086cb data/unnamedmod/loot_tables/blocks/amber_rocks.json
 11bbbb38058782b0d26ca28f4d4947934dbd79df data/unnamedmod/loot_tables/blocks/bronze_block.json
 ca3469c90497f33dd7b089e930072b6f4bb46a29 data/unnamedmod/loot_tables/blocks/cut_bronze.json
 24303329cfabc5f352de23550c5bf708a92b08f4 data/unnamedmod/loot_tables/blocks/nop_block.json

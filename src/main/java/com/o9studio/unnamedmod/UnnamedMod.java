@@ -50,6 +50,7 @@ public class UnnamedMod
             event.accept(ModItems.COPPER_POLISHER);
             event.accept(ModItems.IRON_POLISHER);
             event.accept(ModItems.DIAMOND_POLISHER);
+            event.accept(ModBlocks.AMBER_ROCKS);
             event.accept(ModItems.AMBER_FRAGMENT);
             event.accept(ModItems.AMBER);
             event.accept(ModBlocks.AMBER_BLOCK);

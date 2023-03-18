@@ -1,6 +1,7 @@
 package com.o9studio.unnamedmod.util.datageneration;
 
 import com.o9studio.unnamedmod.core.ModBlocks;
+import com.o9studio.unnamedmod.core.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
@@ -17,6 +18,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.NOP_BLOCK.get());
 
+        add(ModBlocks.AMBER_ROCKS.get(),
+                (block) -> createOreDrop(ModBlocks.AMBER_ROCKS.get(), ModItems.AMBER_FRAGMENT.get()));
         dropSelf(ModBlocks.AMBER_BLOCK.get());
         dropSelf(ModBlocks.BRONZE_BLOCK.get());
         dropSelf(ModBlocks.CUT_BRONZE.get());

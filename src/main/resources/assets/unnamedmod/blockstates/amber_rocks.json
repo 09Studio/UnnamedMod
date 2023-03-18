@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "unnamedmod:block/amber_rocks"
+    },
+    "facing=south": {
+      "model": "unnamedmod:block/amber_rocks",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "unnamedmod:block/amber_rocks",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "unnamedmod:block/amber_rocks",
+      "y": 90
+    }
+  }
+}

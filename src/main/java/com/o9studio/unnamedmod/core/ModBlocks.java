@@ -1,7 +1,9 @@
 package com.o9studio.unnamedmod.core;
 
 import com.o9studio.unnamedmod.UnnamedMod;
+import com.o9studio.unnamedmod.custom.blocks.AmberRocks;
 import com.o9studio.unnamedmod.custom.blocks.RQBlock;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -58,6 +60,8 @@ public class ModBlocks {
 
 
     //ORE BLOCKS
+    public static final RegistryObject<Block> AMBER_ROCKS = BLOCKS.register("amber_rocks", () -> new AmberRocks(
+            BlockBehaviour.Properties.of(Material.STONE).noOcclusion().requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.METAL), UniformInt.of(3,7)));
 
 
     //CROP BLOCKS

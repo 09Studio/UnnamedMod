@@ -69,6 +69,9 @@ public class ModItems {
     public static final RegistryObject<BlockItem> AMBER_BLOCK = ITEMS.register("amber_block", () -> new BlockItem(
             ModBlocks.AMBER_BLOCK.get(), new Item.Properties().fireResistant()));
 
+    public static final RegistryObject<BlockItem> AMBER_ROCKS = ITEMS.register("amber_rocks", () -> new BlockItem(
+            ModBlocks.AMBER_ROCKS.get(), new Item.Properties().fireResistant()));
+
 
 
     public static void register(IEventBus bus){

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "unnamedmod:amber_rocks",
     "unnamedmod:amber_block",
     "unnamedmod:ruby_block",
     "unnamedmod:sapphire_block"
