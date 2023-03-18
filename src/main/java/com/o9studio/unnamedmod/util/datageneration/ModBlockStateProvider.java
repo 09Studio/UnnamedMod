@@ -19,7 +19,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NOP_BLOCK);
 
         blockWithItem(ModBlocks.AMBER_BLOCK);
-        blockWithItem(ModBlocks.BRONZE_BLOCK);
+        blockWithItem(ModBlocks.CUT_BRONZE);
         blockWithItem(ModBlocks.PERIDOT_BLOCK);
         blockWithItem(ModBlocks.RUBY_BLOCK);
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
