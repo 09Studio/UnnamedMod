@@ -20,9 +20,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.AMBER_BLOCK);
         blockWithItem(ModBlocks.CUT_BRONZE);
+        blockWithItem(ModBlocks.PERIDOT_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_PERIDOT_ORE);
         blockWithItem(ModBlocks.PERIDOT_BLOCK);
+        blockWithItem(ModBlocks.RQ_ORE);
+        blockWithItem(ModBlocks.RUBY_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_RUBY_ORE);
         blockWithItem(ModBlocks.RUBY_BLOCK);
+        blockWithItem(ModBlocks.SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
+        blockWithItem(ModBlocks.TOPAZ_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_TOPAZ_ORE);
         blockWithItem(ModBlocks.TOPAZ_BLOCK);
     }
 

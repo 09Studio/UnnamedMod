@@ -3,7 +3,11 @@
   "values": [
     "unnamedmod:bronze_block",
     "unnamedmod:cut_bronze",
+    "unnamedmod:peridot_ore",
+    "unnamedmod:deepslate_peridot_ore",
     "unnamedmod:peridot_block",
+    "unnamedmod:topaz_ore",
+    "unnamedmod:deepslate_topaz_ore",
     "unnamedmod:topaz_block"
   ]
 }

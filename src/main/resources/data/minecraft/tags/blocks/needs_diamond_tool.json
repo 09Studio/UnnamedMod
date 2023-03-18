@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "unnamedmod:rq_ore",
     "unnamedmod:rq_block"
   ]
 }

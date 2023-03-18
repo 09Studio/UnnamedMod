@@ -5,10 +5,19 @@
     "unnamedmod:amber_block",
     "unnamedmod:bronze_block",
     "unnamedmod:cut_bronze",
+    "unnamedmod:peridot_ore",
+    "unnamedmod:deepslate_peridot_ore",
     "unnamedmod:peridot_block",
+    "unnamedmod:rq_ore",
     "unnamedmod:rq_block",
+    "unnamedmod:ruby_ore",
+    "unnamedmod:deepslate_ruby_ore",
     "unnamedmod:ruby_block",
+    "unnamedmod:sapphire_ore",
+    "unnamedmod:deepslate_sapphire_ore",
     "unnamedmod:sapphire_block",
+    "unnamedmod:topaz_ore",
+    "unnamedmod:deepslate_topaz_ore",
     "unnamedmod:topaz_block"
   ]
 }
