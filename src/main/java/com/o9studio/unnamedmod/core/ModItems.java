@@ -1,7 +1,10 @@
 package com.o9studio.unnamedmod.core;
 
 import com.o9studio.unnamedmod.UnnamedMod;
+import com.o9studio.unnamedmod.custom.items.FoodItems;
+import com.o9studio.unnamedmod.custom.items.GlassJarItem;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.BowlFoodItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -62,7 +65,63 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_QUARTZ = ITEMS.register("raw_quartz", () -> new Item(new Item.Properties()));
 
 
+
+    //GREENERY ITEMS
+    public static final RegistryObject<Item> GLASS_JAR = ITEMS.register("glass_jar", () -> new Item(new Item.Properties()));
+
+
+
     //FOOD ITEMS
+    public static final RegistryObject<Item> BLUEBERRIES = ITEMS.register("blueberries", () -> new Item(new Item.Properties().food(FoodItems.BLUEBERRIES)));
+
+    public static final RegistryObject<Item> BLUEBERRY_PIE = ITEMS.register("blueberry_pie", () -> new Item(new Item.Properties().food(FoodItems.BLUEBERRY_PIE)));
+
+    public static final RegistryObject<Item> BLUEBERRY_SMOOTHIE = ITEMS.register("blueberry_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.BLUEBERRY_SMOOTHIE)));
+
+    public static final RegistryObject<Item> CHOCOLATE = ITEMS.register("chocolate", () -> new Item(new Item.Properties().food(FoodItems.CHOCOLATE)));
+
+    public static final RegistryObject<Item> CHOCOLATE_SMOOTHIE = ITEMS.register("chocolate_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.CHOCOLATE_SMOOTHIE)));
+
+    public static final RegistryObject<Item> COOKED_TROPICAL_FISH = ITEMS.register("cooked_tropical_fish", () -> new Item(new Item.Properties().food(FoodItems.COOKED_TROPICAL_FISH)));
+
+    public static final RegistryObject<Item> DARKBERRIES = ITEMS.register("darkberries", () -> new Item(new Item.Properties().food(FoodItems.DARKBERRIES)));
+
+    public static final RegistryObject<Item> DARKBERRY_SMOOTHIE = ITEMS.register("darkberry_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.DARKBERRY_SMOOTHIE)));
+
+    public static final RegistryObject<Item> JADE_VINE_FRUIT = ITEMS.register("jade_vine_fruit", () -> new Item(new Item.Properties().food(FoodItems.JADE_VINE_FRUIT)));
+
+    public static final RegistryObject<Item> JADE_VINE_SMOOTHIE = ITEMS.register("jade_vine_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.JADE_VINE_SMOOTHIE)));
+
+    public static final RegistryObject<Item> LETTUCE = ITEMS.register("lettuce", () -> new Item(new Item.Properties().food(FoodItems.LETTUCE)));
+
+    public static final RegistryObject<Item> RED_BELL_PEPPER = ITEMS.register("red_bell_pepper", () -> new Item(new Item.Properties().food(FoodItems.RED_BELL_PEPPER)));
+
+    public static final RegistryObject<Item> ROASTED_RED_BELL_PEPPER = ITEMS.register("roasted_red_bell_pepper", () -> new Item(new Item.Properties().food(FoodItems.ROASTED_RED_BELL_PEPPER)));
+
+    public static final RegistryObject<Item> SALAD = ITEMS.register("salad", () -> new BowlFoodItem(new Item.Properties().food(FoodItems.SALAD)));
+
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(FoodItems.STRAWBERRY)));
+
+    public static final RegistryObject<Item> STRAWBERRY_SMOOTHIE = ITEMS.register("strawberry_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.STRAWBERRY_SMOOTHIE)));
+
+    public static final RegistryObject<Item> STRAWBERRIES_WITH_MILK = ITEMS.register("strawberries_with_milk", () -> new BowlFoodItem(new Item.Properties().food(FoodItems.STRAWBERRIES_WITH_MILK)));
+
+    public static final RegistryObject<Item> SWEET_BERRY_PIE = ITEMS.register("sweet_berry_pie", () -> new Item(new Item.Properties().food(FoodItems.SWEET_BERRY_PIE)));
+
+    public static final RegistryObject<Item> SWEET_BERRY_SMOOTHIE = ITEMS.register("sweet_berry_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.SWEET_BERRY_SMOOTHIE)));
+
+    public static final RegistryObject<Item> TACO = ITEMS.register("taco", () -> new Item(new Item.Properties().food(FoodItems.TACO)));
+
+    public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato", () -> new Item(new Item.Properties().food(FoodItems.TOMATO)));
+
+    public static final RegistryObject<Item> ROTTEN_TOMATO = ITEMS.register("rotten_tomato", () -> new Item(new Item.Properties().food(FoodItems.ROTTEN_TOMATO)));
+
+    public static final RegistryObject<Item> VANILLA_COOKIE = ITEMS.register("vanilla_cookie", () -> new Item(new Item.Properties().food(FoodItems.VANILLA_COOKIE)));
+
+    public static final RegistryObject<Item> VANILLA_SMOOTHIE = ITEMS.register("vanilla_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.VANILLA_SMOOTHIE)));
+
+    public static final RegistryObject<Item> VEGETABLE_SOUP = ITEMS.register("vegetable_soup", () -> new BowlFoodItem(new Item.Properties().food(FoodItems.VEGETABLE_SOUP)));
+
 
 
     //BLOCK ITEMS

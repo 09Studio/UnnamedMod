@@ -19,6 +19,33 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.WHAT_ITEM);
 
+        simpleItem(ModItems.GLASS_JAR);
+        simpleItem(ModItems.BLUEBERRIES);
+        simpleItem(ModItems.BLUEBERRY_PIE);
+        simpleItem(ModItems.BLUEBERRY_SMOOTHIE);
+        simpleItem(ModItems.CHOCOLATE);
+        simpleItem(ModItems.CHOCOLATE_SMOOTHIE);
+        simpleItem(ModItems.COOKED_TROPICAL_FISH);
+        simpleItem(ModItems.DARKBERRIES);
+        simpleItem(ModItems.DARKBERRY_SMOOTHIE);
+        simpleItem(ModItems.JADE_VINE_FRUIT);
+        simpleItem(ModItems.JADE_VINE_SMOOTHIE);
+        simpleItem(ModItems.LETTUCE);
+        simpleItem(ModItems.RED_BELL_PEPPER);
+        simpleItem(ModItems.ROASTED_RED_BELL_PEPPER);
+        simpleItem(ModItems.SALAD);
+        simpleItem(ModItems.STRAWBERRY);
+        simpleItem(ModItems.STRAWBERRY_SMOOTHIE);
+        simpleItem(ModItems.STRAWBERRIES_WITH_MILK);
+        simpleItem(ModItems.SWEET_BERRY_PIE);
+        simpleItem(ModItems.SWEET_BERRY_SMOOTHIE);
+        simpleItem(ModItems.TACO);
+        simpleItem(ModItems.TOMATO);
+        simpleItem(ModItems.ROTTEN_TOMATO);
+        simpleItem(ModItems.VANILLA_COOKIE);
+        simpleItem(ModItems.VANILLA_SMOOTHIE);
+        simpleItem(ModItems.VEGETABLE_SOUP);
+
 
         simpleItem(ModItems.COPPER_POLISHER);
         simpleItem(ModItems.IRON_POLISHER);

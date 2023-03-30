@@ -44,6 +44,32 @@ public class UnnamedMod
         if (event.getTab() == ModTabs.GREENERY_TAB){
             event.accept(ModItems.WHAT_ITEM);
             event.accept(ModBlocks.NOP_BLOCK);
+            event.accept(ModItems.GLASS_JAR);
+            event.accept(ModItems.BLUEBERRIES);
+            event.accept(ModItems.BLUEBERRY_PIE);
+            event.accept(ModItems.BLUEBERRY_SMOOTHIE);
+            event.accept(ModItems.CHOCOLATE);
+            event.accept(ModItems.CHOCOLATE_SMOOTHIE);
+            event.accept(ModItems.COOKED_TROPICAL_FISH);
+            event.accept(ModItems.DARKBERRIES);
+            event.accept(ModItems.DARKBERRY_SMOOTHIE);
+            event.accept(ModItems.JADE_VINE_FRUIT);
+            event.accept(ModItems.JADE_VINE_SMOOTHIE);
+            event.accept(ModItems.LETTUCE);
+            event.accept(ModItems.RED_BELL_PEPPER);
+            event.accept(ModItems.ROASTED_RED_BELL_PEPPER);
+            event.accept(ModItems.SALAD);
+            event.accept(ModItems.STRAWBERRY);
+            event.accept(ModItems.STRAWBERRY_SMOOTHIE);
+            event.accept(ModItems.STRAWBERRIES_WITH_MILK);
+            event.accept(ModItems.SWEET_BERRY_PIE);
+            event.accept(ModItems.SWEET_BERRY_SMOOTHIE);
+            event.accept(ModItems.TACO);
+            event.accept(ModItems.TOMATO);
+            event.accept(ModItems.ROTTEN_TOMATO);
+            event.accept(ModItems.VANILLA_COOKIE);
+            event.accept(ModItems.VANILLA_SMOOTHIE);
+            event.accept(ModItems.VEGETABLE_SOUP);
         }
 
         if (event.getTab() == ModTabs.CRYSTALS_TAB){
