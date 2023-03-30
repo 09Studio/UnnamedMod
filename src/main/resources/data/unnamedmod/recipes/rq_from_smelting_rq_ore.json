@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "group": "rq",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "unnamedmod:rq_ore"
+  },
+  "result": "unnamedmod:rq"
+}
