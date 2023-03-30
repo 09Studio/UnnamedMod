@@ -18,7 +18,7 @@ public class ModTabs {
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
         GREENERY_TAB = event.registerCreativeModeTab(new ResourceLocation(UnnamedMod.MOD_ID, "greenery_tab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.WHAT_ITEM.get())).title(Component.translatable("creativemodetab.greenery_tab")));
+                builder -> builder.icon(() -> new ItemStack(ModItems.BLUEBERRY_SMOOTHIE.get())).title(Component.translatable("creativemodetab.greenery_tab")));
 
         CRYSTALS_TAB = event.registerCreativeModeTab(new ResourceLocation(UnnamedMod.MOD_ID, "crystals_tab"),
                 builder -> builder.icon(() -> new ItemStack(ModItems.AMBER.get())).title(Component.translatable("creativemodetab.crystals_tab")));

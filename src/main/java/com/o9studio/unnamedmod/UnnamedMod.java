@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
 import com.o9studio.unnamedmod.custom.ModTabs;
+import com.o9studio.unnamedmod.events.ItemsOnComposter;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -37,6 +38,7 @@ public class UnnamedMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        ItemsOnComposter.register();
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
