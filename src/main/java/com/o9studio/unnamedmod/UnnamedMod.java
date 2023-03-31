@@ -57,7 +57,9 @@ public class UnnamedMod
             event.accept(ModItems.DARKBERRY_SMOOTHIE);
             event.accept(ModItems.JADE_VINE_FRUIT);
             event.accept(ModItems.JADE_VINE_SMOOTHIE);
+            event.accept(ModItems.LETTUCE_SEEDS);
             event.accept(ModItems.LETTUCE);
+            event.accept(ModItems.RED_BELL_PEPPER_SEEDS);
             event.accept(ModItems.RED_BELL_PEPPER);
             event.accept(ModItems.ROASTED_RED_BELL_PEPPER);
             event.accept(ModItems.SALAD);
@@ -67,8 +69,10 @@ public class UnnamedMod
             event.accept(ModItems.SWEET_BERRY_PIE);
             event.accept(ModItems.SWEET_BERRY_SMOOTHIE);
             event.accept(ModItems.TACO);
+            event.accept(ModItems.TOMATO_SEEDS);
             event.accept(ModItems.TOMATO);
             event.accept(ModItems.ROTTEN_TOMATO);
+            event.accept(ModItems.VANILLA_BEANS);
             event.accept(ModItems.VANILLA_COOKIE);
             event.accept(ModItems.VANILLA_SMOOTHIE);
             event.accept(ModItems.VEGETABLE_SOUP);

@@ -30,6 +30,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DARKBERRY_SMOOTHIE);
         simpleItem(ModItems.JADE_VINE_FRUIT);
         simpleItem(ModItems.JADE_VINE_SMOOTHIE);
+        simpleItem(ModItems.LETTUCE_SEEDS);
+        simpleItem(ModItems.RED_BELL_PEPPER_SEEDS);
         simpleItem(ModItems.LETTUCE);
         simpleItem(ModItems.RED_BELL_PEPPER);
         simpleItem(ModItems.ROASTED_RED_BELL_PEPPER);
@@ -40,8 +42,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SWEET_BERRY_PIE);
         simpleItem(ModItems.SWEET_BERRY_SMOOTHIE);
         simpleItem(ModItems.TACO);
+        simpleItem(ModItems.TOMATO_SEEDS);
         simpleItem(ModItems.TOMATO);
         simpleItem(ModItems.ROTTEN_TOMATO);
+        simpleItem(ModItems.VANILLA_BEANS);
         simpleItem(ModItems.VANILLA_COOKIE);
         simpleItem(ModItems.VANILLA_SMOOTHIE);
         simpleItem(ModItems.VEGETABLE_SOUP);

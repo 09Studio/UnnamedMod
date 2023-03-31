@@ -1,4 +1,4 @@
-// 1.19.3	2023-03-31T19:29:52.376373	Loot Tables
+// 1.19.3	2023-03-31T20:56:41.0083284	Loot Tables
 a36db3f35c9d1ddaf541495849bd103c5c75dd00 data/unnamedmod/loot_tables/blocks/amber_block.json
 7bc64f6136843bacec21fa82b532442a6ca086cb data/unnamedmod/loot_tables/blocks/amber_rocks.json
 11bbbb38058782b0d26ca28f4d4947934dbd79df data/unnamedmod/loot_tables/blocks/bronze_block.json
@@ -7,14 +7,18 @@ ca3469c90497f33dd7b089e930072b6f4bb46a29 data/unnamedmod/loot_tables/blocks/cut_
 8e2adbaae15751aa5c35d8676047bb7bb09ac61f data/unnamedmod/loot_tables/blocks/deepslate_ruby_ore.json
 e02df062d9737c85e123d5fcd3bd4f61f6886a22 data/unnamedmod/loot_tables/blocks/deepslate_sapphire_ore.json
 ed96fac16d6ef0ea6aecf39b2edb10c701cb8f73 data/unnamedmod/loot_tables/blocks/deepslate_topaz_ore.json
+9bf581449e0ea214c39a81452c72e696f1fae636 data/unnamedmod/loot_tables/blocks/lettuce_crop.json
 24303329cfabc5f352de23550c5bf708a92b08f4 data/unnamedmod/loot_tables/blocks/nop_block.json
 201a818c553e0ce9e846b79a9ce3766b4a89e3e7 data/unnamedmod/loot_tables/blocks/peridot_block.json
 77bd29290d5b1ea67f7f0449b577fd27fe5daa94 data/unnamedmod/loot_tables/blocks/peridot_ore.json
+7abf6d9f62d793f163b7f7aa3a5818310a25288a data/unnamedmod/loot_tables/blocks/red_bell_pepper_crop.json
 50bfbe1e85c255893c1e910d7ee7cb8d33e14b1a data/unnamedmod/loot_tables/blocks/rq_block.json
 8198bbf5fcff1da183f583ef6bf52711b116f87c data/unnamedmod/loot_tables/blocks/rq_ore.json
 7c5108be496fd0a7485fd9d8fa8d836523129564 data/unnamedmod/loot_tables/blocks/ruby_block.json
 fe82400d98231cfb61e4d9616a6de34f60e395bb data/unnamedmod/loot_tables/blocks/ruby_ore.json
 dba770352c2edf25f05b583f46f8f6d0d2cd9c4a data/unnamedmod/loot_tables/blocks/sapphire_block.json
 29f7b4e565e9008693e8f33dca5e4409cc8a37c5 data/unnamedmod/loot_tables/blocks/sapphire_ore.json
+0ccb1346fb429ea3086f2ac090be053cc0b6be4b data/unnamedmod/loot_tables/blocks/tomato_crop.json
 12094f2b699663e286e8960e1d46dec6e804ae17 data/unnamedmod/loot_tables/blocks/topaz_block.json
 fba1e392c085306d52626b764f12903707454fa4 data/unnamedmod/loot_tables/blocks/topaz_ore.json
+7266f86c4c7374a405b3adf6726e55c78b7c12f4 data/unnamedmod/loot_tables/blocks/vanilla_crop.json

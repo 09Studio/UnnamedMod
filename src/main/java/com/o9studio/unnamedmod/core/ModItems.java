@@ -69,7 +69,7 @@ public class ModItems {
     public static final RegistryObject<Item> GLASS_JAR = ITEMS.register("glass_jar", () -> new Item(new Item.Properties()));
 
 
-    //FOOD ITEMS
+    //FOOD & SEEDS ITEMS
     public static final RegistryObject<Item> BLUEBERRIES = ITEMS.register("blueberries", () -> new ItemNameBlockItem(ModBlocks.BLUEBERRY_BUSH.get(),
             new Item.Properties().food(FoodItems.BLUEBERRIES)));
 
@@ -92,7 +92,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> JADE_VINE_SMOOTHIE = ITEMS.register("jade_vine_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.JADE_VINE_SMOOTHIE)));
 
+    public static final RegistryObject<Item> LETTUCE_SEEDS = ITEMS.register("lettuce_seeds", () -> new ItemNameBlockItem(ModBlocks.LETTUCE_CROP.get(),
+            new Item.Properties()));
+
     public static final RegistryObject<Item> LETTUCE = ITEMS.register("lettuce", () -> new Item(new Item.Properties().food(FoodItems.LETTUCE)));
+
+    public static final RegistryObject<Item> RED_BELL_PEPPER_SEEDS = ITEMS.register("red_bell_pepper_seeds", () -> new ItemNameBlockItem(ModBlocks.RED_BELL_PEPPER_CROP.get(),
+            new Item.Properties()));
 
     public static final RegistryObject<Item> RED_BELL_PEPPER = ITEMS.register("red_bell_pepper", () -> new Item(new Item.Properties().food(FoodItems.RED_BELL_PEPPER)));
 
@@ -113,9 +119,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> TACO = ITEMS.register("taco", () -> new Item(new Item.Properties().food(FoodItems.TACO)));
 
+    public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds", () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(),
+            new Item.Properties()));
+
     public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato", () -> new Item(new Item.Properties().food(FoodItems.TOMATO)));
 
     public static final RegistryObject<Item> ROTTEN_TOMATO = ITEMS.register("rotten_tomato", () -> new Item(new Item.Properties().food(FoodItems.ROTTEN_TOMATO)));
+
+    public static final RegistryObject<Item> VANILLA_BEANS = ITEMS.register("vanilla_beans", () -> new ItemNameBlockItem(ModBlocks.VANILLA_CROP.get(),
+            new Item.Properties()));
 
     public static final RegistryObject<Item> VANILLA_COOKIE = ITEMS.register("vanilla_cookie", () -> new Item(new Item.Properties().food(FoodItems.VANILLA_COOKIE)));
 

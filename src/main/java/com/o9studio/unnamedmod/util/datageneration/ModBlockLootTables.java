@@ -3,6 +3,7 @@ package com.o9studio.unnamedmod.util.datageneration;
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
 import com.o9studio.unnamedmod.custom.blocks.BlueBerryCropBlock;
+import com.o9studio.unnamedmod.custom.blocks.LettuceCropBlock;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -21,6 +22,30 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.NOP_BLOCK.get());
+
+        LootItemCondition.Builder lettucebuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.LETTUCE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LettuceCropBlock.AGE, 4));
+        this.add(ModBlocks.LETTUCE_CROP.get(), createCropDrops(ModBlocks.LETTUCE_CROP.get(), ModItems.LETTUCE.get(),
+                ModItems.LETTUCE_SEEDS.get(), lettucebuilder));
+
+        LootItemCondition.Builder pepperbuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.RED_BELL_PEPPER_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LettuceCropBlock.AGE, 5));
+        this.add(ModBlocks.RED_BELL_PEPPER_CROP.get(), createCropDrops(ModBlocks.RED_BELL_PEPPER_CROP.get(), ModItems.RED_BELL_PEPPER.get(),
+                ModItems.RED_BELL_PEPPER_SEEDS.get(), pepperbuilder));
+
+        LootItemCondition.Builder tomatobuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LettuceCropBlock.AGE, 4));
+        this.add(ModBlocks.TOMATO_CROP.get(), createCropDrops(ModBlocks.TOMATO_CROP.get(), ModItems.TOMATO.get(),
+                ModItems.TOMATO_SEEDS.get(), tomatobuilder));
+
+        LootItemCondition.Builder vanillabuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.VANILLA_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LettuceCropBlock.AGE, 5));
+        this.add(ModBlocks.VANILLA_CROP.get(), createCropDrops(ModBlocks.VANILLA_CROP.get(), ModItems.VANILLA_BEANS.get(),
+                ModItems.VANILLA_BEANS.get(), vanillabuilder));
 
 
         add(ModBlocks.AMBER_ROCKS.get(),

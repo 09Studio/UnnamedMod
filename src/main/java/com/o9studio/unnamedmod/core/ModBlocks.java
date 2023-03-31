@@ -98,8 +98,20 @@ public class ModBlocks {
     public static final RegistryObject<Block> DARKBERRY_BUSH = BLOCKS.register("darkberry_bush",
             () -> new DarkBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noLootTable()));
 
+    public static final RegistryObject<Block> LETTUCE_CROP = BLOCKS.register("lettuce_crop",
+            () -> new LettuceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+    public static final RegistryObject<Block> RED_BELL_PEPPER_CROP = BLOCKS.register("red_bell_pepper_crop",
+            () -> new RedBellPepperCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
     public static final RegistryObject<Block> STRAWBERRY_BUSH = BLOCKS.register("strawberry_bush",
             () -> new StrawBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noLootTable()));
+
+    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES)));
+
+    public static final RegistryObject<Block> VANILLA_CROP = BLOCKS.register("vanilla_crop",
+            () -> new VanillaCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
     //Wall Blocks
