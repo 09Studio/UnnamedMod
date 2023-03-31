@@ -2,9 +2,13 @@ package com.o9studio.unnamedmod.util.datageneration;
 
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
+import com.o9studio.unnamedmod.custom.blocks.BlueBerryCropBlock;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -17,6 +21,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.NOP_BLOCK.get());
+
 
         add(ModBlocks.AMBER_ROCKS.get(),
                 (block) -> createOreDrop(ModBlocks.AMBER_ROCKS.get(), ModItems.AMBER_FRAGMENT.get()));

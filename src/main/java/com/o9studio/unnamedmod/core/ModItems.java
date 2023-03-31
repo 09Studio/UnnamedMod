@@ -6,6 +6,7 @@ import com.o9studio.unnamedmod.custom.items.GlassJarItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.BowlFoodItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,7 +25,6 @@ public class ModItems {
     public static final RegistryObject<Item> IRON_POLISHER = ITEMS.register("iron_polisher", () -> new Item(new Item.Properties().stacksTo(1).durability(50)));
 
     public static final RegistryObject<Item> DIAMOND_POLISHER = ITEMS.register("diamond_polisher", () -> new Item(new Item.Properties().stacksTo(1).durability(100)));
-
 
 
     //CRYSTALS ITEMS
@@ -65,14 +65,13 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_QUARTZ = ITEMS.register("raw_quartz", () -> new Item(new Item.Properties()));
 
 
-
     //GREENERY ITEMS
     public static final RegistryObject<Item> GLASS_JAR = ITEMS.register("glass_jar", () -> new Item(new Item.Properties()));
 
 
-
     //FOOD ITEMS
-    public static final RegistryObject<Item> BLUEBERRIES = ITEMS.register("blueberries", () -> new Item(new Item.Properties().food(FoodItems.BLUEBERRIES)));
+    public static final RegistryObject<Item> BLUEBERRIES = ITEMS.register("blueberries", () -> new ItemNameBlockItem(ModBlocks.BLUEBERRY_BUSH.get(),
+            new Item.Properties().food(FoodItems.BLUEBERRIES)));
 
     public static final RegistryObject<Item> BLUEBERRY_PIE = ITEMS.register("blueberry_pie", () -> new Item(new Item.Properties().food(FoodItems.BLUEBERRY_PIE)));
 
@@ -84,7 +83,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> COOKED_TROPICAL_FISH = ITEMS.register("cooked_tropical_fish", () -> new Item(new Item.Properties().food(FoodItems.COOKED_TROPICAL_FISH)));
 
-    public static final RegistryObject<Item> DARKBERRIES = ITEMS.register("darkberries", () -> new Item(new Item.Properties().food(FoodItems.DARKBERRIES)));
+    public static final RegistryObject<Item> DARKBERRIES = ITEMS.register("darkberries", () -> new ItemNameBlockItem(ModBlocks.DARKBERRY_BUSH.get(),
+            new Item.Properties().food(FoodItems.DARKBERRIES)));
 
     public static final RegistryObject<Item> DARKBERRY_SMOOTHIE = ITEMS.register("darkberry_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.DARKBERRY_SMOOTHIE)));
 
@@ -100,7 +100,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> SALAD = ITEMS.register("salad", () -> new BowlFoodItem(new Item.Properties().food(FoodItems.SALAD)));
 
-    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(FoodItems.STRAWBERRY)));
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_BUSH.get(),
+            new Item.Properties().food(FoodItems.STRAWBERRY)));
 
     public static final RegistryObject<Item> STRAWBERRY_SMOOTHIE = ITEMS.register("strawberry_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.STRAWBERRY_SMOOTHIE)));
 
@@ -121,7 +122,6 @@ public class ModItems {
     public static final RegistryObject<Item> VANILLA_SMOOTHIE = ITEMS.register("vanilla_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.VANILLA_SMOOTHIE)));
 
     public static final RegistryObject<Item> VEGETABLE_SOUP = ITEMS.register("vegetable_soup", () -> new BowlFoodItem(new Item.Properties().food(FoodItems.VEGETABLE_SOUP)));
-
 
 
     //BLOCK ITEMS

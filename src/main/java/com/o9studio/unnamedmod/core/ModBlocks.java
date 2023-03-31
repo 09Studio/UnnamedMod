@@ -1,8 +1,7 @@
 package com.o9studio.unnamedmod.core;
 
 import com.o9studio.unnamedmod.UnnamedMod;
-import com.o9studio.unnamedmod.custom.blocks.AmberRocks;
-import com.o9studio.unnamedmod.custom.blocks.RQBlock;
+import com.o9studio.unnamedmod.custom.blocks.*;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -93,6 +92,14 @@ public class ModBlocks {
 
 
     //CROP BLOCKS
+    public static final RegistryObject<Block> BLUEBERRY_BUSH = BLOCKS.register("blueberry_bush",
+            () -> new BlueBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noLootTable()));
+
+    public static final RegistryObject<Block> DARKBERRY_BUSH = BLOCKS.register("darkberry_bush",
+            () -> new DarkBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noLootTable()));
+
+    public static final RegistryObject<Block> STRAWBERRY_BUSH = BLOCKS.register("strawberry_bush",
+            () -> new StrawBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noLootTable()));
 
 
     //Wall Blocks
