@@ -1,11 +1,8 @@
 {
   "replace": false,
   "values": [
-    "unnamedmod:blueberry_bush",
-    "unnamedmod:darkberry_bush",
     "unnamedmod:lettuce_crop",
     "unnamedmod:red_bell_pepper_crop",
-    "unnamedmod:strawberry_bush",
     "unnamedmod:tomato_crop",
     "unnamedmod:vanilla_crop"
   ]

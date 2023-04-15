@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:milk_bucket"
+    },
+    "I": {
+      "item": "unnamedmod:jade_vine_fruit"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "G": {
+      "item": "unnamedmod:glass_jar"
+    }
+  },
+  "pattern": [
+    "#IS",
+    " G "
+  ],
+  "result": {
+    "item": "unnamedmod:jade_vine_smoothie",
+    "count": 1
+  }
+}

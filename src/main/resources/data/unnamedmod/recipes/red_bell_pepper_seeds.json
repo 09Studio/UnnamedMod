@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "unnamedmod:red_bell_pepper"
+    }
+  ],
+  "result": {
+    "item": "unnamedmod:red_bell_pepper_seeds",
+    "count": 2
+  }
+}

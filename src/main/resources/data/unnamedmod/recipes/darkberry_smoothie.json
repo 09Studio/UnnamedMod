@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:milk_bucket"
+    },
+    "I": {
+      "item": "unnamedmod:darkberries"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "G": {
+      "item": "unnamedmod:glass_jar"
+    }
+  },
+  "pattern": [
+    "#IS",
+    " G "
+  ],
+  "result": {
+    "item": "unnamedmod:darkberry_smoothie",
+    "count": 1
+  }
+}
