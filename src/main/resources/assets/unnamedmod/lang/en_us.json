@@ -15,6 +15,8 @@
   "block.unnamedmod.darkberry_bush": "Darkberry Bush",
   "item.unnamedmod.darkberry_smoothie": "Darkberry Smoothie",
   "item.unnamedmod.jade_vine_fruit": "Jade Vine Fruit",
+  "block.unnamedmod.jade_vine": "Jade Vine",
+  "block.unnamedmod.jade_vine_plant": "Jade Vine Plant",
   "item.unnamedmod.jade_vine_smoothie": "Jade Vine Smoothie",
   "item.unnamedmod.lettuce_seeds": "Lettuce Seeds",
   "item.unnamedmod.lettuce": "Lettuce",
@@ -40,6 +42,8 @@
   "item.unnamedmod.vanilla_cookie": "Vanilla Cookie",
   "item.unnamedmod.vanilla_smoothie": "Vanilla Smoothie",
   "item.unnamedmod.vegetable_soup": "Vegetable Soup",
+
+  "block.unnamedmod.gloomlight": "Gloomlight",
 
 
 

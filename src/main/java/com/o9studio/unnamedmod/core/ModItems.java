@@ -88,7 +88,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> DARKBERRY_SMOOTHIE = ITEMS.register("darkberry_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.DARKBERRY_SMOOTHIE)));
 
-    public static final RegistryObject<Item> JADE_VINE_FRUIT = ITEMS.register("jade_vine_fruit", () -> new Item(new Item.Properties().food(FoodItems.JADE_VINE_FRUIT)));
+    public static final RegistryObject<Item> JADE_VINE_FRUIT = ITEMS.register("jade_vine_fruit", () -> new ItemNameBlockItem(ModBlocks.JADE_VINE.get(),
+            new Item.Properties().food(FoodItems.JADE_VINE_FRUIT)));
 
     public static final RegistryObject<Item> JADE_VINE_SMOOTHIE = ITEMS.register("jade_vine_smoothie", () -> new GlassJarItem(new Item.Properties().food(FoodItems.JADE_VINE_SMOOTHIE)));
 

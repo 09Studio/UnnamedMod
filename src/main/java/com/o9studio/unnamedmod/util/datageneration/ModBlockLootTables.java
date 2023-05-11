@@ -2,12 +2,15 @@ package com.o9studio.unnamedmod.util.datageneration;
 
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
-import com.o9studio.unnamedmod.custom.blocks.BlueBerryCropBlock;
+import com.o9studio.unnamedmod.custom.blocks.JadeVines;
 import com.o9studio.unnamedmod.custom.blocks.LettuceCropBlock;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.registries.RegistryObject;
@@ -19,15 +22,27 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 
+    protected static LootTable.Builder createJadeVinesDrop(Block block) {
+        return LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(ModItems.JADE_VINE_FRUIT.get())).when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(JadeVines.BERRIES, true))));
+    }
+
     @Override
     protected void generate() {
         dropSelf(ModBlocks.NOP_BLOCK.get());
+
+        dropSelf(ModBlocks.GLOOMLIGHT.get());
 
         LootItemCondition.Builder lettucebuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.LETTUCE_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LettuceCropBlock.AGE, 4));
         this.add(ModBlocks.LETTUCE_CROP.get(), createCropDrops(ModBlocks.LETTUCE_CROP.get(), ModItems.LETTUCE.get(),
                 ModItems.LETTUCE_SEEDS.get(), lettucebuilder));
+
+        add(ModBlocks.JADE_VINE.get(),
+                (block) -> createJadeVinesDrop(ModBlocks.JADE_VINE.get()));
+
+        add(ModBlocks.JADE_VINE_PLANT.get(),
+                (block) -> createJadeVinesDrop(ModBlocks.JADE_VINE_PLANT.get()));
 
         LootItemCondition.Builder pepperbuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.RED_BELL_PEPPER_CROP.get())

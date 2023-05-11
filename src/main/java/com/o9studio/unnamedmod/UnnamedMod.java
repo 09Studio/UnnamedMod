@@ -76,6 +76,7 @@ public class UnnamedMod
             event.accept(ModItems.VANILLA_COOKIE);
             event.accept(ModItems.VANILLA_SMOOTHIE);
             event.accept(ModItems.VEGETABLE_SOUP);
+            event.accept(ModBlocks.GLOOMLIGHT);
         }
 
         if (event.getTab() == ModTabs.CRYSTALS_TAB){

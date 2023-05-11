@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "unnamedmod:jade_vine",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "berries": "true"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "unnamedmod:jade_vine_fruit"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

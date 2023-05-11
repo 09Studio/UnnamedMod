@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -27,6 +28,8 @@ public class ModBlocks {
 
 
     //NORMAL BLOCKS
+    public static final RegistryObject<Block> GLOOMLIGHT  = registerBlock("gloomlight", () -> new Block(BlockBehaviour.Properties.of(
+            Material.MOSS, MaterialColor.COLOR_GRAY).strength(1).sound(SoundType.MOSS).lightLevel((p_152663_) -> 15)));
 
 
     //DUSKY BLOCKS
@@ -97,6 +100,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DARKBERRY_BUSH = BLOCKS.register("darkberry_bush",
             () -> new DarkBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noLootTable()));
+
+    public static final RegistryObject<Block> JADE_VINE = BLOCKS.register("jade_vine",
+            () -> new JadeVineBlock(BlockBehaviour.Properties.of(Material.PLANT)
+                    .randomTicks().noCollission().instabreak().sound(SoundType.CAVE_VINES)));
+
+    public static final RegistryObject<Block> JADE_VINE_PLANT = BLOCKS.register("jade_vine_plant",
+            () -> new JadeVinePlantBlock(BlockBehaviour.Properties.of(Material.PLANT)
+                    .randomTicks().noCollission().instabreak().sound(SoundType.CAVE_VINES)));
 
     public static final RegistryObject<Block> LETTUCE_CROP = BLOCKS.register("lettuce_crop",
             () -> new LettuceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));

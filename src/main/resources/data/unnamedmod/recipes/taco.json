@@ -1,27 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " # ",
-    "CXI",
-    " B "
-  ],
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:cooked_chicken"
     },
-    "L": {
+    {
       "item": "unnamedmod:lettuce"
     },
-    "T": {
+    {
       "item": "unnamedmod:tomato"
     },
-    "P": {
+    {
       "item": "unnamedmod:red_bell_pepper"
     },
-    "B": {
+    {
       "item": "minecraft:bread"
     }
-  },
+  ],
   "result": {
     "item": "unnamedmod:taco",
     "count": 1

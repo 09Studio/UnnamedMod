@@ -1,10 +1,11 @@
-// 1.19.3	2023-03-31T20:56:41.0083284	Block States: unnamedmod
+// 1.19.3	2023-05-11T17:30:51.8553182	Block States: unnamedmod
 717afd2e2a46b1e659bceeb2d358866378235aba assets/unnamedmod/blockstates/amber_block.json
 ba1ccd5d244e101df0c7b1b3b2970e4f0f746e4f assets/unnamedmod/blockstates/cut_bronze.json
 973d053edf788d200e7d16dbed46394465e180b0 assets/unnamedmod/blockstates/deepslate_peridot_ore.json
 55a5928c984cf51b52860cc9d6bd6cdb7aa6990a assets/unnamedmod/blockstates/deepslate_ruby_ore.json
 47733e4bbd80b2bb15dab9eb3a5a7067efb1eea0 assets/unnamedmod/blockstates/deepslate_sapphire_ore.json
 31093a97aec0b34ce7fe0b67d8eadad71d95a485 assets/unnamedmod/blockstates/deepslate_topaz_ore.json
+fc8ff033f59f940dbbc65ace7154b981fd3a6b78 assets/unnamedmod/blockstates/gloomlight.json
 74c0eab66e151b01a0de38d5a3989ac758150ea9 assets/unnamedmod/blockstates/nop_block.json
 bdcd045b2b36afed0d04797ffb4492f88909252b assets/unnamedmod/blockstates/peridot_block.json
 3dc0182aba2aaf95f72dff01c55da78b9afc1018 assets/unnamedmod/blockstates/peridot_ore.json
@@ -21,6 +22,7 @@ efbede9b6ca9163549cb776bac135d1c4629de97 assets/unnamedmod/models/block/deepslat
 3358ae791cc6a1c55232bd769df283797f13e2dc assets/unnamedmod/models/block/deepslate_ruby_ore.json
 73fe8b7b9fd05c512af9e50227dbdf6c5304b0ab assets/unnamedmod/models/block/deepslate_sapphire_ore.json
 3adc5778ffe88526d1b4dc13bc19de6a7b404cbc assets/unnamedmod/models/block/deepslate_topaz_ore.json
+97d3d0eb67c54c54b0f595031ebdce2ce4a811b1 assets/unnamedmod/models/block/gloomlight.json
 cddd7ca872eac2a72beb398efa886b107e762e1f assets/unnamedmod/models/block/nop_block.json
 bc9685770a977c106a5360ae7923642deb222229 assets/unnamedmod/models/block/peridot_block.json
 f54d73c312b8fa6149e993503293587c868699f1 assets/unnamedmod/models/block/peridot_ore.json
@@ -37,6 +39,7 @@ c9caa2ae8e5dccd0288fdeee469b9e7abf05f3bf assets/unnamedmod/models/item/cut_bronz
 118b9f948eb5afee09487b3ad81c49b613d5773f assets/unnamedmod/models/item/deepslate_ruby_ore.json
 024dd61f800a189ce55637c42462c6c57e26adec assets/unnamedmod/models/item/deepslate_sapphire_ore.json
 4dc938ea3bb6f8fa0803c4cf418f4b2a19f6ed3a assets/unnamedmod/models/item/deepslate_topaz_ore.json
+cbd2840f75eea893934ba2e1e7f73ae12121c716 assets/unnamedmod/models/item/gloomlight.json
 80b3a6e01ef3928f152060a0af3b7f8de60da8ad assets/unnamedmod/models/item/nop_block.json
 5bae1df7d0aab9e94e6541511ed01b8f5f3d8e1b assets/unnamedmod/models/item/peridot_block.json
 08a4f7258d0726ef7e9c2457f662dac738a17870 assets/unnamedmod/models/item/peridot_ore.json

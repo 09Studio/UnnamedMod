@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "unnamedmod:block/jade_vine"
+    },
+    "berries=true": {
+      "model": "unnamedmod:block/jade_vine_fruit"
+    }
+  }
+}

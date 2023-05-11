@@ -17,6 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.NOP_BLOCK);
+        blockWithItem(ModBlocks.GLOOMLIGHT);
 
         blockWithItem(ModBlocks.AMBER_BLOCK);
         blockWithItem(ModBlocks.CUT_BRONZE);
