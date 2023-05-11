@@ -45,6 +45,26 @@
 
   "block.unnamedmod.gloomlight": "Gloomlight",
 
+  "block.unnamedmod.dusky_sapling": "Dusky Sapling",
+  "block.unnamedmod.dusky_log": "Dusky Log",
+  "block.unnamedmod.stripped_dusky_log": "Stripped Dusky Log",
+  "block.unnamedmod.dusky_wood": "Dusky Wood",
+  "block.unnamedmod.stripped_dusky_wood": "Stripped Dusky Wood",
+  "block.unnamedmod.dusky_leaves": "Dusky Leaves",
+  "block.unnamedmod.dusky_planks": "Dusky Planks",
+  
+  "block.unnamedmod.acacia_leaves_wall": "Acacia Leaves Wall",
+  "block.unnamedmod.azalea_leaves_wall": "Azalea Leaves Wall",
+  "block.unnamedmod.birch_leaves_wall": "Birch Leaves Wall",
+  "block.unnamedmod.dark_oak_leaves_wall": "Dark Oak Leaves Wall",
+  "block.unnamedmod.dusky_leaves_wall": "Dusky Leaves Wall",
+  "block.unnamedmod.flowering_azalea_leaves_wall": "Flowering Azalea Leaves Wall",
+  "block.unnamedmod.jungle_leaves_wall": "Jungle Leaves Wall",
+  "block.unnamedmod.mangrove_leaves_wall": "Mangrove Leaves Wall",
+  "block.unnamedmod.oak_leaves_wall": "Oak Leaves Wall",
+  "block.unnamedmod.spruce_leaves_wall": "Spruce Leaves Wall",
+  "block.unnamedmod.nether_wart_wall": "Nether Wart Wall",
+  "block.unnamedmod.warped_wart_wall": "Warped Wart Wall",
 
 
   "item.unnamedmod.copper_polisher": "Copper Polisher",

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "unnamedmod:block/stripped_dusky_log_top",
+    "side": "unnamedmod:block/stripped_dusky_log"
+  }
+}

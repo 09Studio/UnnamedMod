@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "minecraft:dusky_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "unnamedmod:dusky_planks"
+  }
+}

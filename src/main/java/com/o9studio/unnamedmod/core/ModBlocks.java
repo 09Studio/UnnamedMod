@@ -2,13 +2,11 @@ package com.o9studio.unnamedmod.core;
 
 import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.custom.blocks.*;
+import com.o9studio.unnamedmod.world.features.trees.DuskyTreeGrower;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
@@ -33,6 +31,64 @@ public class ModBlocks {
 
 
     //DUSKY BLOCKS
+    public static final RegistryObject<Block> DUSKY_SAPLING = registerBlock("dusky_sapling", () -> new SaplingBlock(
+            new DuskyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> DUSKY_LOG = registerBlock("dusky_log", () -> new DuskyLogsBlocks(
+            BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<Block> STRIPPED_DUSKY_LOG = registerBlock("stripped_dusky_log", () -> new DuskyLogsBlocks(
+            BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final RegistryObject<Block> DUSKY_WOOD = registerBlock("dusky_wood", () -> new DuskyLogsBlocks(
+            BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<Block> STRIPPED_DUSKY_WOOD = registerBlock("stripped_dusky_wood", () -> new DuskyLogsBlocks(
+            BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> DUSKY_LEAVES = registerBlock("dusky_leaves", () -> new DuskyLeavesBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+
+    public static final RegistryObject<Block> DUSKY_PLANKS = registerBlock("dusky_planks", () -> new DuskyPlanksBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
+
+    //WALL BLOCKS
+    public static final RegistryObject<Block> ACACIA_LEAVES_WALL = registerBlock("acacia_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
+
+    public static final RegistryObject<Block> AZALEA_LEAVES_WALL = registerBlock("azalea_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
+
+    public static final RegistryObject<Block> BIRCH_LEAVES_WALL = registerBlock("birch_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
+
+    public static final RegistryObject<Block> DARK_OAK_LEAVES_WALL = registerBlock("dark_oak_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(Blocks.DARK_OAK_LEAVES)));
+
+    public static final RegistryObject<Block> DUSKY_LEAVES_WALL = registerBlock("dusky_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(DUSKY_LEAVES.get())));
+
+    public static final RegistryObject<Block> FLOWERING_AZALEA_LEAVES_WALL = registerBlock("flowering_azalea_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(Blocks.FLOWERING_AZALEA_LEAVES)));
+
+    public static final RegistryObject<Block> JUNGLE_LEAVES_WALL = registerBlock("jungle_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(Blocks.JUNGLE_LEAVES)));
+
+    public static final RegistryObject<Block> MANGROVE_LEAVES_WALL = registerBlock("mangrove_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(Blocks.MANGROVE_LEAVES)));
+
+    public static final RegistryObject<Block> OAK_LEAVES_WALL = registerBlock("oak_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+
+    public static final RegistryObject<Block> SPRUCE_LEAVES_WALL = registerBlock("spruce_leaves_wall", () -> new FlammableWallBlock(
+            BlockBehaviour.Properties.copy(Blocks.SPRUCE_LEAVES)));
+
+    public static final RegistryObject<Block> NETHER_WART_WALL = registerBlock("nether_wart_wall", () -> new WallBlock(
+            BlockBehaviour.Properties.copy(Blocks.NETHER_WART_BLOCK)));
+
+    public static final RegistryObject<Block> WARPED_WART_WALL = registerBlock("warped_wart_wall", () -> new WallBlock(
+            BlockBehaviour.Properties.copy(Blocks.WARPED_WART_BLOCK)));
 
 
     //CRYSTALS BLOCKS

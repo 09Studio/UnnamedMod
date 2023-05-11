@@ -1,10 +1,12 @@
 package com.o9studio.unnamedmod.util.datageneration;
 
 import com.o9studio.unnamedmod.UnnamedMod;
+import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -50,6 +52,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.VANILLA_SMOOTHIE);
         simpleItem(ModItems.VEGETABLE_SOUP);
 
+        saplingItem(ModBlocks.DUSKY_SAPLING);
+
 
         simpleItem(ModItems.COPPER_POLISHER);
         simpleItem(ModItems.IRON_POLISHER);
@@ -73,6 +77,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_TOPAZ);
         simpleItem(ModItems.TOPAZ);
         simpleItem(ModItems.RAW_QUARTZ);
+    }
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(UnnamedMod.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

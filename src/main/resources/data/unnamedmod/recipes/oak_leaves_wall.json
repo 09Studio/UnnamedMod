@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:oak_log"
+    },
+    "C": {
+      "item": "minecraft:oak_leaves"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:oak_leaves_wall",
+    "count": 6
+  }
+}

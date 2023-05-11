@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "unnamedmod:dusky_log"
+    },
+    "C": {
+      "item": "unnamedmod:dusky_leaves"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:dusky_leaves_wall",
+    "count": 6
+  }
+}

@@ -23,7 +23,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     }
 
     protected static LootTable.Builder createJadeVinesDrop(Block block) {
-        return LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(ModItems.JADE_VINE_FRUIT.get())).when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(JadeVines.BERRIES, true))));
+        return LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(ModItems.JADE_VINE_FRUIT.get()))
+                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block).setProperties(StatePropertiesPredicate
+                        .Builder.properties().hasProperty(JadeVines.BERRIES, true))));
     }
 
     @Override
@@ -31,6 +33,27 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.NOP_BLOCK.get());
 
         dropSelf(ModBlocks.GLOOMLIGHT.get());
+
+        dropSelf(ModBlocks.DUSKY_SAPLING.get());
+        dropSelf(ModBlocks.DUSKY_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_DUSKY_LOG.get());
+        dropSelf(ModBlocks.DUSKY_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_DUSKY_WOOD.get());
+        dropSelf(ModBlocks.DUSKY_PLANKS.get());
+        add(ModBlocks.DUSKY_LEAVES.get(), (block) -> createLeavesDrops(block, ModBlocks.DUSKY_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        dropSelf(ModBlocks.ACACIA_LEAVES_WALL.get());
+        dropSelf(ModBlocks.AZALEA_LEAVES_WALL.get());
+        dropSelf(ModBlocks.BIRCH_LEAVES_WALL.get());
+        dropSelf(ModBlocks.DARK_OAK_LEAVES_WALL.get());
+        dropSelf(ModBlocks.DUSKY_LEAVES_WALL.get());
+        dropSelf(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL.get());
+        dropSelf(ModBlocks.JUNGLE_LEAVES_WALL.get());
+        dropSelf(ModBlocks.MANGROVE_LEAVES_WALL.get());
+        dropSelf(ModBlocks.OAK_LEAVES_WALL.get());
+        dropSelf(ModBlocks.SPRUCE_LEAVES_WALL.get());
+        dropSelf(ModBlocks.NETHER_WART_WALL.get());
+        dropSelf(ModBlocks.WARPED_WART_WALL.get());
 
         LootItemCondition.Builder lettucebuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.LETTUCE_CROP.get())

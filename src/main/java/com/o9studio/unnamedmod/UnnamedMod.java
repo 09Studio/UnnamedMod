@@ -77,6 +77,25 @@ public class UnnamedMod
             event.accept(ModItems.VANILLA_SMOOTHIE);
             event.accept(ModItems.VEGETABLE_SOUP);
             event.accept(ModBlocks.GLOOMLIGHT);
+            event.accept(ModBlocks.DUSKY_SAPLING);
+            event.accept(ModBlocks.DUSKY_LOG);
+            event.accept(ModBlocks.STRIPPED_DUSKY_LOG);
+            event.accept(ModBlocks.DUSKY_WOOD);
+            event.accept(ModBlocks.STRIPPED_DUSKY_WOOD);
+            event.accept(ModBlocks.DUSKY_LEAVES);
+            event.accept(ModBlocks.DUSKY_PLANKS);
+            event.accept(ModBlocks.ACACIA_LEAVES_WALL);
+            event.accept(ModBlocks.AZALEA_LEAVES_WALL);
+            event.accept(ModBlocks.BIRCH_LEAVES_WALL);
+            event.accept(ModBlocks.DARK_OAK_LEAVES_WALL);
+            event.accept(ModBlocks.DUSKY_LEAVES_WALL);
+            event.accept(ModBlocks.FLOWERING_AZALEA_LEAVES_WALL);
+            event.accept(ModBlocks.JUNGLE_LEAVES_WALL);
+            event.accept(ModBlocks.MANGROVE_LEAVES_WALL);
+            event.accept(ModBlocks.OAK_LEAVES_WALL);
+            event.accept(ModBlocks.SPRUCE_LEAVES_WALL);
+            event.accept(ModBlocks.NETHER_WART_WALL);
+            event.accept(ModBlocks.WARPED_WART_WALL);
         }
 
         if (event.getTab() == ModTabs.CRYSTALS_TAB){

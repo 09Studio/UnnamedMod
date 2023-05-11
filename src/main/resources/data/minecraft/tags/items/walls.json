@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "unnamedmod:acacia_leaves_wall",
+    "unnamedmod:azalea_leaves_wall",
+    "unnamedmod:birch_leaves_wall",
+    "unnamedmod:dark_oak_leaves_wall",
+    "unnamedmod:flowering_azalea_leaves_wall",
+    "unnamedmod:dusky_leaves_wall",
+    "unnamedmod:jungle_leaves_wall",
+    "unnamedmod:mangrove_leaves_wall",
+    "unnamedmod:oak_leaves_wall",
+    "unnamedmod:spruce_leaves_wall",
+    "unnamedmod:nether_wart_wall",
+    "unnamedmod:warped_wart_wall"
+  ]
+}

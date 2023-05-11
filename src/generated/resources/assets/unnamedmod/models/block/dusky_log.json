@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "unnamedmod:block/dusky_log_top",
+    "side": "unnamedmod:block/dusky_log"
+  }
+}

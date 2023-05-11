@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:spruce_log"
+    },
+    "C": {
+      "item": "minecraft:spruce_leaves"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:spruce_leaves_wall",
+    "count": 6
+  }
+}

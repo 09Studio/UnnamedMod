@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:crimson_stem"
+    },
+    "C": {
+      "item": "minecraft:nether_wart_block"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:nether_wart_wall",
+    "count": 6
+  }
+}

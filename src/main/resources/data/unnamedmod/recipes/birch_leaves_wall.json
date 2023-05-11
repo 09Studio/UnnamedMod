@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:birch_log"
+    },
+    "C": {
+      "item": "minecraft:birch_leaves"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:birch_leaves_wall",
+    "count": 6
+  }
+}
