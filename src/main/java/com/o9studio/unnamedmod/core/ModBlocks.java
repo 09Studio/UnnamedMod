@@ -181,7 +181,9 @@ public class ModBlocks {
             () -> new VanillaCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
-    //Wall Blocks
+    //FLOWER BLOCKS
+    public static final RegistryObject<Block> FLOWERING_LILY_PAD = registerBlock("flowering_lily_pad", () -> new FloweringLilyPad(
+            BlockBehaviour.Properties.copy(Blocks.LILY_PAD)));
 
 
 
