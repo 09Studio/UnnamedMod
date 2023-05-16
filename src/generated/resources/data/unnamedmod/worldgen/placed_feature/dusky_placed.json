@@ -2,19 +2,10 @@
   "feature": "unnamedmod:dusky",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": {
-        "type": "minecraft:weighted_list",
-        "distribution": [
-          {
-            "data": 3,
-            "weight": 9
-          },
-          {
-            "data": 4,
-            "weight": 1
-          }
-        ]
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air"
       }
     },
     {

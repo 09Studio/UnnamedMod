@@ -11,8 +11,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 import org.jetbrains.annotations.Nullable;
 
-public class DuskyLogsBlocks extends RotatedPillarBlock {
-    public DuskyLogsBlocks(Properties properties) {
+public class FlammableLogsBlocks extends RotatedPillarBlock {
+    public FlammableLogsBlocks(Properties properties) {
         super(properties);
     }
 

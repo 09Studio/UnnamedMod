@@ -3,12 +3,11 @@ package com.o9studio.unnamedmod.custom.blocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class DuskySlabBlock extends SlabBlock {
-    public DuskySlabBlock(Properties properties) {
+public class FlammableLeavesBlock extends LeavesBlock {
+    public FlammableLeavesBlock(Properties properties) {
         super(properties);
     }
 
@@ -19,11 +18,11 @@ public class DuskySlabBlock extends SlabBlock {
 
     @Override
     public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-        return 5;
+        return 30;
     }
 
     @Override
     public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-        return 20;
+        return 60;
     }
 }

@@ -34,22 +34,22 @@ public class ModBlocks {
     public static final RegistryObject<Block> DUSKY_SAPLING = registerBlock("dusky_sapling", () -> new SaplingBlock(
             new DuskyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
-    public static final RegistryObject<Block> DUSKY_LOG = registerBlock("dusky_log", () -> new DuskyLogsBlocks(
+    public static final RegistryObject<Block> DUSKY_LOG = registerBlock("dusky_log", () -> new FlammableLogsBlocks(
             BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
 
-    public static final RegistryObject<Block> STRIPPED_DUSKY_LOG = registerBlock("stripped_dusky_log", () -> new DuskyLogsBlocks(
+    public static final RegistryObject<Block> STRIPPED_DUSKY_LOG = registerBlock("stripped_dusky_log", () -> new FlammableLogsBlocks(
             BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
 
-    public static final RegistryObject<Block> DUSKY_WOOD = registerBlock("dusky_wood", () -> new DuskyLogsBlocks(
+    public static final RegistryObject<Block> DUSKY_WOOD = registerBlock("dusky_wood", () -> new FlammableLogsBlocks(
             BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
 
-    public static final RegistryObject<Block> STRIPPED_DUSKY_WOOD = registerBlock("stripped_dusky_wood", () -> new DuskyLogsBlocks(
+    public static final RegistryObject<Block> STRIPPED_DUSKY_WOOD = registerBlock("stripped_dusky_wood", () -> new FlammableLogsBlocks(
             BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
 
-    public static final RegistryObject<Block> DUSKY_LEAVES = registerBlock("dusky_leaves", () -> new DuskyLeavesBlock(
+    public static final RegistryObject<Block> DUSKY_LEAVES = registerBlock("dusky_leaves", () -> new FlammableLeavesBlock(
             BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> DUSKY_PLANKS = registerBlock("dusky_planks", () -> new DuskyPlanksBlock(
+    public static final RegistryObject<Block> DUSKY_PLANKS = registerBlock("dusky_planks", () -> new FlammablePlanksBlock(
             BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
 
@@ -152,10 +152,10 @@ public class ModBlocks {
 
     //CROP BLOCKS
     public static final RegistryObject<Block> BLUEBERRY_BUSH = BLOCKS.register("blueberry_bush",
-            () -> new BlueBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noLootTable()));
+            () -> new BlueBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
 
     public static final RegistryObject<Block> DARKBERRY_BUSH = BLOCKS.register("darkberry_bush",
-            () -> new DarkBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noLootTable()));
+            () -> new DarkBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
 
     public static final RegistryObject<Block> JADE_VINE = BLOCKS.register("jade_vine",
             () -> new JadeVineBlock(BlockBehaviour.Properties.of(Material.PLANT)
@@ -172,7 +172,7 @@ public class ModBlocks {
             () -> new RedBellPepperCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
     public static final RegistryObject<Block> STRAWBERRY_BUSH = BLOCKS.register("strawberry_bush",
-            () -> new StrawBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noLootTable()));
+            () -> new StrawBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
 
     public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
             () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES)));
