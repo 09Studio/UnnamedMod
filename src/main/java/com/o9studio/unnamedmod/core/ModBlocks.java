@@ -29,6 +29,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> GLOOMLIGHT  = registerBlock("gloomlight", () -> new Block(BlockBehaviour.Properties.of(
             Material.MOSS, MaterialColor.COLOR_GRAY).strength(1).sound(SoundType.MOSS).lightLevel((p_152663_) -> 15)));
 
+    public static final RegistryObject<Block> MYCELIUM_GRASS = registerBlock("mycelium_grass",
+            () -> new MyceliumGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS)));
+
+
 
     //DUSKY BLOCKS
     public static final RegistryObject<Block> DUSKY_SAPLING = registerBlock("dusky_sapling", () -> new SaplingBlock(
