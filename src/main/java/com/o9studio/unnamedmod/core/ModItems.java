@@ -3,10 +3,7 @@ package com.o9studio.unnamedmod.core;
 import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.custom.items.FoodItems;
 import com.o9studio.unnamedmod.custom.items.GlassJarItem;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.BowlFoodItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -143,6 +140,9 @@ public class ModItems {
 
     public static final RegistryObject<BlockItem> AMBER_ROCKS = ITEMS.register("amber_rocks", () -> new BlockItem(
             ModBlocks.AMBER_ROCKS.get(), new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<BlockItem> FLOWERING_LILY_PAD = ITEMS.register("flowering_lily_pad", () -> new PlaceOnWaterBlockItem(
+            ModBlocks.FLOWERING_LILY_PAD.get(), new Item.Properties()));
 
 
 

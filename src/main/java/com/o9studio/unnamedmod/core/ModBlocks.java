@@ -182,8 +182,8 @@ public class ModBlocks {
 
 
     //FLOWER BLOCKS
-    public static final RegistryObject<Block> FLOWERING_LILY_PAD = registerBlock("flowering_lily_pad", () -> new FloweringLilyPad(
-            BlockBehaviour.Properties.copy(Blocks.LILY_PAD)));
+    public static final RegistryObject<Block> FLOWERING_LILY_PAD = BLOCKS.register("flowering_lily_pad", () -> new WaterlilyBlock(
+            BlockBehaviour.Properties.of(Material.PLANT).instabreak().sound(SoundType.LILY_PAD).noOcclusion()));
 
 
 
