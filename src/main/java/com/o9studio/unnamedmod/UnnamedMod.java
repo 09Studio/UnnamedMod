@@ -3,6 +3,7 @@ package com.o9studio.unnamedmod;
 import com.mojang.logging.LogUtils;
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
+import com.o9studio.unnamedmod.core.ModPaintings;
 import com.o9studio.unnamedmod.custom.ModTabs;
 import com.o9studio.unnamedmod.events.ItemsOnComposter;
 import net.minecraftforge.api.distmarker.Dist;
@@ -29,6 +30,7 @@ public class UnnamedMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModPaintings.PAINTING_VARIANTS.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -85,6 +87,8 @@ public class UnnamedMod
             event.accept(ModBlocks.STRIPPED_DUSKY_WOOD);
             event.accept(ModBlocks.DUSKY_LEAVES);
             event.accept(ModBlocks.DUSKY_PLANKS);
+            event.accept(ModBlocks.DUSKY_SLAB);
+            event.accept(ModBlocks.DUSKY_STAIRS);
             event.accept(ModBlocks.ACACIA_LEAVES_WALL);
             event.accept(ModBlocks.AZALEA_LEAVES_WALL);
             event.accept(ModBlocks.BIRCH_LEAVES_WALL);
@@ -112,6 +116,8 @@ public class UnnamedMod
             event.accept(ModItems.BRONZE_ROD);
             event.accept(ModBlocks.BRONZE_BLOCK);
             event.accept(ModBlocks.CUT_BRONZE);
+            event.accept(ModBlocks.CUT_BRONZE_SLAB);
+            event.accept(ModBlocks.CUT_BRONZE_STAIRS);
             event.accept(ModItems.RAW_EMERALD);
             event.accept(ModItems.RAW_DIAMOND);
             event.accept(ModBlocks.PERIDOT_ORE);

@@ -3,6 +3,8 @@
   "values": [
     "unnamedmod:bronze_block",
     "unnamedmod:cut_bronze",
+    "unnamedmod:cut_bronze_slab",
+    "unnamedmod:cut_bronze_stairs",
     "unnamedmod:peridot_ore",
     "unnamedmod:deepslate_peridot_ore",
     "unnamedmod:peridot_block",

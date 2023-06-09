@@ -53,6 +53,8 @@
   "block.unnamedmod.stripped_dusky_wood": "Stripped Dusky Wood",
   "block.unnamedmod.dusky_leaves": "Dusky Leaves",
   "block.unnamedmod.dusky_planks": "Dusky Planks",
+  "block.unnamedmod.dusky_slab": "Dusky Slab",
+  "block.unnamedmod.dusky_stairs": "Dusky Stairs",
   
   "block.unnamedmod.acacia_leaves_wall": "Acacia Leaves Wall",
   "block.unnamedmod.azalea_leaves_wall": "Azalea Leaves Wall",
@@ -82,6 +84,8 @@
   "item.unnamedmod.bronze_rod": "Bronze Rod",
   "block.unnamedmod.bronze_block": "Block of Bronze",
   "block.unnamedmod.cut_bronze": "Cut Bronze",
+  "block.unnamedmod.cut_bronze_slab": "Cut Bronze Slab",
+  "block.unnamedmod.cut_bronze_stairs": "Cut Bronze Stairs",
 
   "item.unnamedmod.raw_emerald": "Raw Emerald",
   "item.unnamedmod.raw_diamond": "Raw Diamond",

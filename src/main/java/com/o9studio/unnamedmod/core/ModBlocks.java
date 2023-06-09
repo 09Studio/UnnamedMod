@@ -52,6 +52,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> DUSKY_PLANKS = registerBlock("dusky_planks", () -> new FlammablePlanksBlock(
             BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
+    public static final RegistryObject<Block> DUSKY_SLAB = registerBlock("dusky_slab",
+            () -> new FlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)));
+
+    public static final RegistryObject<Block> DUSKY_STAIRS = registerBlock("dusky_stairs",
+            () -> new FlammableStairsBlock(ModBlocks.DUSKY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
+
 
     //WALL BLOCKS
     public static final RegistryObject<Block> ACACIA_LEAVES_WALL = registerBlock("acacia_leaves_wall", () -> new FlammableWallBlock(
@@ -100,6 +106,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CUT_BRONZE = registerBlock("cut_bronze", () -> new Block(
             BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> CUT_BRONZE_SLAB = registerBlock("cut_bronze_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(CUT_BRONZE.get())));
+
+    public static final RegistryObject<Block> CUT_BRONZE_STAIRS = registerBlock("cut_bronze_stairs",
+            () -> new StairBlock(() -> ModBlocks.CUT_BRONZE.get().defaultBlockState(), BlockBehaviour.Properties.copy(CUT_BRONZE.get())));
 
     public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlock("peridot_block", () -> new Block(
             BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));

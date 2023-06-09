@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/cut_bronze_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/cut_bronze_block"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/cut_bronze_slab_top"
+    }
+  }
+}
