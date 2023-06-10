@@ -4,6 +4,7 @@ import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.custom.blocks.*;
 import com.o9studio.unnamedmod.world.features.trees.DuskyTreeGrower;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -27,7 +28,7 @@ public class ModBlocks {
 
     //NORMAL BLOCKS
     public static final RegistryObject<Block> GLOOMLIGHT  = registerBlock("gloomlight", () -> new Block(BlockBehaviour.Properties.of(
-            Material.MOSS, MaterialColor.COLOR_GRAY).strength(1).sound(SoundType.MOSS).lightLevel((p_152663_) -> 15)));
+            Material.MOSS, MaterialColor.COLOR_GRAY).strength(1).sound(SoundType.MOSS).lightLevel((blockState) -> 15)));
 
     public static final RegistryObject<Block> MYCELIUM_GRASS = registerBlock("mycelium_grass",
             () -> new MyceliumGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS)));
@@ -198,8 +199,74 @@ public class ModBlocks {
 
 
     //FLOWER BLOCKS
+    public static final RegistryObject<Block> AFRICAN_DAISY = registerBlock("african_daisy",
+            () -> new SandFlowerBlock(() -> MobEffects.WEAKNESS, 4, BlockBehaviour.Properties.copy(Blocks.OXEYE_DAISY)));
+
+    public static final RegistryObject<Block> BLACK_IRIS = registerBlock("black_iris",
+            () -> new FlowerBlock(MobEffects.BLINDNESS, 3, BlockBehaviour.Properties.copy(Blocks.AZURE_BLUET)));
+
+    public static final RegistryObject<Block> BLUE_JASMIN = registerBlock("blue_jasmin",
+            () -> new FlowerBlock(MobEffects.WATER_BREATHING, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> BROWN_DAYLILY = registerBlock("brown_daylily",
+            () -> new SandFlowerBlock(() -> MobEffects.DIG_SPEED, 4, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
     public static final RegistryObject<Block> FLOWERING_LILY_PAD = BLOCKS.register("flowering_lily_pad", () -> new WaterlilyBlock(
             BlockBehaviour.Properties.of(Material.PLANT).instabreak().sound(SoundType.LILY_PAD).noOcclusion()));
+
+    public static final RegistryObject<Block> GLOOMY_SPROUT = registerBlock("gloomy_sprout",
+            () -> new GloomySproutBlock(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_GRAY).noCollission().randomTicks().instabreak()
+                    .sound(SoundType.GRASS).lightLevel((blockState) -> 5)));
+
+    public static final RegistryObject<Block> GREEN_DAYLILY = registerBlock("green_daylily",
+            () -> new FlowerBlock(MobEffects.LUCK, 5, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> PURPLE_ORCHID = registerBlock("purple_orchid",
+            () -> new FlowerBlock(MobEffects.REGENERATION, 6, BlockBehaviour.Properties.copy(Blocks.BLUE_ORCHID)));
+
+    public static final RegistryObject<Block> ROSE = registerBlock("rose",
+            () -> new FlowerBlock(MobEffects.DAMAGE_RESISTANCE, 4, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> VANILLA = registerBlock("vanilla",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 3, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER)));
+
+    public static final RegistryObject<Block> WHITE_ROSE = registerBlock("white_rose",
+            () -> new WhiteRoseBlock(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+
+    //FLOWERPOT BLOCKS
+    public static final RegistryObject<Block> POTTED_AFRICAN_DAISY = BLOCKS.register("potted_african_daisy",
+            () -> new FlowerPotBlock(null, ModBlocks.AFRICAN_DAISY, BlockBehaviour.Properties.copy(Blocks.POTTED_OXEYE_DAISY).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_BLACK_IRIS = BLOCKS.register("potted_black_iris",
+            () -> new FlowerPotBlock(null, ModBlocks.BLACK_IRIS, BlockBehaviour.Properties.copy(Blocks.POTTED_AZURE_BLUET).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_BLUE_JASMIN = BLOCKS.register("potted_blue_jasmin",
+            () -> new FlowerPotBlock(null, ModBlocks.BLUE_JASMIN, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_BROWN_DAYLILY = BLOCKS.register("potted_brown_daylily",
+            () -> new FlowerPotBlock(null, ModBlocks.BROWN_DAYLILY, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_GLOOMY_SPROUT = BLOCKS.register("potted_gloomy_sprout",
+            () -> new FlowerPotBlock(null, ModBlocks.GLOOMY_SPROUT, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_GREEN_DAYLILY = BLOCKS.register("potted_green_daylily",
+            () -> new FlowerPotBlock(null, ModBlocks.GREEN_DAYLILY, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_PURPLE_ORCHID = BLOCKS.register("potted_purple_orchid",
+            () -> new FlowerPotBlock(null, ModBlocks.PURPLE_ORCHID, BlockBehaviour.Properties.copy(Blocks.POTTED_BLUE_ORCHID).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_ROSE = BLOCKS.register("potted_rose",
+            () -> new FlowerPotBlock(null, ModBlocks.ROSE, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_VANILLA = BLOCKS.register("potted_vanilla",
+            () -> new FlowerPotBlock(null, ModBlocks.VANILLA, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_WHITE_ROSE = BLOCKS.register("potted_white_rose",
+            () -> new FlowerPotBlock(null, ModBlocks.WHITE_ROSE, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_DUSKY_SAPLING = BLOCKS.register("potted_dusky_sapling",
+            () -> new FlowerPotBlock(null, ModBlocks.DUSKY_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
 
 
 

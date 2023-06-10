@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "unnamedmod:black_iris"
+    }
+  ],
+  "result": {
+    "item": "minecraft:black_dye",
+    "count": 1
+  }
+}

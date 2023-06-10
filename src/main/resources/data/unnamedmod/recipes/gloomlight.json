@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  "##",
+  "##"
+],
+  "key": {
+    "#": {
+      "item": "unnamedmod:gloomy_sprout"
+    }
+  },
+  "result": {
+    "count": 2,
+    "item": "unnamedmod:gloomlight"
+  }
+}

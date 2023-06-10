@@ -6,6 +6,8 @@ import com.o9studio.unnamedmod.core.ModItems;
 import com.o9studio.unnamedmod.core.ModPaintings;
 import com.o9studio.unnamedmod.custom.ModTabs;
 import com.o9studio.unnamedmod.events.ItemsOnComposter;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -41,6 +43,20 @@ public class UnnamedMod
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         ItemsOnComposter.register();
+
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.AFRICAN_DAISY.getId(), ModBlocks.POTTED_AFRICAN_DAISY);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BLACK_IRIS.getId(), ModBlocks.POTTED_BLACK_IRIS);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BLUE_JASMIN.getId(), ModBlocks.POTTED_BLUE_JASMIN);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BROWN_DAYLILY.getId(), ModBlocks.POTTED_BROWN_DAYLILY);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GLOOMY_SPROUT.getId(), ModBlocks.POTTED_GLOOMY_SPROUT);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GREEN_DAYLILY.getId(), ModBlocks.POTTED_GREEN_DAYLILY);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PURPLE_ORCHID.getId(), ModBlocks.POTTED_PURPLE_ORCHID);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ROSE.getId(), ModBlocks.POTTED_ROSE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VANILLA.getId(), ModBlocks.POTTED_VANILLA);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_ROSE.getId(), ModBlocks.POTTED_WHITE_ROSE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.DUSKY_SAPLING.getId(), ModBlocks.POTTED_DUSKY_SAPLING);
+        });
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
@@ -78,9 +94,19 @@ public class UnnamedMod
             event.accept(ModItems.VANILLA_COOKIE);
             event.accept(ModItems.VANILLA_SMOOTHIE);
             event.accept(ModItems.VEGETABLE_SOUP);
+            event.accept(ModBlocks.AFRICAN_DAISY);
+            event.accept(ModBlocks.BLACK_IRIS);
+            event.accept(ModBlocks.BLUE_JASMIN);
+            event.accept(ModBlocks.BROWN_DAYLILY);
             event.accept(ModBlocks.FLOWERING_LILY_PAD);
+            event.accept(ModBlocks.GLOOMY_SPROUT);
             event.accept(ModBlocks.GLOOMLIGHT);
+            event.accept(ModBlocks.GREEN_DAYLILY);
             event.accept(ModBlocks.MYCELIUM_GRASS);
+            event.accept(ModBlocks.PURPLE_ORCHID);
+            event.accept(ModBlocks.ROSE);
+            event.accept(ModBlocks.VANILLA);
+            event.accept(ModBlocks.WHITE_ROSE);
             event.accept(ModBlocks.DUSKY_SAPLING);
             event.accept(ModBlocks.DUSKY_LOG);
             event.accept(ModBlocks.STRIPPED_DUSKY_LOG);

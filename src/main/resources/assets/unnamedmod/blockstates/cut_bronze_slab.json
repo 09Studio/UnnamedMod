@@ -4,7 +4,7 @@
       "model": "unnamedmod:block/cut_bronze_slab"
     },
     "type=double": {
-      "model": "unnamedmod:block/cut_bronze_block"
+      "model": "unnamedmod:block/cut_bronze"
     },
     "type=top": {
       "model": "unnamedmod:block/cut_bronze_slab_top"
