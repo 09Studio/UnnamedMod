@@ -85,6 +85,8 @@ public class UnnamedMod
         if (event.getTab() == ModTabs.GREENERY_TAB){
             event.accept(ModItems.WHAT_ITEM);
             event.accept(ModBlocks.NOP_BLOCK);
+            event.accept(ModBlocks.COPPER_BARS);
+            event.accept(ModBlocks.GOLD_BARS);
             event.accept(ModItems.GLASS_JAR);
             event.accept(ModItems.BLUEBERRIES);
             event.accept(ModItems.BLUEBERRY_PIE);
@@ -168,6 +170,7 @@ public class UnnamedMod
             event.accept(ModItems.BRONZE_INGOT);
             event.accept(ModItems.BRONZE_ROD);
             event.accept(ModBlocks.BRONZE_BLOCK);
+            event.accept(ModBlocks.BRONZE_BARS);
             event.accept(ModBlocks.CUT_BRONZE);
             event.accept(ModBlocks.CUT_BRONZE_SLAB);
             event.accept(ModBlocks.CUT_BRONZE_STAIRS);

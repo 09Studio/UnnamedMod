@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "unnamedmod:bronze_bars",
+    "unnamedmod:copper_bars",
+    "unnamedmod:gold_bars",
     "unnamedmod:amber_rocks",
     "unnamedmod:amber_block",
     "unnamedmod:bronze_block",

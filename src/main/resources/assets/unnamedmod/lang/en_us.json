@@ -2,6 +2,9 @@
   "item.unnamedmod.what_item": "What",
   "block.unnamedmod.nop_block": "Nop",
 
+  "block.unnamedmod.copper_bars": "Copper Bars",
+  "block.unnamedmod.gold_bars": "Gold Bars",
+
   "item.unnamedmod.glass_jar": "Glass Jar",
 
   "item.unnamedmod.blueberries": "Blueberries",
@@ -134,6 +137,7 @@
   "item.unnamedmod.bronze_ingot": "Bronze Ingot",
   "item.unnamedmod.bronze_rod": "Bronze Rod",
   "block.unnamedmod.bronze_block": "Block of Bronze",
+  "block.unnamedmod.bronze_bars": "Bronze Bars",
   "block.unnamedmod.cut_bronze": "Cut Bronze",
   "block.unnamedmod.cut_bronze_slab": "Cut Bronze Slab",
   "block.unnamedmod.cut_bronze_stairs": "Cut Bronze Stairs",

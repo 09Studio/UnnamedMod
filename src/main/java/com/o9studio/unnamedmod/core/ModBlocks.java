@@ -28,8 +28,18 @@ public class ModBlocks {
 
 
     //NORMAL BLOCKS
+    public static final RegistryObject<Block> COPPER_BARS = registerBlock("copper_bars",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE)
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL).noOcclusion()));
+
     public static final RegistryObject<Block> GLOOMLIGHT  = registerBlock("gloomlight", () -> new Block(BlockBehaviour.Properties.of(
             Material.MOSS, MaterialColor.COLOR_GRAY).strength(1).sound(SoundType.MOSS).lightLevel((blockState) -> 15)));
+
+    public static final RegistryObject<Block> GOLD_BARS = registerBlock("gold_bars",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE)
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL).noOcclusion()));
 
     public static final RegistryObject<Block> MYCELIUM_GRASS = registerBlock("mycelium_grass",
             () -> new MyceliumGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS)));
@@ -115,6 +125,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block", () -> new Block(
             BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> BRONZE_BARS = registerBlock("bronze_bars",
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE)
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL).noOcclusion()));
 
     public static final RegistryObject<Block> CUT_BRONZE = registerBlock("cut_bronze", () -> new Block(
             BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
