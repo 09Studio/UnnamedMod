@@ -1,0 +1,22 @@
+{
+  "textures": {
+    "particle": "unnamedmod:block/chocolate_cake_side",
+    "bottom": "unnamedmod:block/chocolate_cake_bottom",
+    "top": "unnamedmod:block/chocolate_cake_top",
+    "side": "unnamedmod:block/chocolate_cake_side",
+    "inside": "unnamedmod:block/chocolate_cake_inner"
+  },
+  "elements": [
+    {   "from": [ 5, 0, 1 ],
+      "to": [ 15, 8, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#inside" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

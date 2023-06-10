@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cake",
+    "unnamedmod:chocolate_cake",
+    "unnamedmod:strawberry_cake",
+    "unnamedmod:vanilla_cake"
+  ]
+}

@@ -4,12 +4,17 @@ import com.mojang.logging.LogUtils;
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
 import com.o9studio.unnamedmod.core.ModPaintings;
+import com.o9studio.unnamedmod.core.ModPotions;
 import com.o9studio.unnamedmod.custom.ModTabs;
 import com.o9studio.unnamedmod.events.ItemsOnComposter;
+import com.o9studio.unnamedmod.util.BetterBrewingRecipe;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,6 +38,7 @@ public class UnnamedMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModPaintings.PAINTING_VARIANTS.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -56,6 +62,21 @@ public class UnnamedMod
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VANILLA.getId(), ModBlocks.POTTED_VANILLA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_ROSE.getId(), ModBlocks.POTTED_WHITE_ROSE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.DUSKY_SAPLING.getId(), ModBlocks.POTTED_DUSKY_SAPLING);
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.THICK,
+                    Items.WITHER_ROSE, ModPotions.DECAY.get()));
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                    Items.GLOW_BERRIES, ModPotions.GLOW.get()));
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.GLOW.get(),
+                    Items.REDSTONE, ModPotions.LONG_GLOW.get()));
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                    ModItems.DARKBERRIES.get(), ModPotions.DARKNESS.get()));
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.DARKNESS.get(),
+                    Items.REDSTONE, ModPotions.LONG_DARKNESS.get()));
         });
     }
 
@@ -70,6 +91,7 @@ public class UnnamedMod
             event.accept(ModItems.BLUEBERRY_SMOOTHIE);
             event.accept(ModItems.CHOCOLATE);
             event.accept(ModItems.CHOCOLATE_SMOOTHIE);
+            event.accept(ModBlocks.CHOCOLATE_CAKE);
             event.accept(ModItems.COOKED_TROPICAL_FISH);
             event.accept(ModItems.DARKBERRIES);
             event.accept(ModItems.DARKBERRY_SMOOTHIE);
@@ -84,6 +106,7 @@ public class UnnamedMod
             event.accept(ModItems.STRAWBERRY);
             event.accept(ModItems.STRAWBERRY_SMOOTHIE);
             event.accept(ModItems.STRAWBERRIES_WITH_MILK);
+            event.accept(ModBlocks.STRAWBERRY_CAKE);
             event.accept(ModItems.SWEET_BERRY_PIE);
             event.accept(ModItems.SWEET_BERRY_SMOOTHIE);
             event.accept(ModItems.TACO);
@@ -93,6 +116,7 @@ public class UnnamedMod
             event.accept(ModItems.VANILLA_BEANS);
             event.accept(ModItems.VANILLA_COOKIE);
             event.accept(ModItems.VANILLA_SMOOTHIE);
+            event.accept(ModBlocks.VANILLA_CAKE);
             event.accept(ModItems.VEGETABLE_SOUP);
             event.accept(ModBlocks.AFRICAN_DAISY);
             event.accept(ModBlocks.BLACK_IRIS);
@@ -116,6 +140,8 @@ public class UnnamedMod
             event.accept(ModBlocks.DUSKY_PLANKS);
             event.accept(ModBlocks.DUSKY_SLAB);
             event.accept(ModBlocks.DUSKY_STAIRS);
+            event.accept(ModBlocks.DUSKY_FENCE);
+            event.accept(ModBlocks.DUSKY_FENCE_GATE);
             event.accept(ModBlocks.ACACIA_LEAVES_WALL);
             event.accept(ModBlocks.AZALEA_LEAVES_WALL);
             event.accept(ModBlocks.BIRCH_LEAVES_WALL);

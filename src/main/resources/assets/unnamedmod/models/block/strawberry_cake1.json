@@ -1,0 +1,22 @@
+{
+  "textures": {
+    "particle": "unnamedmod:block/strawberry_cake_side",
+    "bottom": "unnamedmod:block/strawberry_cake_bottom",
+    "top": "unnamedmod:block/strawberry_cake_top",
+    "side": "unnamedmod:block/strawberry_cake_side",
+    "inside": "unnamedmod:block/strawberry_cake_inner"
+  },
+  "elements": [
+    {   "from": [ 3, 0, 1 ],
+      "to": [ 15, 8, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#inside" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

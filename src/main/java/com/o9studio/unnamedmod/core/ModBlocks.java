@@ -3,6 +3,7 @@ package com.o9studio.unnamedmod.core;
 import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.custom.blocks.*;
 import com.o9studio.unnamedmod.world.features.trees.DuskyTreeGrower;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -62,6 +63,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DUSKY_STAIRS = registerBlock("dusky_stairs",
             () -> new FlammableStairsBlock(ModBlocks.DUSKY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
+
+    public static final RegistryObject<Block> DUSKY_FENCE = registerBlock("dusky_fence",
+            () -> new FlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+
+    public static final RegistryObject<Block> DUSKY_FENCE_GATE = registerBlock("dusky_fence_gate",
+            () -> new FlammableGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_CLOSE, SoundEvents.FENCE_GATE_OPEN));
 
 
     //WALL BLOCKS
@@ -267,6 +274,17 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POTTED_DUSKY_SAPLING = BLOCKS.register("potted_dusky_sapling",
             () -> new FlowerPotBlock(null, ModBlocks.DUSKY_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
+
+
+    //Food Blocks
+    public static final RegistryObject<Block> CHOCOLATE_CAKE = BLOCKS.register("chocolate_cake",
+            () -> new CakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
+
+    public static final RegistryObject<Block> STRAWBERRY_CAKE = BLOCKS.register("strawberry_cake",
+            () -> new CakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
+
+    public static final RegistryObject<Block> VANILLA_CAKE = BLOCKS.register("vanilla_cake",
+            () -> new CakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
 
 
 

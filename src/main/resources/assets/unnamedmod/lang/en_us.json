@@ -10,6 +10,7 @@
   "item.unnamedmod.blueberry_smoothie": "Blueberry Smoothie",
   "item.unnamedmod.chocolate": "Chocolate",
   "item.unnamedmod.chocolate_smoothie": "Chocolate Smoothie",
+  "block.unnamedmod.chocolate_cake": "Chocolate Cake",
   "item.unnamedmod.cooked_tropical_fish": "Cooked Tropical Fish",
   "item.unnamedmod.darkberries": "Darkberries",
   "block.unnamedmod.darkberry_bush": "Darkberry Bush",
@@ -30,6 +31,7 @@
   "block.unnamedmod.strawberry_bush": "Strawberry Bush",
   "item.unnamedmod.strawberry_smoothie": "Strawberry Smoothie",
   "item.unnamedmod.strawberries_with_milk": "Strawberries With Milk",
+  "block.unnamedmod.strawberry_cake": "Strawberry Cake",
   "item.unnamedmod.sweet_berry_pie": "Sweet Berry Pie",
   "item.unnamedmod.sweet_berry_smoothie": "Sweet Berry Smoothie",
   "item.unnamedmod.taco": "Taco",
@@ -41,6 +43,7 @@
   "block.unnamedmod.vanilla_crop": "Vanilla Crop",
   "item.unnamedmod.vanilla_cookie": "Vanilla Cookie",
   "item.unnamedmod.vanilla_smoothie": "Vanilla Smoothie",
+  "block.unnamedmod.vanilla_cake": "Vanilla Cake",
   "item.unnamedmod.vegetable_soup": "Vegetable Soup",
 
   "block.unnamedmod.african_daisy": "African Daisy",
@@ -78,6 +81,8 @@
   "block.unnamedmod.dusky_planks": "Dusky Planks",
   "block.unnamedmod.dusky_slab": "Dusky Slab",
   "block.unnamedmod.dusky_stairs": "Dusky Stairs",
+  "block.unnamedmod.dusky_fence": "Dusky Fence",
+  "block.unnamedmod.dusky_fence_gate": "Dusky Fence Gate",
   
   "block.unnamedmod.acacia_leaves_wall": "Acacia Leaves Wall",
   "block.unnamedmod.azalea_leaves_wall": "Azalea Leaves Wall",
@@ -91,6 +96,29 @@
   "block.unnamedmod.spruce_leaves_wall": "Spruce Leaves Wall",
   "block.unnamedmod.nether_wart_wall": "Nether Wart Wall",
   "block.unnamedmod.warped_wart_wall": "Warped Wart Wall",
+
+  "item.minecraft.potion.effect.decay": "Potion Of Decaying",
+  "item.minecraft.splash_potion.effect.decay": "Splash Potion Of Decaying",
+  "item.minecraft.lingering_potion.effect.decay": "Lingering Potion Of Decaying",
+  "item.minecraft.tipped_arrow.effect.decay": "Arrow Of Decaying",
+
+  "item.minecraft.potion.effect.glow": "Potion Of Glowing",
+  "item.minecraft.splash_potion.effect.glow": "Splash Potion Of Glowing",
+  "item.minecraft.lingering_potion.effect.glow": "Lingering Potion Of Glowing",
+  "item.minecraft.tipped_arrow.effect.glow": "Arrow Of Glowing",
+  "item.minecraft.potion.effect.long_glow": "Potion Of Glowing",
+  "item.minecraft.splash_potion.effect.long_glow": "Splash Potion Of Glowing",
+  "item.minecraft.lingering_potion.effect.long_glow": "Lingering Potion Of Glowing",
+  "item.minecraft.tipped_arrow.effect.long_glow": "Arrow Of Glowing",
+
+  "item.minecraft.potion.effect.darkness": "Potion Of Darkness",
+  "item.minecraft.splash_potion.effect.darkness": "Splash Potion Of Darkness",
+  "item.minecraft.lingering_potion.effect.darkness": "Lingering Potion Of Darkness",
+  "item.minecraft.tipped_arrow.effect.darkness": "Arrow Of Darkness",
+  "item.minecraft.potion.effect.long_darkness": "Potion Of Darkness",
+  "item.minecraft.splash_potion.effect.long_darkness": "Splash Potion Of Darkness",
+  "item.minecraft.lingering_potion.effect.long_darkness": "Lingering Potion Of Darkness",
+  "item.minecraft.tipped_arrow.effect.long_darkness": "Arrow Of Darkness",
 
 
   "item.unnamedmod.copper_polisher": "Copper Polisher",

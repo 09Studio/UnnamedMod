@@ -141,8 +141,17 @@ public class ModItems {
     public static final RegistryObject<BlockItem> AMBER_ROCKS = ITEMS.register("amber_rocks", () -> new BlockItem(
             ModBlocks.AMBER_ROCKS.get(), new Item.Properties().fireResistant()));
 
+    public static final RegistryObject<BlockItem> CHOCOLATE_CAKE = ITEMS.register("chocolate_cake", () -> new BlockItem(
+            ModBlocks.CHOCOLATE_CAKE.get(), new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<BlockItem> FLOWERING_LILY_PAD = ITEMS.register("flowering_lily_pad", () -> new PlaceOnWaterBlockItem(
             ModBlocks.FLOWERING_LILY_PAD.get(), new Item.Properties()));
+
+    public static final RegistryObject<BlockItem> STRAWBERRY_CAKE = ITEMS.register("strawberry_cake", () -> new BlockItem(
+            ModBlocks.STRAWBERRY_CAKE.get(), new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<BlockItem> VANILLA_CAKE = ITEMS.register("vanilla_cake", () -> new BlockItem(
+            ModBlocks.VANILLA_CAKE.get(), new Item.Properties().stacksTo(1)));
 
 
 
