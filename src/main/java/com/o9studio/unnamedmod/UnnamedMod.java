@@ -144,10 +144,14 @@ public class UnnamedMod
             event.accept(ModBlocks.STRIPPED_DUSKY_WOOD);
             event.accept(ModBlocks.DUSKY_LEAVES);
             event.accept(ModBlocks.DUSKY_PLANKS);
-            event.accept(ModBlocks.DUSKY_SLAB);
             event.accept(ModBlocks.DUSKY_STAIRS);
+            event.accept(ModBlocks.DUSKY_SLAB);
             event.accept(ModBlocks.DUSKY_FENCE);
             event.accept(ModBlocks.DUSKY_FENCE_GATE);
+            event.accept(ModBlocks.DUSKY_DOOR);
+            event.accept(ModBlocks.DUSKY_TRAPDOOR);
+            event.accept(ModBlocks.DUSKY_PRESSURE_PLATE);
+            event.accept(ModBlocks.DUSKY_BUTTON);
             event.accept(ModItems.DUSKY_SIGN);
             event.accept(ModBlocks.ACACIA_LEAVES_WALL);
             event.accept(ModBlocks.AZALEA_LEAVES_WALL);

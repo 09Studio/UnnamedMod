@@ -69,17 +69,30 @@ public class ModBlocks {
     public static final RegistryObject<Block> DUSKY_PLANKS = registerBlock("dusky_planks", () -> new FlammablePlanksBlock(
             BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final RegistryObject<Block> DUSKY_SLAB = registerBlock("dusky_slab",
-            () -> new FlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)));
-
     public static final RegistryObject<Block> DUSKY_STAIRS = registerBlock("dusky_stairs",
             () -> new FlammableStairsBlock(ModBlocks.DUSKY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
+
+    public static final RegistryObject<Block> DUSKY_SLAB = registerBlock("dusky_slab",
+            () -> new FlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)));
 
     public static final RegistryObject<Block> DUSKY_FENCE = registerBlock("dusky_fence",
             () -> new FlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
 
     public static final RegistryObject<Block> DUSKY_FENCE_GATE = registerBlock("dusky_fence_gate",
             () -> new FlammableGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_CLOSE, SoundEvents.FENCE_GATE_OPEN));
+
+    public static final RegistryObject<Block> DUSKY_DOOR = registerBlock("dusky_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), SoundEvents.WOODEN_DOOR_CLOSE, SoundEvents.WOODEN_DOOR_OPEN));
+
+    public static final RegistryObject<Block> DUSKY_TRAPDOOR = registerBlock("dusky_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundEvents.WOODEN_TRAPDOOR_OPEN));
+
+    public static final RegistryObject<Block> DUSKY_PRESSURE_PLATE = registerBlock("dusky_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_OFF, SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON));
+
+    public static final RegistryObject<Block> DUSKY_BUTTON = registerBlock("dusky_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON),30, true, SoundEvents.WOODEN_BUTTON_CLICK_OFF, SoundEvents.WOODEN_BUTTON_CLICK_ON));
 
     public static final RegistryObject<Block> DUSKY_WALL_SIGN = BLOCKS.register("dusky_wall_sign",
             () -> new WallSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), SignsWoodTypes.DUSKY));
