@@ -29,6 +29,9 @@ public class ModBlocks {
 
 
     //NORMAL BLOCKS
+    public static final RegistryObject<Block> CRYSTAL_TABLE = registerBlock("crystal_table",
+            () -> new CrystalTableBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(2.5F).sound(SoundType.WOOD)));
+
     public static final RegistryObject<Block> COPPER_BARS = registerBlock("copper_bars",
             () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).requiresCorrectToolForDrops()
                     .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()));

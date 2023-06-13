@@ -1,4 +1,4 @@
-package com.o9studio.unnamedmod.events;
+package com.o9studio.unnamedmod.util;
 
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;

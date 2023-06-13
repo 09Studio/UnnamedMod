@@ -4,7 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.o9studio.unnamedmod.core.*;
 import com.o9studio.unnamedmod.custom.ModTabs;
 import com.o9studio.unnamedmod.custom.entities.SignsWoodTypes;
-import com.o9studio.unnamedmod.events.ItemsOnComposter;
+import com.o9studio.unnamedmod.util.ItemsOnComposter;
 import com.o9studio.unnamedmod.util.BetterBrewingRecipe;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
@@ -173,6 +173,7 @@ public class UnnamedMod
         }
 
         if (event.getTab() == ModTabs.CRYSTALS_TAB){
+            event.accept(ModBlocks.CRYSTAL_TABLE);
             event.accept(ModItems.COPPER_POLISHER);
             event.accept(ModItems.IRON_POLISHER);
             event.accept(ModItems.DIAMOND_POLISHER);
