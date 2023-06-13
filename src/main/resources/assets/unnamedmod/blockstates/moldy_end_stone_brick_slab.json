@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/moldy_end_stone_brick_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/moldy_end_stone_bricks"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/moldy_end_stone_brick_slab_top"
+    }
+  }
+}

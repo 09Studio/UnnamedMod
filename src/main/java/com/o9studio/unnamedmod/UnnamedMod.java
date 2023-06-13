@@ -153,6 +153,11 @@ public class UnnamedMod
             event.accept(ModBlocks.DUSKY_PRESSURE_PLATE);
             event.accept(ModBlocks.DUSKY_BUTTON);
             event.accept(ModItems.DUSKY_SIGN);
+            event.accept(ModBlocks.DIRE_MOLD);
+            event.accept(ModBlocks.MOLDY_END_STONE_BRICKS);
+            event.accept(ModBlocks.MOLDY_END_STONE_BRICK_STAIRS);
+            event.accept(ModBlocks.MOLDY_END_STONE_BRICK_SLAB);
+            event.accept(ModBlocks.MOLDY_END_STONE_BRICK_WALL);
             event.accept(ModBlocks.ACACIA_LEAVES_WALL);
             event.accept(ModBlocks.AZALEA_LEAVES_WALL);
             event.accept(ModBlocks.BIRCH_LEAVES_WALL);

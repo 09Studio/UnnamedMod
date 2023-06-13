@@ -22,6 +22,10 @@
     "unnamedmod:sapphire_block",
     "unnamedmod:topaz_ore",
     "unnamedmod:deepslate_topaz_ore",
-    "unnamedmod:topaz_block"
+    "unnamedmod:topaz_block",
+    "unnamedmod:moldy_end_stone_bricks",
+    "unnamedmod:moldy_end_stone_brick_slab",
+    "unnamedmod:moldy_end_stone_brick_stairs",
+    "unnamedmod:moldy_end_stone_brick_wall"
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "unnamedmod:block/moldy_end_stone_bricks"
+  }
+}

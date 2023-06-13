@@ -1,0 +1,7 @@
+{
+  "render_type": "cutout",
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "unnamedmod:block/moldy_end_stone_bricks"
+  }
+}

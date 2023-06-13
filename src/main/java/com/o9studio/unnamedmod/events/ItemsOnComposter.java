@@ -33,6 +33,7 @@ public class ItemsOnComposter {
         ComposterBlock.COMPOSTABLES.put(ModBlocks.BLACK_IRIS.get().asItem(), 0.65F);
         ComposterBlock.COMPOSTABLES.put(ModBlocks.BLUE_JASMIN.get().asItem(), 0.65F);
         ComposterBlock.COMPOSTABLES.put(ModBlocks.BROWN_DAYLILY.get().asItem(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.DIRE_MOLD.get().asItem(), 0.50F);
         ComposterBlock.COMPOSTABLES.put(ModBlocks.FLOWERING_LILY_PAD.get().asItem(), 0.65F);
         ComposterBlock.COMPOSTABLES.put(ModBlocks.GLOOMY_SPROUT.get().asItem(), 0.65F);
         ComposterBlock.COMPOSTABLES.put(ModBlocks.GLOOMLIGHT.get().asItem(), 0.85F);

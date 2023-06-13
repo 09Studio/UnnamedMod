@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "unnamedmod:block/moldy_end_stone_bricks",
+    "top": "unnamedmod:block/moldy_end_stone_bricks",
+    "side": "unnamedmod:block/moldy_end_stone_bricks"
+  }
+}

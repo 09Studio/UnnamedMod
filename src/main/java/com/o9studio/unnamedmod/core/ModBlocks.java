@@ -24,23 +24,36 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, UnnamedMod.MOD_ID);
 
     //SPECIAL BLOCKS
-    public static final RegistryObject<Block> NOP_BLOCK = registerBlock("nop_block", () -> new Block(
-            BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> NOP_BLOCK = registerBlock("nop_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 
 
     //NORMAL BLOCKS
     public static final RegistryObject<Block> COPPER_BARS = registerBlock("copper_bars",
-            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F)
-                    .sound(SoundType.METAL).noOcclusion()));
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()));
 
-    public static final RegistryObject<Block> GLOOMLIGHT  = registerBlock("gloomlight", () -> new Block(BlockBehaviour.Properties.of(
-            Material.MOSS, MaterialColor.COLOR_GRAY).strength(1).sound(SoundType.MOSS).lightLevel((blockState) -> 15)));
+    public static final RegistryObject<Block> DIRE_MOLD = registerBlock("dire_mold",
+            () -> new DireMoldBlock(BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT, MaterialColor.COLOR_PURPLE).noCollission().strength(0.2F).sound(SoundType.GLOW_LICHEN)));
+
+    public static final RegistryObject<Block> GLOOMLIGHT  = registerBlock("gloomlight",
+            () -> new Block(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GRAY).strength(1).sound(SoundType.MOSS).lightLevel((blockState) -> 15)));
 
     public static final RegistryObject<Block> GOLD_BARS = registerBlock("gold_bars",
-            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F)
-                    .sound(SoundType.METAL).noOcclusion()));
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()));
+
+    public static final RegistryObject<Block> MOLDY_END_STONE_BRICKS  = registerBlock("moldy_end_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE_BRICKS)));
+
+    public static final RegistryObject<Block> MOLDY_END_STONE_BRICK_SLAB  = registerBlock("moldy_end_stone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE_BRICK_SLAB)));
+
+    public static final RegistryObject<Block> MOLDY_END_STONE_BRICK_STAIRS  = registerBlock("moldy_end_stone_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.MOLDY_END_STONE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.END_STONE_BRICK_STAIRS)));
+
+    public static final RegistryObject<Block> MOLDY_END_STONE_BRICK_WALL  = registerBlock("moldy_end_stone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE_BRICK_WALL)));
 
     public static final RegistryObject<Block> MYCELIUM_GRASS = registerBlock("mycelium_grass",
             () -> new MyceliumGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS)));
@@ -48,26 +61,26 @@ public class ModBlocks {
 
 
     //DUSKY BLOCKS
-    public static final RegistryObject<Block> DUSKY_SAPLING = registerBlock("dusky_sapling", () -> new SaplingBlock(
-            new DuskyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> DUSKY_SAPLING = registerBlock("dusky_sapling",
+            () -> new SaplingBlock(new DuskyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
-    public static final RegistryObject<Block> DUSKY_LOG = registerBlock("dusky_log", () -> new FlammableLogsBlocks(
-            BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> DUSKY_LOG = registerBlock("dusky_log",
+            () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
 
-    public static final RegistryObject<Block> STRIPPED_DUSKY_LOG = registerBlock("stripped_dusky_log", () -> new FlammableLogsBlocks(
-            BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_DUSKY_LOG = registerBlock("stripped_dusky_log",
+            () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
 
-    public static final RegistryObject<Block> DUSKY_WOOD = registerBlock("dusky_wood", () -> new FlammableLogsBlocks(
-            BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> DUSKY_WOOD = registerBlock("dusky_wood",
+            () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
 
-    public static final RegistryObject<Block> STRIPPED_DUSKY_WOOD = registerBlock("stripped_dusky_wood", () -> new FlammableLogsBlocks(
-            BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_DUSKY_WOOD = registerBlock("stripped_dusky_wood",
+            () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
 
-    public static final RegistryObject<Block> DUSKY_LEAVES = registerBlock("dusky_leaves", () -> new FlammableLeavesBlock(
-            BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<Block> DUSKY_LEAVES = registerBlock("dusky_leaves",
+            () -> new FlammableLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> DUSKY_PLANKS = registerBlock("dusky_planks", () -> new FlammablePlanksBlock(
-            BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> DUSKY_PLANKS = registerBlock("dusky_planks",
+            () -> new FlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
     public static final RegistryObject<Block> DUSKY_STAIRS = registerBlock("dusky_stairs",
             () -> new FlammableStairsBlock(ModBlocks.DUSKY_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
@@ -102,57 +115,56 @@ public class ModBlocks {
 
 
     //WALL BLOCKS
-    public static final RegistryObject<Block> ACACIA_LEAVES_WALL = registerBlock("acacia_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
+    public static final RegistryObject<Block> ACACIA_LEAVES_WALL = registerBlock("acacia_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
 
-    public static final RegistryObject<Block> AZALEA_LEAVES_WALL = registerBlock("azalea_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
+    public static final RegistryObject<Block> AZALEA_LEAVES_WALL = registerBlock("azalea_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
 
-    public static final RegistryObject<Block> BIRCH_LEAVES_WALL = registerBlock("birch_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
+    public static final RegistryObject<Block> BIRCH_LEAVES_WALL = registerBlock("birch_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_LEAVES)));
 
-    public static final RegistryObject<Block> DARK_OAK_LEAVES_WALL = registerBlock("dark_oak_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(Blocks.DARK_OAK_LEAVES)));
+    public static final RegistryObject<Block> DARK_OAK_LEAVES_WALL = registerBlock("dark_oak_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_LEAVES)));
 
-    public static final RegistryObject<Block> DUSKY_LEAVES_WALL = registerBlock("dusky_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(DUSKY_LEAVES.get())));
+    public static final RegistryObject<Block> DUSKY_LEAVES_WALL = registerBlock("dusky_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(DUSKY_LEAVES.get())));
 
-    public static final RegistryObject<Block> FLOWERING_AZALEA_LEAVES_WALL = registerBlock("flowering_azalea_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(Blocks.FLOWERING_AZALEA_LEAVES)));
+    public static final RegistryObject<Block> FLOWERING_AZALEA_LEAVES_WALL = registerBlock("flowering_azalea_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.FLOWERING_AZALEA_LEAVES)));
 
-    public static final RegistryObject<Block> JUNGLE_LEAVES_WALL = registerBlock("jungle_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(Blocks.JUNGLE_LEAVES)));
+    public static final RegistryObject<Block> JUNGLE_LEAVES_WALL = registerBlock("jungle_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_LEAVES)));
 
-    public static final RegistryObject<Block> MANGROVE_LEAVES_WALL = registerBlock("mangrove_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(Blocks.MANGROVE_LEAVES)));
+    public static final RegistryObject<Block> MANGROVE_LEAVES_WALL = registerBlock("mangrove_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_LEAVES)));
 
-    public static final RegistryObject<Block> OAK_LEAVES_WALL = registerBlock("oak_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<Block> OAK_LEAVES_WALL = registerBlock("oak_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
-    public static final RegistryObject<Block> SPRUCE_LEAVES_WALL = registerBlock("spruce_leaves_wall", () -> new FlammableWallBlock(
-            BlockBehaviour.Properties.copy(Blocks.SPRUCE_LEAVES)));
+    public static final RegistryObject<Block> SPRUCE_LEAVES_WALL = registerBlock("spruce_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LEAVES)));
 
-    public static final RegistryObject<Block> NETHER_WART_WALL = registerBlock("nether_wart_wall", () -> new WallBlock(
-            BlockBehaviour.Properties.copy(Blocks.NETHER_WART_BLOCK)));
+    public static final RegistryObject<Block> NETHER_WART_WALL = registerBlock("nether_wart_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_WART_BLOCK)));
 
-    public static final RegistryObject<Block> WARPED_WART_WALL = registerBlock("warped_wart_wall", () -> new WallBlock(
-            BlockBehaviour.Properties.copy(Blocks.WARPED_WART_BLOCK)));
+    public static final RegistryObject<Block> WARPED_WART_WALL = registerBlock("warped_wart_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_WART_BLOCK)));
 
 
     //CRYSTALS BLOCKS
-    public static final RegistryObject<Block> AMBER_BLOCK = BLOCKS.register("amber_block", () -> new Block(
-            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> AMBER_BLOCK = BLOCKS.register("amber_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
-    public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block", () -> new Block(
-            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> BRONZE_BLOCK = registerBlock("bronze_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> BRONZE_BARS = registerBlock("bronze_bars",
-            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F)
-                    .sound(SoundType.METAL).noOcclusion()));
+            () -> new IronBarsBlock(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NONE).requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()));
 
-    public static final RegistryObject<Block> CUT_BRONZE = registerBlock("cut_bronze", () -> new Block(
-            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> CUT_BRONZE = registerBlock("cut_bronze",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> CUT_BRONZE_SLAB = registerBlock("cut_bronze_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(CUT_BRONZE.get())));
@@ -160,53 +172,62 @@ public class ModBlocks {
     public static final RegistryObject<Block> CUT_BRONZE_STAIRS = registerBlock("cut_bronze_stairs",
             () -> new StairBlock(() -> ModBlocks.CUT_BRONZE.get().defaultBlockState(), BlockBehaviour.Properties.copy(CUT_BRONZE.get())));
 
-    public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlock("peridot_block", () -> new Block(
-            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlock("peridot_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
-    public static final RegistryObject<Block> RQ_BLOCK = registerBlock("rq_block", () -> new RQBlock(
-            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(50.0F, 1200.0F)
-                    .sound(SoundType.GLASS).lightLevel(state -> state.getValue(RQBlock.LIT) ? 0 : 15)));
+    public static final RegistryObject<Block> RQ_BLOCK = registerBlock("rq_block",
+            () -> new RQBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(50.0F, 1200.0F).sound(SoundType.GLASS).lightLevel(state -> state.getValue(RQBlock.LIT) ? 0 : 15)));
 
-    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block", () -> new Block(
-            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
-    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block", () -> new Block(
-            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
-    public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlock("topaz_block", () -> new Block(
-            BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> TOPAZ_BLOCK = registerBlock("topaz_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
 
     //ORE BLOCKS
-    public static final RegistryObject<Block> AMBER_ROCKS = BLOCKS.register("amber_rocks", () -> new AmberRocks(
-            BlockBehaviour.Properties.of(Material.STONE).noOcclusion().requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.METAL), UniformInt.of(3,7)));
+    public static final RegistryObject<Block> AMBER_ROCKS = BLOCKS.register("amber_rocks",
+            () -> new AmberRocks(BlockBehaviour.Properties.of(Material.STONE).noOcclusion().requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.METAL), UniformInt.of(3,7)));
 
-    public static final RegistryObject<Block> PERIDOT_ORE = registerBlock("peridot_ore", () -> new DropExperienceBlock(
-            BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> PERIDOT_ORE = registerBlock("peridot_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
 
-    public static final RegistryObject<Block> DEEPSLATE_PERIDOT_ORE = registerBlock("deepslate_peridot_ore", () -> new DropExperienceBlock(
-            BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> DEEPSLATE_PERIDOT_ORE = registerBlock("deepslate_peridot_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
 
-    public static final RegistryObject<Block> RQ_ORE = registerBlock("rq_ore", () -> new DropExperienceBlock(
-            BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.NETHER_ORE).lightLevel((blockState) -> 5 )));
+    public static final RegistryObject<Block> RQ_ORE = registerBlock("rq_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(30.0F, 1200.0F).sound(SoundType.NETHER_ORE).lightLevel((blockState) -> 5 )));
 
-    public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore", () -> new DropExperienceBlock(
-            BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
 
-    public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", () -> new DropExperienceBlock(
-            BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
 
-    public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore", () -> new DropExperienceBlock(
-            BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
 
-    public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore", () -> new DropExperienceBlock(
-            BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
 
-    public static final RegistryObject<Block> TOPAZ_ORE = registerBlock("topaz_ore", () -> new DropExperienceBlock(
-            BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> TOPAZ_ORE = registerBlock("topaz_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
 
-    public static final RegistryObject<Block> DEEPSLATE_TOPAZ_ORE = registerBlock("deepslate_topaz_ore", () -> new DropExperienceBlock(
-            BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> DEEPSLATE_TOPAZ_ORE = registerBlock("deepslate_topaz_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
+                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
 
 
     //CROP BLOCKS
@@ -253,8 +274,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> BROWN_DAYLILY = registerBlock("brown_daylily",
             () -> new SandFlowerBlock(() -> MobEffects.DIG_SPEED, 4, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
-    public static final RegistryObject<Block> FLOWERING_LILY_PAD = BLOCKS.register("flowering_lily_pad", () -> new WaterlilyBlock(
-            BlockBehaviour.Properties.of(Material.PLANT).instabreak().sound(SoundType.LILY_PAD).noOcclusion()));
+    public static final RegistryObject<Block> FLOWERING_LILY_PAD = BLOCKS.register("flowering_lily_pad",
+            () -> new WaterlilyBlock(BlockBehaviour.Properties.of(Material.PLANT).instabreak().sound(SoundType.LILY_PAD).noOcclusion()));
 
     public static final RegistryObject<Block> GLOOMY_SPROUT = registerBlock("gloomy_sprout",
             () -> new GloomySproutBlock(BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_GRAY).noCollission().randomTicks().instabreak()
