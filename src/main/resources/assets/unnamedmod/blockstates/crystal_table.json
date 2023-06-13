@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "unnamedmod:block/crystal_table"
+    },
+    "facing=south": {
+      "model": "unnamedmod:block/crystal_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "unnamedmod:block/crystal_table",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "unnamedmod:block/crystal_table",
+      "y": 90
+    }
+  }
+}

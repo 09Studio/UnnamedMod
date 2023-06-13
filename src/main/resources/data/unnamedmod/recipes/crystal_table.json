@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cc",
+    "ww"
+  ],
+  "key": {
+    "c": {
+      "tag": "unnamedmod:crystals"
+    },
+    "w": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:crystal_table",
+    "count": 1
+  }
+}
