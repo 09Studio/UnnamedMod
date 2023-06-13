@@ -2,6 +2,7 @@ package com.o9studio.unnamedmod.core;
 
 import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.custom.blocks.*;
+import com.o9studio.unnamedmod.custom.entities.SignsWoodTypes;
 import com.o9studio.unnamedmod.world.features.trees.DuskyTreeGrower;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -79,6 +80,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DUSKY_FENCE_GATE = registerBlock("dusky_fence_gate",
             () -> new FlammableGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_CLOSE, SoundEvents.FENCE_GATE_OPEN));
+
+    public static final RegistryObject<Block> DUSKY_WALL_SIGN = BLOCKS.register("dusky_wall_sign",
+            () -> new WallSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), SignsWoodTypes.DUSKY));
+
+    public static final RegistryObject<Block> DUSKY_SIGN = BLOCKS.register("dusky_sign",
+            () -> new StandingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), SignsWoodTypes.DUSKY));
 
 
     //WALL BLOCKS

@@ -1,22 +1,23 @@
 package com.o9studio.unnamedmod;
 
 import com.mojang.logging.LogUtils;
-import com.o9studio.unnamedmod.core.ModBlocks;
-import com.o9studio.unnamedmod.core.ModItems;
-import com.o9studio.unnamedmod.core.ModPaintings;
-import com.o9studio.unnamedmod.core.ModPotions;
+import com.o9studio.unnamedmod.core.*;
 import com.o9studio.unnamedmod.custom.ModTabs;
+import com.o9studio.unnamedmod.custom.entities.SignsWoodTypes;
 import com.o9studio.unnamedmod.events.ItemsOnComposter;
 import com.o9studio.unnamedmod.util.BetterBrewingRecipe;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.CreativeModeTabEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -39,6 +40,7 @@ public class UnnamedMod
         ModBlocks.register(modEventBus);
         ModPaintings.PAINTING_VARIANTS.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModEntityBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -77,6 +79,8 @@ public class UnnamedMod
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.DARKNESS.get(),
                     Items.REDSTONE, ModPotions.LONG_DARKNESS.get()));
+
+            Sheets.addWoodType(SignsWoodTypes.DUSKY);
         });
     }
 
@@ -144,6 +148,7 @@ public class UnnamedMod
             event.accept(ModBlocks.DUSKY_STAIRS);
             event.accept(ModBlocks.DUSKY_FENCE);
             event.accept(ModBlocks.DUSKY_FENCE_GATE);
+            event.accept(ModItems.DUSKY_SIGN);
             event.accept(ModBlocks.ACACIA_LEAVES_WALL);
             event.accept(ModBlocks.AZALEA_LEAVES_WALL);
             event.accept(ModBlocks.BIRCH_LEAVES_WALL);
@@ -204,10 +209,6 @@ public class UnnamedMod
         }
     }
 
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
-    }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
@@ -215,6 +216,8 @@ public class UnnamedMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            WoodType.register(SignsWoodTypes.DUSKY);
+            BlockEntityRenderers.register(ModEntityBlocks.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
         }
     }
 }

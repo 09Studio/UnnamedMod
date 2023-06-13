@@ -144,6 +144,9 @@ public class ModItems {
     public static final RegistryObject<BlockItem> CHOCOLATE_CAKE = ITEMS.register("chocolate_cake", () -> new BlockItem(
             ModBlocks.CHOCOLATE_CAKE.get(), new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> DUSKY_SIGN = ITEMS.register("dusky_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.DUSKY_SIGN.get(), ModBlocks.DUSKY_WALL_SIGN.get()));
+
     public static final RegistryObject<BlockItem> FLOWERING_LILY_PAD = ITEMS.register("flowering_lily_pad", () -> new PlaceOnWaterBlockItem(
             ModBlocks.FLOWERING_LILY_PAD.get(), new Item.Properties()));
 
