@@ -3,7 +3,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"6": "unnamedmod:block/crystal_table",
-		"particle": "unnamedmod:block/crystal_table"
+		"particle": "unnamedmod:block/dusky_planks"
 	},
 	"elements": [
 		{
