@@ -44,6 +44,7 @@ public class UnnamedMod
         ModPotions.register(modEventBus);
         ModEntityBlocks.register(modEventBus);
         ModMenus.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

@@ -2,11 +2,13 @@ package com.o9studio.unnamedmod.custom.entities;
 
 import com.o9studio.unnamedmod.core.ModEntityBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
+import com.o9studio.unnamedmod.custom.recipe.CrystalTableRecipe;
 import com.o9studio.unnamedmod.custom.screens.CrystalTableMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -26,6 +28,8 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
+
 public class CrystalTableEntity extends BlockEntity implements MenuProvider {
 
     private final ItemStackHandler itemHandler = new ItemStackHandler(3) {
@@ -39,7 +43,7 @@ public class CrystalTableEntity extends BlockEntity implements MenuProvider {
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 120;
+    private int maxProgress = 78;
 
     public CrystalTableEntity(BlockPos pos, BlockState blockState) {
         super(ModEntityBlocks.CRYSTAL_TABLE.get(), pos, blockState);
@@ -70,7 +74,7 @@ public class CrystalTableEntity extends BlockEntity implements MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("Crystal Table");
+        return Component.literal("Crystal Table");
     }
 
     @Nullable
@@ -136,38 +140,52 @@ public class CrystalTableEntity extends BlockEntity implements MenuProvider {
 
             if (entity.progress >= entity.maxProgress){
                 craftItem(entity);
-            }else {
-                entity.resetProgress();
-                setChanged(level, pos, blockState);
             }
+        }else {
+            entity.resetProgress();
+            setChanged(level, pos, blockState);
         }
-
-    }
-
-    private static boolean hasRecipe(CrystalTableEntity entity) {
-        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
-        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
-            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
-        }
-
-        boolean hasTool1 = entity.itemHandler.getStackInSlot(0).getItem() == ModItems.IRON_POLISHER.get();
-        boolean hasTool2 = entity.itemHandler.getStackInSlot(0).getItem() == ModItems.COPPER_POLISHER.get();
-        boolean hasTool3 = entity.itemHandler.getStackInSlot(0).getItem() == ModItems.DIAMOND_POLISHER.get();
-        boolean correctTools = hasTool1 || hasTool2 || hasTool3;
-
-        return correctTools && canInsertAmountIntoOutputSlot(inventory)
-                && canInsertItemIntoOutputSlot(inventory, new ItemStack(ModItems.RAW_RQ.get(), 1));
     }
 
     private void resetProgress() {
         this.progress = 0;
     }
 
+    private static boolean hasRecipe(CrystalTableEntity entity) {
+        Level level = entity.level;
+        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
+        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
+        }
+
+        Optional<CrystalTableRecipe> recipe = level.getRecipeManager().getRecipeFor(CrystalTableRecipe.Type.INSTANCE, inventory, level);
+
+        boolean hasCopperTool = entity.itemHandler.getStackInSlot(0).getItem() == ModItems.COPPER_POLISHER.get();
+        boolean hasIronTool = entity.itemHandler.getStackInSlot(0).getItem() == ModItems.IRON_POLISHER.get();
+        boolean hasDiamondTool = entity.itemHandler.getStackInSlot(0).getItem() == ModItems.DIAMOND_POLISHER.get();
+        boolean hasCorrectTools = hasCopperTool || hasIronTool || hasDiamondTool;
+
+        return recipe.isPresent() && hasCorrectTools && canInsertAmountIntoOutputSlot(inventory)
+                && canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem());
+    }
+
     private static void craftItem(CrystalTableEntity entity) {
+        Level level = entity.level;
+        SimpleContainer inventory = new SimpleContainer(entity.itemHandler.getSlots());
+        for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
+            inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
+        }
+
+        Optional<CrystalTableRecipe> recipe = level.getRecipeManager().getRecipeFor(CrystalTableRecipe.Type.INSTANCE, inventory, level);
+
         if(hasRecipe(entity)) {
+            if(entity.itemHandler.getStackInSlot(0).hurt(1, RandomSource.createNewThreadLocalInstance(), null)) {
+                entity.itemHandler.extractItem(0,1, false);
+            }
+
             entity.itemHandler.extractItem(1,1, false);
 
-            entity.itemHandler.setStackInSlot(2, new ItemStack(ModItems.RQ.get(),
+            entity.itemHandler.setStackInSlot(2, new ItemStack(recipe.get().getResultItem().getItem(),
                     entity.itemHandler.getStackInSlot(2).getCount() + 1));
 
             entity.resetProgress();

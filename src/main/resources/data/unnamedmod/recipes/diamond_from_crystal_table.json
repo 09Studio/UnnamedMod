@@ -1,0 +1,11 @@
+{
+  "type": "unnamedmod:crystal_table_recipe",
+  "ingredients": [
+    {
+      "item": "unnamedmod:raw_diamond"
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond"
+  }
+}

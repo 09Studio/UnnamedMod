@@ -14,6 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModMenus {
     public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.MENU_TYPES, UnnamedMod.MOD_ID);
 
+    //MENUS
     public static final RegistryObject<MenuType<CrystalTableMenu>> CRYSTAL_TABLE_MENU =
             registerMenuType(CrystalTableMenu::new, "crystal_table_menu");
 

@@ -12,6 +12,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModEntityBlocks {
         public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, UnnamedMod.MOD_ID);
 
+        //BLOCK ENTITIES
         public static final RegistryObject<BlockEntityType<SignsBlockEntities>> SIGN_BLOCK_ENTITIES =
                 BLOCK_ENTITIES.register("sign_block_entity", () ->
                         BlockEntityType.Builder.of(SignsBlockEntities::new,
