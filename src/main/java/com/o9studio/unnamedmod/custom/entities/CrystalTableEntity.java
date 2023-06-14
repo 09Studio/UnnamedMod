@@ -74,7 +74,7 @@ public class CrystalTableEntity extends BlockEntity implements MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.literal("Crystal Table");
+        return Component.translatable("container.crystal_table");
     }
 
     @Nullable

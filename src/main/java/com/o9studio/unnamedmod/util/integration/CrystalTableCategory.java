@@ -35,7 +35,7 @@ public class CrystalTableCategory implements IRecipeCategory<CrystalTableRecipe>
 
     @Override
     public Component getTitle() {
-        return Component.literal("Crystal Table");
+        return Component.translatable("container.crystal_table");
     }
 
     @Override

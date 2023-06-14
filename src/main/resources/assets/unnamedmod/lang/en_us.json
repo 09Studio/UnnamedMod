@@ -136,6 +136,7 @@
 
 
   "block.unnamedmod.crystal_table": "Crystal Table",
+  "container.crystal_table": "Crystal Table",
 
   "item.unnamedmod.copper_polisher": "Copper Polisher",
   "item.unnamedmod.iron_polisher": "Iron Polisher",
@@ -190,8 +191,15 @@
   "item.unnamedmod.topaz": "Topaz",
   "block.unnamedmod.topaz_block": "Block of Topaz",
 
+  
+  "unnamedmod.advancements.crystal_table.title": "Crystal Mod",
+  "unnamedmod.advancements.crystal_table.description": "Obtain a Crystal Table",
+  "unnamedmod.advancements.rq.title": "A Powerful Material",
+  "unnamedmod.advancements.rq.description": "Obtain a Rainbow Quartz",
+  "unnamedmod.advancements.rq_armor.title": "Cover Me In Crystals",
+  "unnamedmod.advancements.rq_armor.description": "Obtain a full set of Rainbow Quartz armor",
 
-
+  
   "creativemodetab.greenery_tab": "Greenery Tab",
   "creativemodetab.crystals_tab": "Crystals Tab"
 }
