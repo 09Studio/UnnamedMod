@@ -268,10 +268,10 @@ public class ModBlocks {
             () -> new SandFlowerBlock(() -> MobEffects.WEAKNESS, 4, BlockBehaviour.Properties.copy(Blocks.OXEYE_DAISY)));
 
     public static final RegistryObject<Block> BLACK_IRIS = registerBlock("black_iris",
-            () -> new FlowerBlock(MobEffects.BLINDNESS, 3, BlockBehaviour.Properties.copy(Blocks.AZURE_BLUET)));
+            () -> new FlowerBlock(() -> MobEffects.BLINDNESS, 3, BlockBehaviour.Properties.copy(Blocks.AZURE_BLUET)));
 
     public static final RegistryObject<Block> BLUE_JASMIN = registerBlock("blue_jasmin",
-            () -> new FlowerBlock(MobEffects.WATER_BREATHING, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+            () -> new FlowerBlock(() -> MobEffects.WATER_BREATHING, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
     public static final RegistryObject<Block> BROWN_DAYLILY = registerBlock("brown_daylily",
             () -> new SandFlowerBlock(() -> MobEffects.DIG_SPEED, 4, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
@@ -284,16 +284,16 @@ public class ModBlocks {
                     .sound(SoundType.GRASS).lightLevel((blockState) -> 5)));
 
     public static final RegistryObject<Block> GREEN_DAYLILY = registerBlock("green_daylily",
-            () -> new FlowerBlock(MobEffects.LUCK, 5, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
     public static final RegistryObject<Block> PURPLE_ORCHID = registerBlock("purple_orchid",
-            () -> new FlowerBlock(MobEffects.REGENERATION, 6, BlockBehaviour.Properties.copy(Blocks.BLUE_ORCHID)));
+            () -> new FlowerBlock(() -> MobEffects.REGENERATION, 6, BlockBehaviour.Properties.copy(Blocks.BLUE_ORCHID)));
 
     public static final RegistryObject<Block> ROSE = registerBlock("rose",
-            () -> new FlowerBlock(MobEffects.DAMAGE_RESISTANCE, 4, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+            () -> new FlowerBlock(() -> MobEffects.DAMAGE_RESISTANCE, 4, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
     public static final RegistryObject<Block> VANILLA = registerBlock("vanilla",
-            () -> new FlowerBlock(MobEffects.ABSORPTION, 3, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER)));
+            () -> new FlowerBlock(() -> MobEffects.ABSORPTION, 3, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER)));
 
     public static final RegistryObject<Block> WHITE_ROSE = registerBlock("white_rose",
             () -> new WhiteRoseBlock(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.copy(Blocks.POPPY)));
