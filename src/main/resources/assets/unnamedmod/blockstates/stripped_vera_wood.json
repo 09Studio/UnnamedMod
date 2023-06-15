@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "unnamedmod:block/stripped_vera_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "unnamedmod:block/stripped_vera_wood"
+    },
+    "axis=z": {
+      "model": "unnamedmod:block/stripped_vera_wood_horizontal",
+      "x": 90
+    }
+  }
+}

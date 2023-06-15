@@ -40,6 +40,12 @@ public class FlammableLogsBlocks extends RotatedPillarBlock {
             if(state.is(ModBlocks.DUSKY_WOOD.get())) {
                 return ModBlocks.STRIPPED_DUSKY_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
+            if(state.is(ModBlocks.VERA_LOG.get())) {
+                return ModBlocks.STRIPPED_VERA_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if(state.is(ModBlocks.VERA_WOOD.get())) {
+                return ModBlocks.STRIPPED_VERA_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
         }
 
         return super.getToolModifiedState(state, context, toolAction, simulate);

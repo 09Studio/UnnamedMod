@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "unnamedmod:block/vera_slab"
+    },
+    "type=double": {
+      "model": "unnamedmod:block/vera_planks"
+    },
+    "type=top": {
+      "model": "unnamedmod:block/vera_slab_top"
+    }
+  }
+}

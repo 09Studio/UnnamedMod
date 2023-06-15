@@ -19,6 +19,7 @@
     "unnamedmod:mangrove_leaves_wall",
     "unnamedmod:oak_leaves_wall",
     "unnamedmod:spruce_leaves_wall",
+    "unnamedmod:vera_leaves_wall",
     "unnamedmod:nether_wart_wall",
     "unnamedmod:warped_wart_wall",
     "unnamedmod:dusky_log",
@@ -31,6 +32,11 @@
     "unnamedmod:dusky_fence",
     "unnamedmod:dusky_fence_gate",
     "unnamedmod:flowering_lily_pad",
-    "unnamedmod:dire_mold"
+    "unnamedmod:dire_mold",
+    "unnamedmod:vera_planks",
+    "unnamedmod:vera_slab",
+    "unnamedmod:vera_stairs",
+    "unnamedmod:vera_fence",
+    "unnamedmod:vera_fence_gate"
   ]
 }

@@ -4,4 +4,5 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class SignsWoodTypes {
     public static WoodType DUSKY = WoodType.create("dusky");
+    public static WoodType VERA = WoodType.create("vera");
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "unnamedmod:block/vera_planks",
+    "top": "unnamedmod:block/vera_planks",
+    "side": "unnamedmod:block/vera_planks"
+  }
+}

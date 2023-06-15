@@ -116,6 +116,57 @@ public class ModBlocks {
             () -> new StandingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), SignsWoodTypes.DUSKY));
 
 
+    //VERA BLOCKS
+    public static final RegistryObject<Block> VERA_LOG = registerBlock("vera_log",
+            () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<Block> STRIPPED_VERA_LOG = registerBlock("stripped_vera_log",
+            () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final RegistryObject<Block> VERA_WOOD = registerBlock("vera_wood",
+            () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<Block> STRIPPED_VERA_WOOD = registerBlock("stripped_vera_wood",
+            () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> VERA_LEAVES = registerBlock("vera_leaves",
+            () -> new FlammableLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+
+    public static final RegistryObject<Block> VERA_PLANKS = registerBlock("vera_planks",
+            () -> new FlammablePlanksBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
+    public static final RegistryObject<Block> VERA_STAIRS = registerBlock("vera_stairs",
+            () -> new FlammableStairsBlock(ModBlocks.VERA_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
+
+    public static final RegistryObject<Block> VERA_SLAB = registerBlock("vera_slab",
+            () -> new FlammableSlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)));
+
+    public static final RegistryObject<Block> VERA_FENCE = registerBlock("vera_fence",
+            () -> new FlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+
+    public static final RegistryObject<Block> VERA_FENCE_GATE = registerBlock("vera_fence_gate",
+            () -> new FlammableGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_CLOSE, SoundEvents.FENCE_GATE_OPEN));
+
+    public static final RegistryObject<Block> VERA_DOOR = registerBlock("vera_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), SoundEvents.WOODEN_DOOR_CLOSE, SoundEvents.WOODEN_DOOR_OPEN));
+
+    public static final RegistryObject<Block> VERA_TRAPDOOR = registerBlock("vera_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundEvents.WOODEN_TRAPDOOR_OPEN));
+
+    public static final RegistryObject<Block> VERA_PRESSURE_PLATE = registerBlock("vera_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_OFF, SoundEvents.WOODEN_PRESSURE_PLATE_CLICK_ON));
+
+    public static final RegistryObject<Block> VERA_BUTTON = registerBlock("vera_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON),30, true, SoundEvents.WOODEN_BUTTON_CLICK_OFF, SoundEvents.WOODEN_BUTTON_CLICK_ON));
+
+    public static final RegistryObject<Block> VERA_WALL_SIGN = BLOCKS.register("vera_wall_sign",
+            () -> new WallSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), SignsWoodTypes.VERA));
+
+    public static final RegistryObject<Block> VERA_SIGN = BLOCKS.register("vera_sign",
+            () -> new StandingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), SignsWoodTypes.VERA));
+
+
     //WALL BLOCKS
     public static final RegistryObject<Block> ACACIA_LEAVES_WALL = registerBlock("acacia_leaves_wall",
             () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.AZALEA_LEAVES)));
@@ -146,6 +197,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SPRUCE_LEAVES_WALL = registerBlock("spruce_leaves_wall",
             () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_LEAVES)));
+
+    public static final RegistryObject<Block> VERA_LEAVES_WALL = registerBlock("vera_leaves_wall",
+            () -> new FlammableWallBlock(BlockBehaviour.Properties.copy(VERA_LEAVES.get())));
 
     public static final RegistryObject<Block> NETHER_WART_WALL = registerBlock("nether_wart_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_WART_BLOCK)));

@@ -85,6 +85,7 @@ public class UnnamedMod
                     Items.REDSTONE, ModPotions.LONG_DARKNESS.get()));
 
             Sheets.addWoodType(SignsWoodTypes.DUSKY);
+            Sheets.addWoodType(SignsWoodTypes.VERA);
         });
     }
 
@@ -157,6 +158,21 @@ public class UnnamedMod
             event.accept(ModBlocks.DUSKY_PRESSURE_PLATE);
             event.accept(ModBlocks.DUSKY_BUTTON);
             event.accept(ModItems.DUSKY_SIGN);
+            event.accept(ModBlocks.VERA_LOG);
+            event.accept(ModBlocks.STRIPPED_VERA_LOG);
+            event.accept(ModBlocks.VERA_WOOD);
+            event.accept(ModBlocks.STRIPPED_VERA_WOOD);
+            event.accept(ModBlocks.VERA_LEAVES);
+            event.accept(ModBlocks.VERA_PLANKS);
+            event.accept(ModBlocks.VERA_STAIRS);
+            event.accept(ModBlocks.VERA_SLAB);
+            event.accept(ModBlocks.VERA_FENCE);
+            event.accept(ModBlocks.VERA_FENCE_GATE);
+            event.accept(ModBlocks.VERA_DOOR);
+            event.accept(ModBlocks.VERA_TRAPDOOR);
+            event.accept(ModBlocks.VERA_PRESSURE_PLATE);
+            event.accept(ModBlocks.VERA_BUTTON);
+            event.accept(ModItems.VERA_SIGN);
             event.accept(ModBlocks.DIRE_MOLD);
             event.accept(ModBlocks.MOLDY_END_STONE_BRICKS);
             event.accept(ModBlocks.MOLDY_END_STONE_BRICK_STAIRS);
@@ -172,6 +188,7 @@ public class UnnamedMod
             event.accept(ModBlocks.MANGROVE_LEAVES_WALL);
             event.accept(ModBlocks.OAK_LEAVES_WALL);
             event.accept(ModBlocks.SPRUCE_LEAVES_WALL);
+            event.accept(ModBlocks.VERA_LEAVES_WALL);
             event.accept(ModBlocks.NETHER_WART_WALL);
             event.accept(ModBlocks.WARPED_WART_WALL);
         }
@@ -231,6 +248,7 @@ public class UnnamedMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             WoodType.register(SignsWoodTypes.DUSKY);
+            WoodType.register(SignsWoodTypes.VERA);
             BlockEntityRenderers.register(ModEntityBlocks.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
 
             MenuScreens.register(ModMenus.CRYSTAL_TABLE_MENU.get(), CrystalTableScreen::new);

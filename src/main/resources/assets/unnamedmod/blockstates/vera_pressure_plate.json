@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "unnamedmod:block/vera_pressure_plate"
+    },
+    "powered=true": {
+      "model": "unnamedmod:block/vera_pressure_plate_down"
+    }
+  }
+}

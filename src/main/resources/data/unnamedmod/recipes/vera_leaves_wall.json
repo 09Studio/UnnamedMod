@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "unnamedmod:vera_log"
+    },
+    "C": {
+      "item": "unnamedmod:vera_leaves"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:vera_leaves_wall",
+    "count": 6
+  }
+}
