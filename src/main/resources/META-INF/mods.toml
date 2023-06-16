@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="unnamedmod"
-version="0.0.1-1.19.3"
+version="0.5.0-1.19.3"
 displayName="Unnamed Mod"
 logoFile="examplemod.png"
 credits="Thanks for using my mod in your Minecraft world"
@@ -15,7 +15,7 @@ This mod will bring you:
 For a complete list of new things, and a guide, check:
 '''
 
-[[dependencies.nonamemod]]
+[[dependencies.unnamedmod]]
 
     modId="forge"
     mandatory=true
@@ -23,7 +23,7 @@ For a complete list of new things, and a guide, check:
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.nonamemod]]
+[[dependencies.unnamedmod]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.19.3,1.20)"

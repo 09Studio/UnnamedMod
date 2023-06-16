@@ -61,6 +61,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> MYCELIUM_GRASS = registerBlock("mycelium_grass",
             () -> new MyceliumGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS)));
 
+    public static final RegistryObject<Block> SOUL_JACK_O_LANTERN = registerBlock("soul_jack_o_lantern",
+            () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.of(Material.VEGETABLE, MaterialColor.COLOR_ORANGE).strength(1.0F).sound(SoundType.WOOD).lightLevel((blockstate) -> 15)));
+
 
     //DUSKY BLOCKS
     public static final RegistryObject<Block> DUSKY_SAPLING = registerBlock("dusky_sapling",
@@ -117,6 +120,9 @@ public class ModBlocks {
 
 
     //VERA BLOCKS
+    public static final RegistryObject<Block> VERA_SAPLING = registerBlock("vera_sapling",
+            () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
     public static final RegistryObject<Block> VERA_LOG = registerBlock("vera_log",
             () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
 
@@ -386,6 +392,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POTTED_DUSKY_SAPLING = BLOCKS.register("potted_dusky_sapling",
             () -> new FlowerPotBlock(null, ModBlocks.DUSKY_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_VERA_SAPLING = BLOCKS.register("potted_vera_sapling",
+            () -> new FlowerPotBlock(null, ModBlocks.VERA_SAPLING, BlockBehaviour.Properties.copy(Blocks.POTTED_OAK_SAPLING).noOcclusion()));
 
 
     //Food Blocks

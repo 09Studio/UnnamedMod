@@ -74,6 +74,7 @@
   "block.unnamedmod.potted_vanilla": "Potted Vanilla",
   "block.unnamedmod.potted_white_rose": "Potted White Rose",
   "block.unnamedmod.potted_dusky_sapling": "Potted Dusky Sapling",
+  "block.unnamedmod.potted_vera_sapling": "Potted Vera Sapling",
 
   "block.unnamedmod.dusky_sapling": "Dusky Sapling",
   "block.unnamedmod.dusky_log": "Dusky Log",
@@ -92,6 +93,7 @@
   "block.unnamedmod.dusky_button": "Dusky Button",
   "block.unnamedmod.dusky_sign": "Dusky Sign",
 
+  "block.unnamedmod.vera_sapling": "Vera Sapling",
   "block.unnamedmod.vera_log": "Vera Log",
   "block.unnamedmod.stripped_vera_log": "Stripped Vera Log",
   "block.unnamedmod.vera_wood": "Vera Wood",
@@ -113,6 +115,8 @@
   "block.unnamedmod.moldy_end_stone_brick_slab": "Moldy End Stone Brick Slab",
   "block.unnamedmod.moldy_end_stone_brick_stairs": "Moldy End Stone Brick Stairs",
   "block.unnamedmod.moldy_end_stone_brick_wall": "Moldy End Stone Brick Wall",
+
+  "block.unnamedmod.soul_jack_o_lantern": "Soul Jack O Lantern",
   
   "block.unnamedmod.acacia_leaves_wall": "Acacia Leaves Wall",
   "block.unnamedmod.azalea_leaves_wall": "Azalea Leaves Wall",

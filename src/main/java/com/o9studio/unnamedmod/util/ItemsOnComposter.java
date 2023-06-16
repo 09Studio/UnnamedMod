@@ -28,6 +28,7 @@ public class ItemsOnComposter {
 
         ComposterBlock.COMPOSTABLES.put(ModBlocks.DUSKY_SAPLING.get().asItem(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(ModBlocks.DUSKY_LEAVES.get().asItem(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.VERA_SAPLING.get().asItem(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(ModBlocks.VERA_LEAVES.get().asItem(), 0.3F);
 
         ComposterBlock.COMPOSTABLES.put(ModBlocks.AFRICAN_DAISY.get().asItem(), 0.65F);

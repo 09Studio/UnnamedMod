@@ -21,11 +21,9 @@ public class ModConfiguredFeatures {
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
-        register(context, DUSKY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.DUSKY_LOG.get()),
-                new ForkingTrunkPlacer(4,1,2),
-                BlockStateProvider.simple(ModBlocks.DUSKY_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+        register(context, DUSKY_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(ModBlocks.DUSKY_LOG.get()),
+                new ForkingTrunkPlacer(4, 1, 2),
+                BlockStateProvider.simple(ModBlocks.DUSKY_LEAVES.get()), new BlobFoliagePlacer(ConstantInt.of(1), ConstantInt.of(1), 2),
                 new TwoLayersFeatureSize(1, 0, 1)).build());
     }
 

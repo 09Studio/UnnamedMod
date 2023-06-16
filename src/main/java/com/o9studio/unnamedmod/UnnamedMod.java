@@ -68,6 +68,7 @@ public class UnnamedMod
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VANILLA.getId(), ModBlocks.POTTED_VANILLA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_ROSE.getId(), ModBlocks.POTTED_WHITE_ROSE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.DUSKY_SAPLING.getId(), ModBlocks.POTTED_DUSKY_SAPLING);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VERA_SAPLING.getId(), ModBlocks.POTTED_VERA_SAPLING);
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.THICK,
                     Items.WITHER_ROSE, ModPotions.DECAY.get()));
@@ -158,6 +159,7 @@ public class UnnamedMod
             event.accept(ModBlocks.DUSKY_PRESSURE_PLATE);
             event.accept(ModBlocks.DUSKY_BUTTON);
             event.accept(ModItems.DUSKY_SIGN);
+            event.accept(ModBlocks.VERA_SAPLING);
             event.accept(ModBlocks.VERA_LOG);
             event.accept(ModBlocks.STRIPPED_VERA_LOG);
             event.accept(ModBlocks.VERA_WOOD);
@@ -178,6 +180,7 @@ public class UnnamedMod
             event.accept(ModBlocks.MOLDY_END_STONE_BRICK_STAIRS);
             event.accept(ModBlocks.MOLDY_END_STONE_BRICK_SLAB);
             event.accept(ModBlocks.MOLDY_END_STONE_BRICK_WALL);
+            event.accept(ModBlocks.SOUL_JACK_O_LANTERN);
             event.accept(ModBlocks.ACACIA_LEAVES_WALL);
             event.accept(ModBlocks.AZALEA_LEAVES_WALL);
             event.accept(ModBlocks.BIRCH_LEAVES_WALL);

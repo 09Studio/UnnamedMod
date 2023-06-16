@@ -16,8 +16,8 @@ public class ModEntityBlocks {
         public static final RegistryObject<BlockEntityType<SignsBlockEntities>> SIGN_BLOCK_ENTITIES =
                 BLOCK_ENTITIES.register("sign_block_entity", () ->
                         BlockEntityType.Builder.of(SignsBlockEntities::new,
-                                ModBlocks.DUSKY_WALL_SIGN.get(),
-                                ModBlocks.DUSKY_SIGN.get()).build(null));
+                                ModBlocks.DUSKY_WALL_SIGN.get(), ModBlocks.DUSKY_SIGN.get(),
+                                ModBlocks.VERA_WALL_SIGN.get(), ModBlocks.VERA_SIGN.get()).build(null));
 
         public static final RegistryObject<BlockEntityType<CrystalTableEntity>> CRYSTAL_TABLE =
                 BLOCK_ENTITIES.register("crystal_table", () ->
