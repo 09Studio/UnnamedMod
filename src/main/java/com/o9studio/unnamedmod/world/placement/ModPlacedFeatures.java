@@ -19,12 +19,16 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> DUSKY_PLACED_KEY = createKey("dusky_placed");
+    public static final ResourceKey<PlacedFeature> VERA_PLACED_KEY = createKey("vera_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, DUSKY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DUSKY_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.isEmpty(), ModBlocks.DUSKY_SAPLING.get()));
+
+        register(context, VERA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.VERA_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.isEmpty(), ModBlocks.VERA_SAPLING.get()));
     }
 
 

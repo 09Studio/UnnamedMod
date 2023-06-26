@@ -2,6 +2,7 @@ package com.o9studio.unnamedmod.custom.blocks;
 
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
+import com.o9studio.unnamedmod.util.JadeVines;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -65,11 +66,11 @@ public class JadeVinePlantBlock extends GrowingPlantBodyBlock implements Bonemea
 
     @Override
     public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-        return 15;
+        return 60;
     }
 
     @Override
     public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-        return 60;
+        return 15;
     }
 }

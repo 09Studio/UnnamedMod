@@ -18,11 +18,11 @@ public class FlammableWallBlock extends WallBlock {
 
     @Override
     public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-        return 15;
+        return 35;
     }
 
     @Override
     public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-        return 35;
+        return 15;
     }
 }

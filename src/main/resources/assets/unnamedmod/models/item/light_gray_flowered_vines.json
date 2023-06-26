@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "unnamedmod:block/light_gray_flowered_vines"
+    }
+}

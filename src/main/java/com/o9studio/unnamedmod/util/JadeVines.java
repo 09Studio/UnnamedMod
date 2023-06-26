@@ -1,4 +1,4 @@
-package com.o9studio.unnamedmod.custom.blocks;
+package com.o9studio.unnamedmod.util;
 
 import com.o9studio.unnamedmod.core.ModItems;
 import net.minecraft.core.BlockPos;

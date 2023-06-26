@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#V#"
+  ],
+  "key": {
+    "#": {
+      "item": "unnamedmod:paper_flower"
+    },
+    "V": {
+      "item": "minecraft:vine"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:white_flowered_vines",
+    "count": 1
+  }
+}

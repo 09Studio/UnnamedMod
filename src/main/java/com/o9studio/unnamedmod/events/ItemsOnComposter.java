@@ -1,4 +1,4 @@
-package com.o9studio.unnamedmod.util;
+package com.o9studio.unnamedmod.events;
 
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
@@ -45,5 +45,23 @@ public class ItemsOnComposter {
         ComposterBlock.COMPOSTABLES.put(ModBlocks.ROSE.get().asItem(), 0.65F);
         ComposterBlock.COMPOSTABLES.put(ModBlocks.VANILLA.get().asItem(), 0.65F);
         ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_ROSE.get().asItem(), 0.65F);
+
+        ComposterBlock.COMPOSTABLES.put(ModItems.PAPER_FLOWER.get(), 0.2F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.WHITE_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.ORANGE_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.MAGENTA_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.LIGHT_BLUE_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.YELLOW_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.LIME_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.PINK_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.GRAY_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.LIGHT_GRAY_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.CYAN_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.PURPLE_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.BLUE_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.BROWN_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.GREEN_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.RED_FLOWERED_VINES.get().asItem(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(ModBlocks.BLACK_FLOWERED_VINES.get().asItem(), 0.5F);
     }
 }

@@ -4,6 +4,7 @@ import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.custom.blocks.*;
 import com.o9studio.unnamedmod.custom.entities.SignsWoodTypes;
 import com.o9studio.unnamedmod.world.features.trees.DuskyTreeGrower;
+import com.o9studio.unnamedmod.world.features.trees.VeraTreeGrower;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
@@ -121,7 +122,7 @@ public class ModBlocks {
 
     //VERA BLOCKS
     public static final RegistryObject<Block> VERA_SAPLING = registerBlock("vera_sapling",
-            () -> new SaplingBlock(null, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new VeraTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> VERA_LOG = registerBlock("vera_log",
             () -> new FlammableLogsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
@@ -406,6 +407,56 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> VANILLA_CAKE = BLOCKS.register("vanilla_cake",
             () -> new CakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
+
+
+    //FLOWERED VINES
+    public static final RegistryObject<Block> WHITE_FLOWERED_VINES  = registerBlock("white_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.of(Material.REPLACEABLE_PLANT).noCollission().randomTicks().strength(0.2F).sound(SoundType.VINE)));
+
+    public static final RegistryObject<Block> ORANGE_FLOWERED_VINES  = registerBlock("orange_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> MAGENTA_FLOWERED_VINES  = registerBlock("magenta_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> LIGHT_BLUE_FLOWERED_VINES  = registerBlock("light_blue_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> YELLOW_FLOWERED_VINES  = registerBlock("yellow_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> LIME_FLOWERED_VINES  = registerBlock("lime_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> PINK_FLOWERED_VINES  = registerBlock("pink_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> GRAY_FLOWERED_VINES  = registerBlock("gray_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> LIGHT_GRAY_FLOWERED_VINES  = registerBlock("light_gray_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> CYAN_FLOWERED_VINES  = registerBlock("cyan_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> PURPLE_FLOWERED_VINES  = registerBlock("purple_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> BLUE_FLOWERED_VINES  = registerBlock("blue_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> BROWN_FLOWERED_VINES  = registerBlock("brown_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> GREEN_FLOWERED_VINES  = registerBlock("green_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> RED_FLOWERED_VINES  = registerBlock("red_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
+
+    public static final RegistryObject<Block> BLACK_FLOWERED_VINES  = registerBlock("black_flowered_vines",
+            () -> new FlammableVineBlock(BlockBehaviour.Properties.copy(WHITE_FLOWERED_VINES.get())));
 
 
 

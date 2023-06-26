@@ -65,6 +65,8 @@ public class ModItems {
     //GREENERY ITEMS
     public static final RegistryObject<Item> GLASS_JAR = ITEMS.register("glass_jar", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> PAPER_FLOWER = ITEMS.register("paper_flower", () -> new Item(new Item.Properties()));
+
 
     //FOOD & SEEDS ITEMS
     public static final RegistryObject<Item> BLUEBERRIES = ITEMS.register("blueberries", () -> new ItemNameBlockItem(ModBlocks.BLUEBERRY_BUSH.get(),
