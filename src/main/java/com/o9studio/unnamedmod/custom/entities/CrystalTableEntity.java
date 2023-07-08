@@ -4,6 +4,7 @@ import com.o9studio.unnamedmod.core.ModEntityBlocks;
 import com.o9studio.unnamedmod.core.ModItems;
 import com.o9studio.unnamedmod.custom.recipe.CrystalTableRecipe;
 import com.o9studio.unnamedmod.custom.screens.CrystalTableMenu;
+import com.o9studio.unnamedmod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -160,10 +161,7 @@ public class CrystalTableEntity extends BlockEntity implements MenuProvider {
 
         Optional<CrystalTableRecipe> recipe = level.getRecipeManager().getRecipeFor(CrystalTableRecipe.Type.INSTANCE, inventory, level);
 
-        boolean hasCopperTool = entity.itemHandler.getStackInSlot(0).getItem() == ModItems.COPPER_POLISHER.get();
-        boolean hasIronTool = entity.itemHandler.getStackInSlot(0).getItem() == ModItems.IRON_POLISHER.get();
-        boolean hasDiamondTool = entity.itemHandler.getStackInSlot(0).getItem() == ModItems.DIAMOND_POLISHER.get();
-        boolean hasCorrectTools = hasCopperTool || hasIronTool || hasDiamondTool;
+        boolean hasCorrectTools = entity.itemHandler.getStackInSlot(0).is(ModTags.POLISHERS);
 
         return recipe.isPresent() && hasCorrectTools && canInsertAmountIntoOutputSlot(inventory)
                 && canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem());

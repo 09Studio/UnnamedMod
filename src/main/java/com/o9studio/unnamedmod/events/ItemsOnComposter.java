@@ -15,6 +15,7 @@ public class ItemsOnComposter {
         ComposterBlock.COMPOSTABLES.put(ModItems.JADE_VINE_FRUIT.get(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(ModItems.LETTUCE_SEEDS.get(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(ModItems.LETTUCE.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(ModItems.MOON_FRUIT.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(ModItems.RED_BELL_PEPPER_SEEDS.get(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(ModItems.RED_BELL_PEPPER.get(), 0.65F);
         ComposterBlock.COMPOSTABLES.put(ModItems.STRAWBERRY.get(), 0.3F);

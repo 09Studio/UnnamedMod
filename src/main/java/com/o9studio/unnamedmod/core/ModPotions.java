@@ -23,6 +23,9 @@ public class ModPotions {
     public static final RegistryObject<Potion> DARKNESS = POTIONS.register("darkness",
             () -> new Potion(new MobEffectInstance(MobEffects.DARKNESS, 3600, 0)));
 
+    public static final RegistryObject<Potion> LEVITATION = POTIONS.register("levitation",
+            () -> new Potion(new MobEffectInstance(MobEffects.LEVITATION, 3600, 0)));
+
 
     //LONG POTIONS
     public static final RegistryObject<Potion> LONG_GLOW = POTIONS.register("long_glow",
@@ -31,8 +34,13 @@ public class ModPotions {
     public static final RegistryObject<Potion> LONG_DARKNESS = POTIONS.register("long_darkness",
             () -> new Potion(new MobEffectInstance(MobEffects.DARKNESS, 9600, 0)));
 
+    public static final RegistryObject<Potion> LONG_LEVITATION = POTIONS.register("long_levitation",
+            () -> new Potion(new MobEffectInstance(MobEffects.LEVITATION, 9600, 0)));
+
 
     //POTIONS II
+    public static final RegistryObject<Potion> STRONG_LEVITATION = POTIONS.register("strong_levitation",
+            () -> new Potion(new MobEffectInstance(MobEffects.LEVITATION, 1800, 1)));
 
 
     public static void register(IEventBus eventBus) {

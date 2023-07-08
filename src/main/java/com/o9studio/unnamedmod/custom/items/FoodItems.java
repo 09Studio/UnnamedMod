@@ -20,7 +20,8 @@ public class FoodItems {
 
     public static final FoodProperties COOKED_TROPICAL_FISH = new FoodProperties.Builder().nutrition(5).saturationMod(0.6F).build();
 
-    public static final FoodProperties DARKBERRIES = new FoodProperties.Builder().nutrition(2).saturationMod(0.2F).build();
+    public static final FoodProperties DARKBERRIES = new FoodProperties.Builder().nutrition(2).saturationMod(0.2F)
+            .effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 100, 0), 0.3F).build();
 
     public static final FoodProperties DARKBERRY_SMOOTHIE = new FoodProperties.Builder().nutrition(5).saturationMod(0.8F).alwaysEat().build();
 
@@ -29,6 +30,11 @@ public class FoodItems {
     public static final FoodProperties JADE_VINE_SMOOTHIE = new FoodProperties.Builder().nutrition(5).saturationMod(0.8F).alwaysEat().build();
 
     public static final FoodProperties LETTUCE = new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build();
+
+    public static final FoodProperties MOON_FRUIT = new FoodProperties.Builder().nutrition(4).saturationMod(0.5F)
+            .effect(() -> new MobEffectInstance(MobEffects.LEVITATION, 100, 0), 0.6F).build();
+
+    public static final FoodProperties MOON_SMOOTHIE = new FoodProperties.Builder().nutrition(5).saturationMod(0.8F).alwaysEat().build();
 
     public static final FoodProperties RED_BELL_PEPPER = new FoodProperties.Builder().nutrition(2).saturationMod(0.3F)
             .effect(() -> new MobEffectInstance(MobEffects.HARM, 10, 0), 0.2F).build();
@@ -58,10 +64,10 @@ public class FoodItems {
 
     public static final FoodProperties VANILLA_SMOOTHIE = new FoodProperties.Builder().nutrition(5).saturationMod(0.8F).alwaysEat().build();
 
-    public static final FoodProperties VEGETABLE_SOUP = buildStew(7).build();
+    public static final FoodProperties VEGETABLE_SOUP = buildStew().build();
 
 
-    private static FoodProperties.Builder buildStew(int pNutrition) {
-        return (new FoodProperties.Builder()).nutrition(pNutrition).saturationMod(0.6F);
+    private static FoodProperties.Builder buildStew() {
+        return (new FoodProperties.Builder()).nutrition(7).saturationMod(0.6F);
     }
 }

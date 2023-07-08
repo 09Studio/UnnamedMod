@@ -85,6 +85,15 @@ public class UnnamedMod
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.DARKNESS.get(),
                     Items.REDSTONE, ModPotions.LONG_DARKNESS.get()));
 
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                    ModItems.MOON_FRUIT.get(), ModPotions.LEVITATION.get()));
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.LEVITATION.get(),
+                    Items.REDSTONE, ModPotions.LONG_LEVITATION.get()));
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.LEVITATION.get(),
+                    Items.GLOWSTONE_DUST, ModPotions.STRONG_LEVITATION.get()));
+
             Sheets.addWoodType(SignsWoodTypes.DUSKY);
             Sheets.addWoodType(SignsWoodTypes.VERA);
         });
@@ -111,6 +120,8 @@ public class UnnamedMod
             event.accept(ModItems.JADE_VINE_SMOOTHIE);
             event.accept(ModItems.LETTUCE_SEEDS);
             event.accept(ModItems.LETTUCE);
+            event.accept(ModItems.MOON_FRUIT);
+            event.accept(ModItems.MOON_SMOOTHIE);
             event.accept(ModItems.RED_BELL_PEPPER_SEEDS);
             event.accept(ModItems.RED_BELL_PEPPER);
             event.accept(ModItems.ROASTED_RED_BELL_PEPPER);
