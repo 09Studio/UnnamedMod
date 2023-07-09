@@ -192,6 +192,7 @@
 
   "block.unnamedmod.crystal_table": "Crystal Table",
   "container.crystal_table": "Crystal Table",
+  "entity.minecraft.villager.unnamedmod.crystal_master": "Crystal Master",
 
   "item.unnamedmod.copper_polisher": "Copper Polisher",
   "item.unnamedmod.iron_polisher": "Iron Polisher",

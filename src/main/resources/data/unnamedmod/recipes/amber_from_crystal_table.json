@@ -1,0 +1,11 @@
+{
+  "type": "unnamedmod:crystal_table_recipe",
+  "ingredients": [
+    {
+      "item": "unnamedmod:amber_fragment"
+    }
+  ],
+  "output": {
+    "item": "unnamedmod:amber"
+  }
+}

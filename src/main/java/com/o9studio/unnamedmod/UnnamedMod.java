@@ -45,6 +45,7 @@ public class UnnamedMod
         ModEntityBlocks.register(modEventBus);
         ModMenus.register(modEventBus);
         ModRecipes.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -96,6 +97,8 @@ public class UnnamedMod
 
             Sheets.addWoodType(SignsWoodTypes.DUSKY);
             Sheets.addWoodType(SignsWoodTypes.VERA);
+
+            ModVillagers.registerPOIs();
         });
     }
 
