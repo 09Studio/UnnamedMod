@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:river",
+    "minecraft:lush_caves"
+  ],
+  "features": "unnamedmod:flowering_lily_pad_placed",
+  "step": "vegetal_decoration"
+}

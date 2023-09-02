@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": ["minecraft:mushroom_fields"],
+  "features": "unnamedmod:mycelium_grass_placed",
+  "step": "top_layer_modification"
+}

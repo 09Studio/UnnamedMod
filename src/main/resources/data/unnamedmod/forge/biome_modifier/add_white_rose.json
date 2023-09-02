@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:grove",
+    "minecraft:snowy_slopes"
+  ],
+  "features": "unnamedmod:white_rose_placed",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": ["minecraft:end_highlands"],
+  "features": "unnamedmod:amber_rocks_placed",
+  "step": "top_layer_modification"
+}

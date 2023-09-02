@@ -1,11 +1,20 @@
 {
-  "feature": "unnamedmod:dusky",
+  "feature": "unnamedmod:dusky_key",
   "placement": [
     {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:air"
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": 1,
+            "weight": 9
+          },
+          {
+            "data": 2,
+            "weight": 1
+          }
+        ]
       }
     },
     {
@@ -21,18 +30,6 @@
     },
     {
       "type": "minecraft:biome"
-    },
-    {
-      "type": "minecraft:block_predicate_filter",
-      "predicate": {
-        "type": "minecraft:would_survive",
-        "state": {
-          "Name": "unnamedmod:dusky_sapling",
-          "Properties": {
-            "stage": "0"
-          }
-        }
-      }
     }
   ]
 }

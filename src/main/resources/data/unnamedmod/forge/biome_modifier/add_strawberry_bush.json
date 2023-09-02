@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:forest"
+  ],
+  "features": "unnamedmod:strawberry_bush_placed",
+  "step": "vegetal_decoration"
+}

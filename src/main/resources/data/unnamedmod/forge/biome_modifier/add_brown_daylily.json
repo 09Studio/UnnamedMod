@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:badlands",
+    "minecraft:desert",
+    "minecraft:eroded_badlands",
+    "minecraft:wooded_badlands"
+  ],
+  "features": "unnamedmod:brown_daylily_placed",
+  "step": "vegetal_decoration"
+}

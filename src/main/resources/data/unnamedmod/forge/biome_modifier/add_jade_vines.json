@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": ["minecraft:deep_dark"],
+  "features": "unnamedmod:jade_vines_placed",
+  "step": "underground_decoration"
+}

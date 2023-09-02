@@ -1,8 +1,8 @@
 package com.o9studio.unnamedmod.util.datageneration;
 
 import com.o9studio.unnamedmod.UnnamedMod;
-import com.o9studio.unnamedmod.world.features.ModConfiguredFeatures;
-import com.o9studio.unnamedmod.world.placement.ModPlacedFeatures;
+import com.o9studio.unnamedmod.world.ModConfiguredFeatures;
+import com.o9studio.unnamedmod.world.ModPlacedFeatures;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;

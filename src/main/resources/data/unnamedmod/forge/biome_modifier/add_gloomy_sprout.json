@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:stony_peaks",
+    "minecraft:stony_shore"
+  ],
+  "features": "unnamedmod:gloomy_sprout_placed",
+  "step": "vegetal_decoration"
+}

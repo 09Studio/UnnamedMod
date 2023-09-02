@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": ["minecraft:mushroom_fields"],
+  "features": "unnamedmod:black_iris_placed",
+  "step": "vegetal_decoration"
+}

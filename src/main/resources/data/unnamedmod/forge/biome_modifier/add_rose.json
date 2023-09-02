@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:plains",
+    "minecraft:meadow"
+  ],
+  "features": "unnamedmod:rose_placed",
+  "step": "vegetal_decoration"
+}

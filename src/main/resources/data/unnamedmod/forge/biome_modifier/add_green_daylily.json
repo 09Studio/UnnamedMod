@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:bamboo_jungle",
+    "minecraft:jungle",
+    "minecraft:sparse_jungle"
+  ],
+  "features": "unnamedmod:green_daylily_placed",
+  "step": "vegetal_decoration"
+}

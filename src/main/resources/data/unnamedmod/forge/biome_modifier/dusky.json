@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#forge:is_mushroom",
-  "features": "unnamedmod:dusky_placed",
-  "step": "vegetal_decoration"
-}
