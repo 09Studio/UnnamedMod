@@ -247,7 +247,6 @@ public class UnnamedMod
             event.accept(ModItems.RAW_EMERALD);
             event.accept(ModItems.RAW_DIAMOND);
             event.accept(ModBlocks.PERIDOT_ORE);
-            event.accept(ModBlocks.DEEPSLATE_PERIDOT_ORE);
             event.accept(ModItems.RAW_PERIDOT);
             event.accept(ModItems.PERIDOT);
             event.accept(ModBlocks.PERIDOT_BLOCK);
@@ -256,17 +255,14 @@ public class UnnamedMod
             event.accept(ModItems.RQ);
             event.accept(ModBlocks.RQ_BLOCK);
             event.accept(ModBlocks.RUBY_ORE);
-            event.accept(ModBlocks.DEEPSLATE_RUBY_ORE);
             event.accept(ModItems.RAW_RUBY);
             event.accept(ModItems.RUBY);
             event.accept(ModBlocks.RUBY_BLOCK);
             event.accept(ModBlocks.SAPPHIRE_ORE);
-            event.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
             event.accept(ModItems.RAW_SAPPHIRE);
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModBlocks.SAPPHIRE_BLOCK);
             event.accept(ModBlocks.TOPAZ_ORE);
-            event.accept(ModBlocks.DEEPSLATE_TOPAZ_ORE);
             event.accept(ModItems.RAW_TOPAZ);
             event.accept(ModItems.TOPAZ);
             event.accept(ModBlocks.TOPAZ_BLOCK);

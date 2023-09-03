@@ -217,7 +217,6 @@
   "item.unnamedmod.raw_quartz": "Raw Quartz",
 
   "block.unnamedmod.peridot_ore": "Peridot Ore",
-  "block.unnamedmod.deepslate_peridot_ore": "Deepslate Peridot Ore",
   "item.unnamedmod.raw_peridot": "Raw Peridot",
   "item.unnamedmod.peridot": "Peridot",
   "block.unnamedmod.peridot_block": "Block of Peridot",
@@ -230,19 +229,16 @@
   "tooltip.unnamedmod.rq_block_shift_off": "Hold §6SHIFT §rfor more information.",
 
   "block.unnamedmod.ruby_ore": "Ruby Ore",
-  "block.unnamedmod.deepslate_ruby_ore": "Deepslate Ruby Ore",
   "item.unnamedmod.raw_ruby": "Raw Ruby",
   "item.unnamedmod.ruby": "Ruby",
   "block.unnamedmod.ruby_block": "Block of Ruby",
 
   "block.unnamedmod.sapphire_ore": "Sapphire Ore",
-  "block.unnamedmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "item.unnamedmod.raw_sapphire": "Raw Sapphire",
   "item.unnamedmod.sapphire": "Sapphire",
   "block.unnamedmod.sapphire_block": "Block of Sapphire",
 
   "block.unnamedmod.topaz_ore": "Topaz Ore",
-  "block.unnamedmod.deepslate_topaz_ore": "Deepslate Topaz Ore",
   "item.unnamedmod.raw_topaz": "Raw Topaz",
   "item.unnamedmod.topaz": "Topaz",
   "block.unnamedmod.topaz_block": "Block of Topaz",

@@ -258,10 +258,6 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PERIDOT_ORE = registerBlock("peridot_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
-                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
-
-    public static final RegistryObject<Block> DEEPSLATE_PERIDOT_ORE = registerBlock("deepslate_peridot_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
                     .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
 
     public static final RegistryObject<Block> RQ_ORE = registerBlock("rq_ore",
@@ -270,27 +266,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
-                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
-
-    public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
-                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+                    .strength(2.5F, 2.0F).sound(SoundType.DRIPSTONE_BLOCK), UniformInt.of(3, 7)));
 
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
                     .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
 
-    public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
-                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
-
     public static final RegistryObject<Block> TOPAZ_ORE = registerBlock("topaz_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
-                    .strength(3.0F, 3.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
-
-    public static final RegistryObject<Block> DEEPSLATE_TOPAZ_ORE = registerBlock("deepslate_topaz_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops()
-                    .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
+                    .strength(1.5F, 1.0F).sound(SoundType.STONE), UniformInt.of(3, 7)));
 
 
     //CROP BLOCKS
