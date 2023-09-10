@@ -42,6 +42,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLACK_IRIS_PLACED_KEY = createKey("black_iris_placed");
     public static final ResourceKey<PlacedFeature> BLUE_JASMIN_PLACED_KEY = createKey("blue_jasmin_placed");
     public static final ResourceKey<PlacedFeature> BROWN_DAYLILY_PLACED_KEY = createKey("brown_daylily_placed");
+    public static final ResourceKey<PlacedFeature> CYCLAMEN_PLACED_KEY = createKey("cyclamen_placed");
     public static final ResourceKey<PlacedFeature> FLOWERING_LILY_PAD_PLACED_KEY = createKey("flowering_lily_pad_placed");
     public static final ResourceKey<PlacedFeature> GLOOMY_SPROUT_PLACED_KEY = createKey("gloomy_sprout_placed");
     public static final ResourceKey<PlacedFeature> GREEN_DAYLILY_PLACED_KEY = createKey("green_daylily_placed");
@@ -88,15 +89,15 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(5), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, PERIDOT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PERIDOT_ORE_KEY),
-                commonOrePlacement(10, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(0), VerticalAnchor.belowTop(125))));
+                commonOrePlacement(10, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-100), VerticalAnchor.belowTop(0))));
         register(context, RQ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RQ_ORE_KEY),
                 rareOrePlacement(5, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(100), VerticalAnchor.belowTop(125))));
         register(context, RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBY_ORE_KEY),
-                commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.belowTop(20))));
+                commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-100), VerticalAnchor.belowTop(300))));
         register(context, SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_KEY),
-                commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.belowTop(20))));
+                commonOrePlacement(12, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(0), VerticalAnchor.belowTop(300))));
         register(context, TOPAZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TOPAZ_ORE_KEY),
-                commonOrePlacement(10, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-10), VerticalAnchor.belowTop(100))));
+                commonOrePlacement(10, HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(40), VerticalAnchor.belowTop(100))));
 
         register(context, AFRICAN_DAISY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.AFRICAN_DAISY_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
@@ -105,6 +106,8 @@ public class ModPlacedFeatures {
         register(context, BLUE_JASMIN_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLUE_JASMIN_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
         register(context, BROWN_DAYLILY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BROWN_DAYLILY_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CYCLAMEN_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CYCLAMEN_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, FLOWERING_LILY_PAD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLOWERING_LILY_PAD_KEY),
                 List.of(CountPlacement.of(2), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));

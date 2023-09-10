@@ -9,8 +9,8 @@
           "Name": "unnamedmod:ruby_ore"
         },
         "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "minecraft:stone_ore_replaceables"
+          "block": "minecraft:dripstone_block",
+          "predicate_type": "minecraft:block_match"
         }
       }
     ]

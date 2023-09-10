@@ -62,6 +62,7 @@ public class UnnamedMod
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BLACK_IRIS.getId(), ModBlocks.POTTED_BLACK_IRIS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BLUE_JASMIN.getId(), ModBlocks.POTTED_BLUE_JASMIN);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.BROWN_DAYLILY.getId(), ModBlocks.POTTED_BROWN_DAYLILY);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CYCLAMEN.getId(), ModBlocks.POTTED_CYCLAMEN);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GLOOMY_SPROUT.getId(), ModBlocks.POTTED_GLOOMY_SPROUT);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GREEN_DAYLILY.getId(), ModBlocks.POTTED_GREEN_DAYLILY);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PURPLE_ORCHID.getId(), ModBlocks.POTTED_PURPLE_ORCHID);
@@ -180,6 +181,7 @@ public class UnnamedMod
             event.accept(ModBlocks.BLACK_IRIS);
             event.accept(ModBlocks.BLUE_JASMIN);
             event.accept(ModBlocks.BROWN_DAYLILY);
+            event.accept(ModBlocks.CYCLAMEN);
             event.accept(ModBlocks.FLOWERING_LILY_PAD);
             event.accept(ModBlocks.GLOOMY_SPROUT);
             event.accept(ModBlocks.GLOOMLIGHT);

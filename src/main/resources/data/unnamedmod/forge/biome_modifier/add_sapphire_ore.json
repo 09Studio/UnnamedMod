@@ -1,6 +1,9 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": [
+    "minecraft:grove",
+    "minecraft:snowy_slopes"
+  ],
   "features": "unnamedmod:sapphire_ore_placed",
   "step": "underground_ores"
 }

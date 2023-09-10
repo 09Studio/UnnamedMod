@@ -9,13 +9,13 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.function.Supplier;
 
-public class WhiteRoseBlock extends FlammableFlowerBlock {
+public class CyclamenBlock extends FlammableFlowerBlock {
 
-    public WhiteRoseBlock(Supplier<MobEffect> effectSupplier, int i, Properties properties) {
+    public CyclamenBlock(Supplier<MobEffect> effectSupplier, int i, Properties properties) {
         super(effectSupplier, i, properties);
     }
 
     protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return pState.is(BlockTags.DIRT) || pState.is(Blocks.FARMLAND) || pState.is(Blocks.SNOW_BLOCK);
+        return pState.is(BlockTags.DIRT) || pState.is(Blocks.FARMLAND) || pState.is(Blocks.SNOW_BLOCK) || pState.is(Blocks.POWDER_SNOW);
     }
 }

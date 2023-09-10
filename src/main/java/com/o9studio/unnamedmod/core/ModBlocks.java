@@ -324,6 +324,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BROWN_DAYLILY = registerBlock("brown_daylily",
             () -> new SandFlowerBlock(() -> MobEffects.DIG_SPEED, 4, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
+    public static final RegistryObject<Block> CYCLAMEN = registerBlock("cyclamen",
+            () -> new CyclamenBlock(() -> MobEffects.INVISIBILITY, 5, BlockBehaviour.Properties.copy(Blocks.PINK_TULIP)));
+
     public static final RegistryObject<Block> FLOWERING_LILY_PAD = BLOCKS.register("flowering_lily_pad",
             () -> new WaterlilyBlock(BlockBehaviour.Properties.of(Material.PLANT).instabreak().sound(SoundType.LILY_PAD).noOcclusion()));
 
@@ -344,7 +347,7 @@ public class ModBlocks {
             () -> new FlowerBlock(() -> MobEffects.ABSORPTION, 3, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER)));
 
     public static final RegistryObject<Block> WHITE_ROSE = registerBlock("white_rose",
-            () -> new WhiteRoseBlock(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+            () -> new FlowerBlock(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
 
     //FLOWERPOT BLOCKS
@@ -359,6 +362,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POTTED_BROWN_DAYLILY = BLOCKS.register("potted_brown_daylily",
             () -> new FlowerPotBlock(null, ModBlocks.BROWN_DAYLILY, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_CYCLAMEN = BLOCKS.register("potted_cyclamen",
+            () -> new FlowerPotBlock(null, ModBlocks.CYCLAMEN, BlockBehaviour.Properties.copy(Blocks.POTTED_PINK_TULIP).noOcclusion()));
 
     public static final RegistryObject<Block> POTTED_GLOOMY_SPROUT = BLOCKS.register("potted_gloomy_sprout",
             () -> new FlowerPotBlock(null, ModBlocks.GLOOMY_SPROUT, BlockBehaviour.Properties.copy(Blocks.POTTED_BROWN_MUSHROOM).noOcclusion()));

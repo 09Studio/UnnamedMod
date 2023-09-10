@@ -1,8 +1,10 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "minecraft:flower_forest",
-    "minecraft:forest"
+    "minecraft:grove",
+    "minecraft:snowy_plains",
+    "minecraft:snowy_slopes",
+    "minecraft:snowy_taiga"
   ],
   "features": "unnamedmod:blueberry_bush_placed",
   "step": "vegetal_decoration"
