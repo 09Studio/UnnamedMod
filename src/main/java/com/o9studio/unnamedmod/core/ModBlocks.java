@@ -316,10 +316,10 @@ public class ModBlocks {
             () -> new SandFlowerBlock(() -> MobEffects.WEAKNESS, 4, BlockBehaviour.Properties.copy(Blocks.OXEYE_DAISY)));
 
     public static final RegistryObject<Block> BLACK_IRIS = registerBlock("black_iris",
-            () -> new FlowerBlock(() -> MobEffects.BLINDNESS, 3, BlockBehaviour.Properties.copy(Blocks.AZURE_BLUET)));
+            () -> new FlammableFlowerBlock(() -> MobEffects.BLINDNESS, 3, BlockBehaviour.Properties.copy(Blocks.AZURE_BLUET)));
 
     public static final RegistryObject<Block> BLUE_JASMIN = registerBlock("blue_jasmin",
-            () -> new FlowerBlock(() -> MobEffects.WATER_BREATHING, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+            () -> new FlammableFlowerBlock(() -> MobEffects.WATER_BREATHING, 6, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
     public static final RegistryObject<Block> BROWN_DAYLILY = registerBlock("brown_daylily",
             () -> new SandFlowerBlock(() -> MobEffects.DIG_SPEED, 4, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
@@ -335,19 +335,28 @@ public class ModBlocks {
                     .sound(SoundType.GRASS).lightLevel((blockState) -> 5)));
 
     public static final RegistryObject<Block> GREEN_DAYLILY = registerBlock("green_daylily",
-            () -> new FlowerBlock(() -> MobEffects.LUCK, 5, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+            () -> new FlammableFlowerBlock(() -> MobEffects.LUCK, 5, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> HIBISCUS = registerBlock("hibiscus",
+            () -> new FlammableFlowerBlock(() -> MobEffects.DAMAGE_RESISTANCE, 4, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> LAVENDER = registerBlock("lavender",
+            () -> new FlammableTallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.PEONY)));
 
     public static final RegistryObject<Block> PURPLE_ORCHID = registerBlock("purple_orchid",
-            () -> new FlowerBlock(() -> MobEffects.REGENERATION, 6, BlockBehaviour.Properties.copy(Blocks.BLUE_ORCHID)));
+            () -> new FlammableFlowerBlock(() -> MobEffects.REGENERATION, 6, BlockBehaviour.Properties.copy(Blocks.BLUE_ORCHID)));
 
     public static final RegistryObject<Block> ROSE = registerBlock("rose",
-            () -> new FlowerBlock(() -> MobEffects.DAMAGE_RESISTANCE, 4, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+            () -> new FlammableFlowerBlock(() -> MobEffects.DAMAGE_RESISTANCE, 4, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> SUNDROP = registerBlock("sundrop",
+            () -> new FlammableFlowerBlock(() -> MobEffects.GLOWING, 5, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER).noOcclusion().lightLevel((blockstate) -> 12)));
 
     public static final RegistryObject<Block> VANILLA = registerBlock("vanilla",
-            () -> new FlowerBlock(() -> MobEffects.ABSORPTION, 3, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER)));
+            () -> new FlammableFlowerBlock(() -> MobEffects.ABSORPTION, 3, BlockBehaviour.Properties.copy(Blocks.CORNFLOWER)));
 
     public static final RegistryObject<Block> WHITE_ROSE = registerBlock("white_rose",
-            () -> new FlowerBlock(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+            () -> new FlammableFlowerBlock(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.copy(Blocks.POPPY)));
 
 
     //FLOWERPOT BLOCKS
@@ -372,11 +381,17 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_GREEN_DAYLILY = BLOCKS.register("potted_green_daylily",
             () -> new FlowerPotBlock(null, ModBlocks.GREEN_DAYLILY, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
 
+    public static final RegistryObject<Block> POTTED_HIBISCUS = BLOCKS.register("potted_hibiscus",
+            () -> new FlowerPotBlock(null, ModBlocks.HIBISCUS, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).noOcclusion()));
+
     public static final RegistryObject<Block> POTTED_PURPLE_ORCHID = BLOCKS.register("potted_purple_orchid",
             () -> new FlowerPotBlock(null, ModBlocks.PURPLE_ORCHID, BlockBehaviour.Properties.copy(Blocks.POTTED_BLUE_ORCHID).noOcclusion()));
 
     public static final RegistryObject<Block> POTTED_ROSE = BLOCKS.register("potted_rose",
             () -> new FlowerPotBlock(null, ModBlocks.ROSE, BlockBehaviour.Properties.copy(Blocks.POTTED_POPPY).noOcclusion()));
+
+    public static final RegistryObject<Block> POTTED_SUNDROP = BLOCKS.register("potted_sundrop",
+            () -> new FlowerPotBlock(null, ModBlocks.SUNDROP, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion().lightLevel((blockstate) -> 6)));
 
     public static final RegistryObject<Block> POTTED_VANILLA = BLOCKS.register("potted_vanilla",
             () -> new FlowerPotBlock(null, ModBlocks.VANILLA, BlockBehaviour.Properties.copy(Blocks.POTTED_CORNFLOWER).noOcclusion()));

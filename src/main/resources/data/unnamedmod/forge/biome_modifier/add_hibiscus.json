@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:river",
+    "minecraft:swamp",
+    "minecraft:lush_caves",
+    "minecraft:mangrove_swamp"
+  ],
+  "features": "unnamedmod:hibiscus_placed",
+  "step": "vegetal_decoration"
+}

@@ -5,7 +5,9 @@
     "minecraft:ice_spikes",
     "minecraft:snowy_plains",
     "minecraft:snowy_slopes",
-    "minecraft:snowy_taiga"
+    "minecraft:snowy_taiga",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks"
   ],
   "features": "unnamedmod:cyclamen_placed",
   "step": "vegetal_decoration"

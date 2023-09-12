@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "unnamedmod:block/lavender_bottom"
+    },
+    "half=upper": {
+      "model": "unnamedmod:block/lavender_top"
+    }
+  }
+}

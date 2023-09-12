@@ -67,8 +67,11 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_LILY_PAD_KEY = registerKey("flowering_lily_pad_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GLOOMY_SPROUT_KEY = registerKey("gloomy_sprout_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_DAYLILY_KEY = registerKey("green_daylily_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LAVENDER_KEY = registerKey("lavender_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HIBISCUS_KEY = registerKey("hibiscus_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_ORCHID_KEY = registerKey("purple_orchid_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ROSE_KEY = registerKey("rose_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SUNDROP_KEY = registerKey("sundrop_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_ROSE_KEY = registerKey("white_rose_key");
 
 
@@ -123,34 +126,40 @@ public class ModConfiguredFeatures {
 
         register(context, AMBER_ROCKS_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AMBER_ROCKS.get().defaultBlockState())), List.of(Blocks.END_STONE)));
 
-        register(context, PERIDOT_ORE_KEY, Feature.ORE, new OreConfiguration(PERIDOT_ORE.get(),8));
-        register(context, RQ_ORE_KEY, Feature.ORE, new OreConfiguration(RQ_ORE.get(),12));
-        register(context, RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(RUBY_ORE.get(),12));
-        register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(SAPPHIRE_ORE.get(),12));
-        register(context, TOPAZ_ORE_KEY, Feature.ORE, new OreConfiguration(TOPAZ_ORE.get(),8));
+        register(context, PERIDOT_ORE_KEY, Feature.ORE, new OreConfiguration(PERIDOT_ORE.get(),12));
+        register(context, RQ_ORE_KEY, Feature.ORE, new OreConfiguration(RQ_ORE.get(),10));
+        register(context, RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(RUBY_ORE.get(),15));
+        register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(SAPPHIRE_ORE.get(),15));
+        register(context, TOPAZ_ORE_KEY, Feature.ORE, new OreConfiguration(TOPAZ_ORE.get(),12));
 
         register(context, AFRICAN_DAISY_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(40, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AFRICAN_DAISY.get())))));
         register(context, BLACK_IRIS_KEY, Feature.FLOWER,
-                new RandomPatchConfiguration(64, 6, 6, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLACK_IRIS.get())))));
+                new RandomPatchConfiguration(50, 6, 6, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLACK_IRIS.get())))));
         register(context, BLUE_JASMIN_KEY, Feature.FLOWER,
-                new RandomPatchConfiguration(40, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLUE_JASMIN.get())))));
+                new RandomPatchConfiguration(64, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLUE_JASMIN.get())))));
         register(context, BROWN_DAYLILY_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(40, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BROWN_DAYLILY.get())))));
         register(context, CYCLAMEN_KEY, Feature.FLOWER,
-                new RandomPatchConfiguration(64, 6, 6, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CYCLAMEN.get())))));
+                new RandomPatchConfiguration(64, 8, 8, PlacementUtils.inlinePlaced(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CYCLAMEN.get())))));
         register(context, FLOWERING_LILY_PAD_KEY, Feature.RANDOM_PATCH,
                 FeatureUtils.simpleRandomPatchConfiguration(2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.FLOWERING_LILY_PAD.get())))));
         register(context, GLOOMY_SPROUT_KEY, Feature.RANDOM_PATCH,
                 FeatureUtils.simpleRandomPatchConfiguration(2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GLOOMY_SPROUT.get())))));
         register(context, GREEN_DAYLILY_KEY, Feature.FLOWER,
-                new RandomPatchConfiguration(64, 2, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GREEN_DAYLILY.get())))));
+                new RandomPatchConfiguration(40, 4, 4, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GREEN_DAYLILY.get())))));
+        register(context, HIBISCUS_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(64, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.HIBISCUS.get())))));
+        register(context, LAVENDER_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(50, 4, 4, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LAVENDER.get())))));
         register(context, PURPLE_ORCHID_KEY, Feature.FLOWER,
-                new RandomPatchConfiguration(64, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PURPLE_ORCHID.get())))));
+                new RandomPatchConfiguration(64, 6, 4, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.PURPLE_ORCHID.get())))));
         register(context, ROSE_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(40, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ROSE.get())))));
+        register(context, SUNDROP_KEY, Feature.FLOWER,
+            new RandomPatchConfiguration(64, 6, 6, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SUNDROP.get())))));
         register(context, WHITE_ROSE_KEY, Feature.FLOWER,
-                new RandomPatchConfiguration(40, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_ROSE.get())))));
+                new RandomPatchConfiguration(40, 6, 4, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_ROSE.get())))));
 
     }
 

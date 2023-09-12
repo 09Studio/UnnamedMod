@@ -65,8 +65,10 @@ public class UnnamedMod
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CYCLAMEN.getId(), ModBlocks.POTTED_CYCLAMEN);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GLOOMY_SPROUT.getId(), ModBlocks.POTTED_GLOOMY_SPROUT);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GREEN_DAYLILY.getId(), ModBlocks.POTTED_GREEN_DAYLILY);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.HIBISCUS.getId(), ModBlocks.POTTED_HIBISCUS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PURPLE_ORCHID.getId(), ModBlocks.POTTED_PURPLE_ORCHID);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ROSE.getId(), ModBlocks.POTTED_ROSE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SUNDROP.getId(), ModBlocks.POTTED_SUNDROP);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VANILLA.getId(), ModBlocks.POTTED_VANILLA);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_ROSE.getId(), ModBlocks.POTTED_WHITE_ROSE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.DUSKY_SAPLING.getId(), ModBlocks.POTTED_DUSKY_SAPLING);
@@ -186,9 +188,12 @@ public class UnnamedMod
             event.accept(ModBlocks.GLOOMY_SPROUT);
             event.accept(ModBlocks.GLOOMLIGHT);
             event.accept(ModBlocks.GREEN_DAYLILY);
+            event.accept(ModBlocks.HIBISCUS);
+            event.accept(ModBlocks.LAVENDER);
             event.accept(ModBlocks.MYCELIUM_GRASS);
             event.accept(ModBlocks.PURPLE_ORCHID);
             event.accept(ModBlocks.ROSE);
+            event.accept(ModBlocks.SUNDROP);
             event.accept(ModBlocks.VANILLA);
             event.accept(ModBlocks.WHITE_ROSE);
             event.accept(ModBlocks.SOUL_JACK_O_LANTERN);

@@ -30,6 +30,8 @@ public class ModPaintings {
 
 
     //LARGE PAINTINGS
+    public static final RegistryObject<PaintingVariant> STREAM = PAINTING_VARIANTS.register("stream",
+            () -> new PaintingVariant(32, 32));
 
 
 

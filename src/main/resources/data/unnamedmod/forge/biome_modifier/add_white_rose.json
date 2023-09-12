@@ -2,7 +2,8 @@
   "type": "forge:add_features",
   "biomes": [
     "minecraft:flower_forest",
-    "minecraft:meadow"
+    "minecraft:forest",
+    "minecraft:sunflower_plains"
   ],
   "features": "unnamedmod:white_rose_placed",
   "step": "vegetal_decoration"
