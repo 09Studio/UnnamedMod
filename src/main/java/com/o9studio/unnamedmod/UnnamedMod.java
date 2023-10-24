@@ -7,6 +7,7 @@ import com.o9studio.unnamedmod.custom.entities.SignsWoodTypes;
 import com.o9studio.unnamedmod.custom.screens.CrystalTableScreen;
 import com.o9studio.unnamedmod.events.ItemsOnComposter;
 import com.o9studio.unnamedmod.util.BetterBrewingRecipe;
+import com.o9studio.unnamedmod.world.ModLootModifier;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
@@ -46,6 +47,7 @@ public class UnnamedMod
         ModMenus.register(modEventBus);
         ModRecipes.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModLootModifier.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

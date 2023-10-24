@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "entries": [
+    "unnamedmod:blueberries_in_snowy",
+    "unnamedmod:blueberries_in_taiga",
+    "unnamedmod:amber_in_end",
+    "unnamedmod:strawberries_in_plains",
+    "unnamedmod:iron_polisher_in_ws",
+    "unnamedmod:copper_polisher_in_ws",
+    "unnamedmod:bronze_rod_in_ts",
+    "unnamedmod:paper_flower_in_mason",
+    "unnamedmod:glass_jar_in_mason",
+    "unnamedmod:lettuce_in_snowy",
+    "unnamedmod:tomato_in_taiga",
+    "unnamedmod:rotten_tomato_in_taiga",
+    "unnamedmod:vanilla_in_savanna",
+    "unnamedmod:red_bell_pepper_in_plains",
+    "unnamedmod:moon_fruit_in_end",
+    "unnamedmod:jade_fruit_in_deep_dark"
+  ]
+}
