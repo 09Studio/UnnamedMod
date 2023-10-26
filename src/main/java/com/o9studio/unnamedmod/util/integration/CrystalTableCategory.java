@@ -52,6 +52,6 @@ public class CrystalTableCategory implements IRecipeCategory<CrystalTableRecipe>
     public void setRecipe(IRecipeLayoutBuilder builder, CrystalTableRecipe recipe, IFocusGroup focuses) {
         builder.addSlot(RecipeIngredientRole.INPUT, 80, 25).addIngredients(recipe.getIngredients().get(0));
 
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 134, 45).addItemStack(recipe.getResultItem());
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 134, 45).addItemStack(recipe.getResultItem(null));
     }
 }

@@ -3,7 +3,7 @@ package com.o9studio.unnamedmod;
 import com.mojang.logging.LogUtils;
 import com.o9studio.unnamedmod.core.*;
 import com.o9studio.unnamedmod.custom.ModTabs;
-import com.o9studio.unnamedmod.custom.entities.SignsWoodTypes;
+import com.o9studio.unnamedmod.util.SignsWoodTypes;
 import com.o9studio.unnamedmod.custom.screens.CrystalTableScreen;
 import com.o9studio.unnamedmod.events.ItemsOnComposter;
 import com.o9studio.unnamedmod.util.BetterBrewingRecipe;
@@ -20,7 +20,7 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -39,6 +39,7 @@ public class UnnamedMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModPaintings.PAINTING_VARIANTS.register(modEventBus);
@@ -102,14 +103,12 @@ public class UnnamedMod
 
             Sheets.addWoodType(SignsWoodTypes.DUSKY);
             Sheets.addWoodType(SignsWoodTypes.VERA);
-
-            ModVillagers.registerPOIs();
         });
     }
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event)
+    private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTab() == ModTabs.GREENERY_TAB){
+        if (event.getTab() == ModTabs.GREENERY_TAB.get()){
             event.accept(ModItems.WHAT_ITEM);
             event.accept(ModBlocks.NOP_BLOCK);
             event.accept(ModBlocks.COPPER_BARS);
@@ -236,7 +235,7 @@ public class UnnamedMod
             event.accept(ModBlocks.WARPED_WART_WALL);
         }
 
-        if (event.getTab() == ModTabs.CRYSTALS_TAB){
+        if (event.getTab() == ModTabs.CRYSTALS_TAB.get()){
             event.accept(ModBlocks.CRYSTAL_TABLE);
             event.accept(ModItems.COPPER_POLISHER);
             event.accept(ModItems.IRON_POLISHER);

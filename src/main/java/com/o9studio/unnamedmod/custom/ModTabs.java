@@ -2,26 +2,27 @@ package com.o9studio.unnamedmod.custom;
 
 import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.core.ModItems;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.event.CreativeModeTabEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
-@Mod.EventBusSubscriber(modid = UnnamedMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModTabs {
-    public static CreativeModeTab GREENERY_TAB;
-    public static CreativeModeTab CRYSTALS_TAB;
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MOD_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, UnnamedMod.MOD_ID);
 
-    @SubscribeEvent
-    public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
-        GREENERY_TAB = event.registerCreativeModeTab(new ResourceLocation(UnnamedMod.MOD_ID, "greenery_tab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.BLUEBERRY_SMOOTHIE.get())).title(Component.translatable("creativemodetab.greenery_tab")));
+    public static RegistryObject<CreativeModeTab> GREENERY_TAB = CREATIVE_MOD_TABS.register("greenery_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BLUEBERRY_SMOOTHIE.get()))
+                    .title(Component.translatable("creativemodetab.greenery_tab")).build());
 
-        CRYSTALS_TAB = event.registerCreativeModeTab(new ResourceLocation(UnnamedMod.MOD_ID, "crystals_tab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.AMBER.get())).title(Component.translatable("creativemodetab.crystals_tab")));
+    public static RegistryObject<CreativeModeTab> CRYSTALS_TAB = CREATIVE_MOD_TABS.register("crystals_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMBER.get()))
+                    .title(Component.translatable("creativemodetab.crystals_tab")).build());
 
+
+    public static void  register(IEventBus eventBus) {
+        CREATIVE_MOD_TABS.register(eventBus);
     }
 }

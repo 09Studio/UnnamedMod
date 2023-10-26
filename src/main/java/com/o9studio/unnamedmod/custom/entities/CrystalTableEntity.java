@@ -164,7 +164,7 @@ public class CrystalTableEntity extends BlockEntity implements MenuProvider {
         boolean hasCorrectTools = entity.itemHandler.getStackInSlot(0).is(ModTags.POLISHERS);
 
         return recipe.isPresent() && hasCorrectTools && canInsertAmountIntoOutputSlot(inventory)
-                && canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem());
+                && canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem(null));
     }
 
     private static void craftItem(CrystalTableEntity entity) {
@@ -183,7 +183,7 @@ public class CrystalTableEntity extends BlockEntity implements MenuProvider {
 
             entity.itemHandler.extractItem(1,1, false);
 
-            entity.itemHandler.setStackInSlot(2, new ItemStack(recipe.get().getResultItem().getItem(),
+            entity.itemHandler.setStackInSlot(2, new ItemStack(recipe.get().getResultItem(null).getItem(),
                     entity.itemHandler.getStackInSlot(2).getCount() + 1));
 
             entity.resetProgress();

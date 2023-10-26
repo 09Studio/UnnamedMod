@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="unnamedmod"
-version="0.5.0-1.19.3"
+version="0.5.0-1.20"
 displayName="Unnamed Mod"
 logoFile="examplemod.png"
 credits="Thanks for using my mod in your Minecraft world"
@@ -26,6 +26,6 @@ For a complete list of new things, and a guide, check:
 [[dependencies.unnamedmod]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.3,1.20)"
+    versionRange="[1.19.3,1.21)"
     ordering="NONE"
     side="BOTH"
