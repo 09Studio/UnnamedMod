@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:old_growth_birch_forest",
+    "minecraft:birch_forest"
+  ],
+  "features": "unnamedmod:clover_placed",
+  "step": "vegetal_decoration"
+}

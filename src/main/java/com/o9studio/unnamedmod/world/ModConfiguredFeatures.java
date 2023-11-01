@@ -23,6 +23,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.WeightedListInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.PinkPetalsBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -63,6 +64,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_IRIS_KEY = registerKey("black_iris_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_JASMIN_KEY = registerKey("blue_jasmin_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BROWN_DAYLILY_KEY = registerKey("brown_daylily_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CLOVER_KEY = registerKey("clover_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CYCLAMEN_KEY = registerKey("cyclamen_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FLOWERING_LILY_PAD_KEY = registerKey("flowering_lily_pad_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GLOOMY_SPROUT_KEY = registerKey("gloomy_sprout_key");
@@ -160,6 +162,15 @@ public class ModConfiguredFeatures {
             new RandomPatchConfiguration(64, 6, 6, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.SUNDROP.get())))));
         register(context, WHITE_ROSE_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(40, 6, 4, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_ROSE.get())))));
+
+        SimpleWeightedRandomList.Builder<BlockState> cloverBuilder = SimpleWeightedRandomList.builder();
+        for(int i = 1; i <= 4; ++i) {
+            for(Direction direction : Direction.Plane.HORIZONTAL) {
+                cloverBuilder.add(ModBlocks.CLOVER.get().defaultBlockState().setValue(PinkPetalsBlock.AMOUNT, Integer.valueOf(i)).setValue(PinkPetalsBlock.FACING, direction), 1);
+            }
+        }
+        register(context, CLOVER_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(35, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(new WeightedStateProvider(cloverBuilder)))));
 
     }
 

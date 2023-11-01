@@ -1,0 +1,160 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover1"
+      },
+      "when": {
+        "facing": "north",
+        "flower_amount": "1|2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover1",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "flower_amount": "1|2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover1",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "flower_amount": "1|2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover1",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "flower_amount": "1|2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover2"
+      },
+      "when": {
+        "facing": "north",
+        "flower_amount": "2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover2",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "flower_amount": "2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover2",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "flower_amount": "2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover2",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "flower_amount": "2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover3"
+      },
+      "when": {
+        "facing": "north",
+        "flower_amount": "3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover3",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "flower_amount": "3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover3",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "flower_amount": "3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover3",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "flower_amount": "3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover4"
+      },
+      "when": {
+        "facing": "north",
+        "flower_amount": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover4",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "flower_amount": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover4",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "flower_amount": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "unnamedmod:block/clover4",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "flower_amount": "4"
+      }
+    }
+  ]
+}

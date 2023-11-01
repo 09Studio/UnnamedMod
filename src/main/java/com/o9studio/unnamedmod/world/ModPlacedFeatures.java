@@ -42,6 +42,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLACK_IRIS_PLACED_KEY = createKey("black_iris_placed");
     public static final ResourceKey<PlacedFeature> BLUE_JASMIN_PLACED_KEY = createKey("blue_jasmin_placed");
     public static final ResourceKey<PlacedFeature> BROWN_DAYLILY_PLACED_KEY = createKey("brown_daylily_placed");
+    public static final ResourceKey<PlacedFeature> CLOVER_PLACED_KEY = createKey("clover_placed");
     public static final ResourceKey<PlacedFeature> CYCLAMEN_PLACED_KEY = createKey("cyclamen_placed");
     public static final ResourceKey<PlacedFeature> FLOWERING_LILY_PAD_PLACED_KEY = createKey("flowering_lily_pad_placed");
     public static final ResourceKey<PlacedFeature> GLOOMY_SPROUT_PLACED_KEY = createKey("gloomy_sprout_placed");
@@ -110,6 +111,8 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
         register(context, BROWN_DAYLILY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BROWN_DAYLILY_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(50), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, CLOVER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CLOVER_KEY),
+                List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 10), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
         register(context, CYCLAMEN_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CYCLAMEN_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(50), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, FLOWERING_LILY_PAD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FLOWERING_LILY_PAD_KEY),

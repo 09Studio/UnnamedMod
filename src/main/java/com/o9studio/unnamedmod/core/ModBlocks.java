@@ -336,6 +336,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BROWN_DAYLILY = registerBlock("brown_daylily",
             () -> new SandFlowerBlock(() -> MobEffects.DIG_SPEED, 4, BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
+    public static final RegistryObject<Block> CLOVER = registerBlock("clover",
+            () -> new CloverBlock(BlockBehaviour.Properties.copy(Blocks.PINK_PETALS)));
+
     public static final RegistryObject<Block> CYCLAMEN = registerBlock("cyclamen",
             () -> new CyclamenBlock(() -> MobEffects.INVISIBILITY, 5, BlockBehaviour.Properties.copy(Blocks.PINK_TULIP)));
 

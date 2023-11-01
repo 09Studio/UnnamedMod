@@ -184,6 +184,7 @@ public class UnnamedMod
             event.accept(ModBlocks.BLACK_IRIS);
             event.accept(ModBlocks.BLUE_JASMIN);
             event.accept(ModBlocks.BROWN_DAYLILY);
+            event.accept(ModBlocks.CLOVER);
             event.accept(ModBlocks.CYCLAMEN);
             event.accept(ModBlocks.FLOWERING_LILY_PAD);
             event.accept(ModBlocks.GLOOMY_SPROUT);
