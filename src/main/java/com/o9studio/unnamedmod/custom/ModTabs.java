@@ -14,11 +14,11 @@ public class ModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MOD_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, UnnamedMod.MOD_ID);
 
     public static RegistryObject<CreativeModeTab> GREENERY_TAB = CREATIVE_MOD_TABS.register("greenery_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BLUEBERRY_SMOOTHIE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BLUEBERRIES.get()))
                     .title(Component.translatable("creativemodetab.greenery_tab")).build());
 
     public static RegistryObject<CreativeModeTab> CRYSTALS_TAB = CREATIVE_MOD_TABS.register("crystals_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMBER.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.AMBER_FRAGMENT.get()))
                     .title(Component.translatable("creativemodetab.crystals_tab")).build());
 
 
