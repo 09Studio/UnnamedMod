@@ -1,6 +1,8 @@
 package com.o9studio.unnamedmod.core;
 
 import com.o9studio.unnamedmod.UnnamedMod;
+import com.o9studio.unnamedmod.custom.entities.BoatsEntities;
+import com.o9studio.unnamedmod.custom.items.BoatsItems;
 import com.o9studio.unnamedmod.custom.items.FoodItems;
 import com.o9studio.unnamedmod.custom.items.GlassJarItem;
 import net.minecraft.world.item.*;
@@ -66,6 +68,18 @@ public class ModItems {
     public static final RegistryObject<Item> GLASS_JAR = ITEMS.register("glass_jar", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PAPER_FLOWER = ITEMS.register("paper_flower", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DUSKY_BOAT = ITEMS.register("dusky_boat",
+            () -> new BoatsItems(false, BoatsEntities.Type.DUSKY, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> DUSKY_CHEST_BOAT = ITEMS.register("dusky_chest_boat",
+            () -> new BoatsItems(true, BoatsEntities.Type.DUSKY, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> VERA_BOAT = ITEMS.register("vera_boat",
+            () -> new BoatsItems(false, BoatsEntities.Type.VERA, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> VERA_CHEST_BOAT = ITEMS.register("vera_chest_boat",
+            () -> new BoatsItems(true, BoatsEntities.Type.VERA, new Item.Properties().stacksTo(1)));
 
 
     //FOOD & SEEDS ITEMS

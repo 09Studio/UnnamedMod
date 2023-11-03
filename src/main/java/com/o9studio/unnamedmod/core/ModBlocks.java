@@ -343,7 +343,7 @@ public class ModBlocks {
             () -> new CyclamenBlock(() -> MobEffects.INVISIBILITY, 5, BlockBehaviour.Properties.copy(Blocks.PINK_TULIP)));
 
     public static final RegistryObject<Block> FLOWERING_LILY_PAD = BLOCKS.register("flowering_lily_pad",
-            () -> new WaterlilyBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).instabreak().sound(SoundType.LILY_PAD).noOcclusion().pushReaction(PushReaction.DESTROY)));
+            () -> new WaterlilyBlock(BlockBehaviour.Properties.copy(Blocks.LILY_PAD)));
 
     public static final RegistryObject<Block> GLOOMY_SPROUT = registerBlock("gloomy_sprout",
             () -> new GloomySproutBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).noCollission().randomTicks().instabreak()

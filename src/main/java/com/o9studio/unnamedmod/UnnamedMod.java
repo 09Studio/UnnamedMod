@@ -7,11 +7,13 @@ import com.o9studio.unnamedmod.util.SignsWoodTypes;
 import com.o9studio.unnamedmod.custom.screens.CrystalTableScreen;
 import com.o9studio.unnamedmod.events.ItemsOnComposter;
 import com.o9studio.unnamedmod.util.BetterBrewingRecipe;
+import com.o9studio.unnamedmod.util.renderers.BoatsRenderer;
 import com.o9studio.unnamedmod.world.ModLootModifier;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
@@ -44,6 +46,7 @@ public class UnnamedMod
         ModBlocks.register(modEventBus);
         ModPaintings.PAINTING_VARIANTS.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModEntities.register(modEventBus);
         ModEntityBlocks.register(modEventBus);
         ModMenus.register(modEventBus);
         ModRecipes.register(modEventBus);
@@ -164,6 +167,8 @@ public class UnnamedMod
             event.accept(ModBlocks.DUSKY_PRESSURE_PLATE);
             event.accept(ModBlocks.DUSKY_BUTTON);
             event.accept(ModItems.DUSKY_SIGN);
+            event.accept(ModItems.DUSKY_BOAT);
+            event.accept(ModItems.DUSKY_CHEST_BOAT);
             event.accept(ModBlocks.VERA_SAPLING);
             event.accept(ModBlocks.VERA_LOG);
             event.accept(ModBlocks.STRIPPED_VERA_LOG);
@@ -180,6 +185,8 @@ public class UnnamedMod
             event.accept(ModBlocks.VERA_PRESSURE_PLATE);
             event.accept(ModBlocks.VERA_BUTTON);
             event.accept(ModItems.VERA_SIGN);
+            event.accept(ModItems.VERA_BOAT);
+            event.accept(ModItems.VERA_CHEST_BOAT);
             event.accept(ModBlocks.AFRICAN_DAISY);
             event.accept(ModBlocks.BLACK_IRIS);
             event.accept(ModBlocks.BLUE_JASMIN);
@@ -289,6 +296,8 @@ public class UnnamedMod
             WoodType.register(SignsWoodTypes.DUSKY);
             WoodType.register(SignsWoodTypes.VERA);
             BlockEntityRenderers.register(ModEntityBlocks.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), p_174010_ -> new BoatsRenderer(p_174010_, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), p_174010_ -> new BoatsRenderer(p_174010_, true));
 
             MenuScreens.register(ModMenus.CRYSTAL_TABLE_MENU.get(), CrystalTableScreen::new);
         }

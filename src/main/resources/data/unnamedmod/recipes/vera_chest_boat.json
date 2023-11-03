@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chest_boat",
+  "ingredients": [
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "item": "unnamedmod:vera_boat"
+    }
+  ],
+  "result": {
+    "item": "unnamedmod:vera_chest_boat"
+  }
+}

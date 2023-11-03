@@ -2,6 +2,8 @@
   "item.unnamedmod.what_item": "What",
   "block.unnamedmod.nop_block": "Nop",
 
+  "entity.unnamedmod.mod_chest_boat": "Boat With Chest",
+
   "block.unnamedmod.copper_bars": "Copper Bars",
   "block.unnamedmod.gold_bars": "Gold Bars",
 
@@ -24,10 +26,10 @@
   "item.unnamedmod.jade_vine_smoothie": "Jade Vine Smoothie",
   "item.unnamedmod.lettuce_seeds": "Lettuce Seeds",
   "item.unnamedmod.lettuce": "Lettuce",
+  "block.unnamedmod.lettuce_crop": "Lettuce Crop",
   "item.unnamedmod.moon_fruit": "Moon Fruit",
   "block.unnamedmod.moon_flower": "Moon Flower",
   "item.unnamedmod.moon_smoothie": "Moon Smoothie",
-  "block.unnamedmod.lettuce_crop": "Lettuce Crop",
   "item.unnamedmod.red_bell_pepper_seeds": "Red Bell Pepper Seeds",
   "item.unnamedmod.red_bell_pepper": "Red Bell Pepper",
   "block.unnamedmod.red_bell_pepper_crop": "Red Bell Pepper Crop",
@@ -103,6 +105,8 @@
   "block.unnamedmod.dusky_pressure_plate": "Dusky Pressure Plate",
   "block.unnamedmod.dusky_button": "Dusky Button",
   "block.unnamedmod.dusky_sign": "Dusky Sign",
+  "item.unnamedmod.dusky_boat": "Dusky Boat",
+  "item.unnamedmod.dusky_chest_boat": "Dusky Chest Boat",
 
   "block.unnamedmod.vera_sapling": "Vera Sapling",
   "block.unnamedmod.vera_log": "Vera Log",
@@ -120,6 +124,8 @@
   "block.unnamedmod.vera_pressure_plate": "Vera Pressure Plate",
   "block.unnamedmod.vera_button": "Vera Button",
   "block.unnamedmod.vera_sign": "Vera Sign",
+  "item.unnamedmod.vera_boat": "Vera Boat",
+  "item.unnamedmod.vera_chest_boat": "Vera Chest Boat",
 
   "block.unnamedmod.dire_mold": "Dire Mold",
   "block.unnamedmod.moldy_end_stone_bricks": "Moldy End Stone Bricks",
@@ -265,8 +271,8 @@
   "block.unnamedmod.topaz_block": "Block of Topaz",
 
   
-  "unnamedmod.advancements.crystal_table.title": "Crystal Mod",
-  "unnamedmod.advancements.crystal_table.description": "Obtain a Crystal Table",
+  "unnamedmod.advancements.crystal_table.title": "Crystals",
+  "unnamedmod.advancements.crystal_table.description": "Expand your list of materials",
   "unnamedmod.advancements.rq.title": "A Powerful Material",
   "unnamedmod.advancements.rq.description": "Obtain a Rainbow Quartz",
   "unnamedmod.advancements.rq_armor.title": "Cover Me In Crystals",
