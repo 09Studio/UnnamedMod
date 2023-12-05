@@ -168,8 +168,14 @@ public class ModItems {
     public static final RegistryObject<Item> DUSKY_SIGN = ITEMS.register("dusky_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.DUSKY_SIGN.get(), ModBlocks.DUSKY_WALL_SIGN.get()));
 
+    public static final RegistryObject<Item> DUSKY_HANGING_SIGN = ITEMS.register("dusky_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.DUSKY_HANGING_SIGN.get(), ModBlocks.DUSKY_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
     public static final RegistryObject<Item> VERA_SIGN = ITEMS.register("vera_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.VERA_SIGN.get(), ModBlocks.VERA_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> VERA_HANGING_SIGN = ITEMS.register("vera_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.VERA_HANGING_SIGN.get(), ModBlocks.VERA_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<BlockItem> FLOWERING_LILY_PAD = ITEMS.register("flowering_lily_pad",
             () -> new PlaceOnWaterBlockItem(ModBlocks.FLOWERING_LILY_PAD.get(), new Item.Properties()));

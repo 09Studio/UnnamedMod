@@ -2,8 +2,8 @@ package com.o9studio.unnamedmod.core;
 
 import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.custom.blocks.*;
-import com.o9studio.unnamedmod.util.SignsWoodTypes;
 import com.o9studio.unnamedmod.util.ModBlockSetTypes;
+import com.o9studio.unnamedmod.util.ModWoodTypes;
 import com.o9studio.unnamedmod.world.trees.DuskyTreeGrower;
 import com.o9studio.unnamedmod.world.trees.VeraTreeGrower;
 import net.minecraft.core.BlockPos;
@@ -123,11 +123,17 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> DUSKY_BUTTON = registerBlock("dusky_button", () -> woodenButton(ModBlockSetTypes.DUSKY));
 
-    public static final RegistryObject<Block> DUSKY_WALL_SIGN = BLOCKS.register("dusky_wall_sign",
-            () -> new WallSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), SignsWoodTypes.DUSKY));
+ public static final RegistryObject<Block> DUSKY_SIGN = BLOCKS.register("dusky_sign",
+            () -> new StandingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.DUSKY));
 
-    public static final RegistryObject<Block> DUSKY_SIGN = BLOCKS.register("dusky_sign",
-            () -> new StandingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), SignsWoodTypes.DUSKY));
+    public static final RegistryObject<Block> DUSKY_WALL_SIGN = BLOCKS.register("dusky_wall_sign",
+            () -> new WallSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.DUSKY));
+
+    public static final RegistryObject<Block> DUSKY_HANGING_SIGN = BLOCKS.register("dusky_hanging_sign",
+            () -> new HangingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.DUSKY));
+
+    public static final RegistryObject<Block> DUSKY_WALL_HANGING_SIGN = BLOCKS.register("dusky_wall_hanging_sign",
+            () -> new WallHangingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.DUSKY));
 
 
     //VERA BLOCKS
@@ -179,11 +185,17 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> VERA_BUTTON = registerBlock("vera_button", () -> woodenButton(ModBlockSetTypes.VERA));
 
-    public static final RegistryObject<Block> VERA_WALL_SIGN = BLOCKS.register("vera_wall_sign",
-            () -> new WallSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), SignsWoodTypes.VERA));
-
     public static final RegistryObject<Block> VERA_SIGN = BLOCKS.register("vera_sign",
-            () -> new StandingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), SignsWoodTypes.VERA));
+            () -> new StandingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.VERA));
+
+    public static final RegistryObject<Block> VERA_WALL_SIGN = BLOCKS.register("vera_wall_sign",
+            () -> new WallSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.VERA));
+
+    public static final RegistryObject<Block> VERA_HANGING_SIGN = BLOCKS.register("vera_hanging_sign",
+            () -> new HangingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.VERA));
+
+    public static final RegistryObject<Block> VERA_WALL_HANGING_SIGN = BLOCKS.register("vera_wall_hanging_sign",
+            () -> new WallHangingSignsBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.VERA));
 
 
     //WALL BLOCKS

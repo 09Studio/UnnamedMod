@@ -8,12 +8,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class StandingSignsBlocks extends StandingSignBlock {
-    public StandingSignsBlocks(Properties properties, WoodType woodType) {
-        super(properties, woodType);
+    public StandingSignsBlocks(Properties pProperties, WoodType pType) {
+        super(pProperties, pType);
     }
 
     @Override
-    public BlockEntity newBlockEntity(BlockPos pos, BlockState blockState) {
-        return new SignsBlockEntities(pos, blockState);
+    public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
+        return new SignsBlockEntities(pPos, pState);
     }
 }

@@ -105,6 +105,7 @@
   "block.unnamedmod.dusky_pressure_plate": "Placa de presión grisácea",
   "block.unnamedmod.dusky_button": "Botón grisáceo",
   "block.unnamedmod.dusky_sign": "Cartel grisáceo",
+  "block.unnamedmod.dusky_hanging_sign": "Cartel colgante grisáceo",
   "item.unnamedmod.dusky_boat": "Barca grisácea",
   "item.unnamedmod.dusky_chest_boat": "Barca grisácea con cofre",
 
@@ -124,6 +125,7 @@
   "block.unnamedmod.vera_pressure_plate": "Placa de presión de vera",
   "block.unnamedmod.vera_button": "Botón de vera",
   "block.unnamedmod.vera_sign": "Cartel de vera",
+  "block.unnamedmod.vera_hanging_sign": "Cartel colgante de vera",
   "item.unnamedmod.vera_boat": "Barca de vera",
   "item.unnamedmod.vera_chest_boat": "Barca de vera con cofre",
 

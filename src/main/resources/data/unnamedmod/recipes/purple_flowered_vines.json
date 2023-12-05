@@ -1,5 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "flowering_vines",
   "ingredients": [
     {
       "tag": "unnamedmod:flowered_vines"

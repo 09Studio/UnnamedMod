@@ -7,12 +7,12 @@ import net.minecraft.world.level.block.entity.SignBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class SignsBlockEntities extends SignBlockEntity {
-    public SignsBlockEntities(BlockPos pos, BlockState blockState) {
-        super(pos, blockState);
+    public SignsBlockEntities(BlockPos pPos, BlockState pBlockState) {
+        super(ModEntityBlocks.MOD_SIGN.get(), pPos, pBlockState);
     }
 
     @Override
     public BlockEntityType<?> getType() {
-        return ModEntityBlocks.SIGN_BLOCK_ENTITIES.get();
+        return ModEntityBlocks.MOD_SIGN.get();
     }
 }

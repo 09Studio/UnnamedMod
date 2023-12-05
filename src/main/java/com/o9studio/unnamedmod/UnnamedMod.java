@@ -3,10 +3,10 @@ package com.o9studio.unnamedmod;
 import com.mojang.logging.LogUtils;
 import com.o9studio.unnamedmod.core.*;
 import com.o9studio.unnamedmod.custom.ModTabs;
-import com.o9studio.unnamedmod.util.SignsWoodTypes;
 import com.o9studio.unnamedmod.custom.screens.CrystalTableScreen;
 import com.o9studio.unnamedmod.events.ItemsOnComposter;
 import com.o9studio.unnamedmod.util.BetterBrewingRecipe;
+import com.o9studio.unnamedmod.util.ModWoodTypes;
 import com.o9studio.unnamedmod.util.renderers.BoatsRenderer;
 import com.o9studio.unnamedmod.world.ModLootModifier;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -103,9 +103,6 @@ public class UnnamedMod
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.LEVITATION.get(),
                     Items.GLOWSTONE_DUST, ModPotions.STRONG_LEVITATION.get()));
-
-            Sheets.addWoodType(SignsWoodTypes.DUSKY);
-            Sheets.addWoodType(SignsWoodTypes.VERA);
         });
     }
 
@@ -167,6 +164,7 @@ public class UnnamedMod
             event.accept(ModBlocks.DUSKY_PRESSURE_PLATE);
             event.accept(ModBlocks.DUSKY_BUTTON);
             event.accept(ModItems.DUSKY_SIGN);
+            event.accept(ModItems.DUSKY_HANGING_SIGN);
             event.accept(ModItems.DUSKY_BOAT);
             event.accept(ModItems.DUSKY_CHEST_BOAT);
             event.accept(ModBlocks.VERA_SAPLING);
@@ -185,6 +183,7 @@ public class UnnamedMod
             event.accept(ModBlocks.VERA_PRESSURE_PLATE);
             event.accept(ModBlocks.VERA_BUTTON);
             event.accept(ModItems.VERA_SIGN);
+            event.accept(ModItems.VERA_HANGING_SIGN);
             event.accept(ModItems.VERA_BOAT);
             event.accept(ModItems.VERA_CHEST_BOAT);
             event.accept(ModBlocks.AFRICAN_DAISY);
@@ -293,9 +292,8 @@ public class UnnamedMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            WoodType.register(SignsWoodTypes.DUSKY);
-            WoodType.register(SignsWoodTypes.VERA);
-            BlockEntityRenderers.register(ModEntityBlocks.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
+            Sheets.addWoodType(ModWoodTypes.VERA);
+            Sheets.addWoodType(ModWoodTypes.DUSKY);
             EntityRenderers.register(ModEntities.MOD_BOAT.get(), p_174010_ -> new BoatsRenderer(p_174010_, false));
             EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), p_174010_ -> new BoatsRenderer(p_174010_, true));
 
