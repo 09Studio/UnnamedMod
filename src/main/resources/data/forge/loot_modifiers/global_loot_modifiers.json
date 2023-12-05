@@ -16,6 +16,13 @@
     "unnamedmod:vanilla_in_savanna",
     "unnamedmod:red_bell_pepper_in_plains",
     "unnamedmod:moon_fruit_in_end",
-    "unnamedmod:jade_fruit_in_deep_dark"
+    "unnamedmod:jade_fruit_in_deep_dark",
+
+    "unnamedmod:bronze_nugget_in_sand",
+    "unnamedmod:bronze_rod_in_sand",
+    "unnamedmod:iron_polisher_in_sand",
+    "unnamedmod:paper_flower_in_sand",
+    "unnamedmod:raw_topaz_in_sand",
+    "unnamedmod:topaz_in_sand"
   ]
 }
