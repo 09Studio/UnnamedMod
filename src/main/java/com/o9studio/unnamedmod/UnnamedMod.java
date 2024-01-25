@@ -30,6 +30,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 @Mod(UnnamedMod.MOD_ID)
 public class UnnamedMod
@@ -52,6 +53,8 @@ public class UnnamedMod
         ModRecipes.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModLootModifier.register(modEventBus);
+
+        GeckoLib.initialize();
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

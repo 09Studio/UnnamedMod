@@ -37,10 +37,10 @@ public class MoonFlowerBlock extends BushBlock implements BonemealableBlock {
     private static final float HURT_SPEED_THRESHOLD = 0.003F;
     public static final int MAX_AGE = 3;
     public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
-    private static final VoxelShape AGE0 = Block.box(1, 0, 1, 15, 4, 15);
-    private static final VoxelShape AGE1 = Block.box(1, 0, 1, 15, 13, 15);
-    private static final VoxelShape AGE2 = Block.box(1, 0, 1, 15, 14, 15);
-    private static final VoxelShape AGE3 = Block.box(1, 0, 1, 15, 16, 15);
+    private static final VoxelShape AGE0 = Block.box(1, 0, 1, 14, 4, 14);
+    private static final VoxelShape AGE1 = Block.box(1, 0, 1, 14, 13, 14);
+    private static final VoxelShape AGE2 = Block.box(1, 0, 1, 14, 15, 14);
+    private static final VoxelShape AGE3 = Block.box(1, 0, 1, 14, 16, 14);
 
     public MoonFlowerBlock(BlockBehaviour.Properties properties) {
         super(properties);
