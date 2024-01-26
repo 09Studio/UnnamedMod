@@ -1,0 +1,69 @@
+{
+  "display": {
+    "icon": {
+      "item": "unnamedmod:glass_jar"
+    },"title": {
+      "translate": "unnamedmod.advancements.all_smoothies.title"
+    },
+    "description": {
+      "translate": "unnamedmod.advancements.all_smoothies.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "minecraft:husbandry/plant_seed",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "unnamedmod:blueberry_smoothie"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:chocolate_smoothie"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:darkberry_smoothie"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:jade_vine_smoothie"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:moon_smoothie"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:strawberry_smoothie"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:sweet_berry_smoothie"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:vanilla_smoothie"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

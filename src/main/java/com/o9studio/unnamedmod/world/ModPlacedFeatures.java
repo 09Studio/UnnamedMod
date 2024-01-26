@@ -31,12 +31,7 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> MYCELIUM_GRASS_PLACED_KEY = createKey("mycelium_grass_placed");
 
-    public static final ResourceKey<PlacedFeature> AMBER_ROCKS_PLACED_KEY = createKey("amber_rocks_placed");
-    public static final ResourceKey<PlacedFeature> PERIDOT_ORE_PLACED_KEY = createKey("peridot_ore_placed");
     public static final ResourceKey<PlacedFeature> RQ_ORE_PLACED_KEY = createKey("rq_ore_placed");
-    public static final ResourceKey<PlacedFeature> RUBY_ORE_PLACED_KEY = createKey("ruby_ore_placed");
-    public static final ResourceKey<PlacedFeature> SAPPHIRE_ORE_PLACED_KEY = createKey("sapphire_ore_placed");
-    public static final ResourceKey<PlacedFeature> TOPAZ_ORE_PLACED_KEY = createKey("topaz_ore_placed");
 
     public static final ResourceKey<PlacedFeature> AFRICAN_DAISY_PLACED_KEY = createKey("african_daisy_placed");
     public static final ResourceKey<PlacedFeature> BLACK_IRIS_PLACED_KEY = createKey("black_iris_placed");
@@ -58,10 +53,6 @@ public class ModPlacedFeatures {
     //HELPERS
     public static List<PlacementModifier> orePlacement(PlacementModifier modifier, PlacementModifier modifier1) {
         return List.of(modifier, InSquarePlacement.spread(), modifier1, BiomeFilter.biome());
-    }
-
-    public static List<PlacementModifier> commonOrePlacement(int veinsPerChunk, PlacementModifier modifier) {
-        return orePlacement(CountPlacement.of(veinsPerChunk), modifier);
     }
 
     public static List<PlacementModifier> rareOrePlacement(int veinsPerChunk, PlacementModifier modifier) {
@@ -89,19 +80,8 @@ public class ModPlacedFeatures {
         register(context, MYCELIUM_GRASS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MYCELIUM_GRASS_KEY),
                 List.of(CountPlacement.of(15), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
-        register(context, AMBER_ROCKS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.AMBER_ROCKS_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(5), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
-
-        register(context, PERIDOT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PERIDOT_ORE_KEY),
-                commonOrePlacement(15, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.belowTop(0))));
         register(context, RQ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RQ_ORE_KEY),
-                rareOrePlacement(30, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(90), VerticalAnchor.belowTop(110))));
-        register(context, RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUBY_ORE_KEY),
-                commonOrePlacement(30, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.belowTop(256))));
-        register(context, SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SAPPHIRE_ORE_KEY),
-                commonOrePlacement(15, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(80), VerticalAnchor.belowTop(256))));
-        register(context, TOPAZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TOPAZ_ORE_KEY),
-                commonOrePlacement(20, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(40), VerticalAnchor.belowTop(120))));
+                rareOrePlacement(30, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(85), VerticalAnchor.belowTop(110))));
 
         register(context, AFRICAN_DAISY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.AFRICAN_DAISY_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));

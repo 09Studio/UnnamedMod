@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:cake"
+    },"title": {
+      "translate": "unnamedmod.advancements.cake_master.title"
+    },
+    "description": {
+      "translate": "unnamedmod.advancements.cake_master.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "minecraft:husbandry/plant_seed",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cake"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:chocolate_cake"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:strawberry_cake"
+            ]
+          },
+          {
+            "items": [
+              "unnamedmod:vanilla_cake"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

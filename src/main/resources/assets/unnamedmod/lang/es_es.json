@@ -272,7 +272,14 @@
   "item.unnamedmod.topaz": "Topacio",
   "block.unnamedmod.topaz_block": "Bloque de topacio",
 
-  
+
+  "unnamedmod.advancements.all_smoothies.title": "Baticido",
+  "unnamedmod.advancements.all_smoothies.description": "Haz todos los smoothies.",
+  "unnamedmod.advancements.cake_master.title": "Maestro de las Tartas",
+  "unnamedmod.advancements.cake_master.description": "Haz todas las tartas.",
+  "unnamedmod.advancements.jewel_sites.title": "Mineria",
+  "unnamedmod.advancements.jewel_sites.description": "Explora las estaciones de mineria.",
+
   "unnamedmod.advancements.crystal_table.title": "Cristales",
   "unnamedmod.advancements.crystal_table.description": "Expande tu repertorio de materiales",
   "unnamedmod.advancements.rq.title": "Un material poderoso",

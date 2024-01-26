@@ -272,7 +272,14 @@
   "item.unnamedmod.topaz": "Topaz",
   "block.unnamedmod.topaz_block": "Block of Topaz",
 
-  
+
+  "unnamedmod.advancements.all_smoothies.title": "All Smoothies",
+  "unnamedmod.advancements.all_smoothies.description": "Craft every single smoothie",
+  "unnamedmod.advancements.cake_master.title": "Cake Master",
+  "unnamedmod.advancements.cake_master.description": "Craft every single cake",
+  "unnamedmod.advancements.jewel_sites.title": "Mining Sites",
+  "unnamedmod.advancements.jewel_sites.description": "Explore all of the mining sites",
+
   "unnamedmod.advancements.crystal_table.title": "Crystals",
   "unnamedmod.advancements.crystal_table.description": "Expand your list of materials",
   "unnamedmod.advancements.rq.title": "A Powerful Material",

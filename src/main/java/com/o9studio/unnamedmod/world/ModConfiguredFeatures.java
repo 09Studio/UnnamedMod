@@ -53,12 +53,7 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> MYCELIUM_GRASS_KEY = registerKey("mycelium_grass_key");
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> AMBER_ROCKS_KEY = registerKey("amber_rocks_key");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PERIDOT_ORE_KEY = registerKey("peridot_ore_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RQ_ORE_KEY = registerKey("rq_ore_key");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> RUBY_ORE_KEY = registerKey("ruby_ore_key");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> SAPPHIRE_ORE_KEY = registerKey("sapphire_ore_key");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> TOPAZ_ORE_KEY = registerKey("topaz_ore_key");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> AFRICAN_DAISY_KEY = registerKey("african_daisy_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_IRIS_KEY = registerKey("black_iris_key");
@@ -78,16 +73,8 @@ public class ModConfiguredFeatures {
 
 
     //HELPERS
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> PERIDOT_ORE = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(new BlockMatchTest(Blocks.DEEPSLATE), ModBlocks.PERIDOT_ORE.get().defaultBlockState())));
     public static final Supplier<List<OreConfiguration.TargetBlockState>> RQ_ORE = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(new BlockMatchTest(Blocks.NETHERRACK), ModBlocks.RQ_ORE.get().defaultBlockState())));
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> RUBY_ORE = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(new BlockMatchTest(Blocks.DRIPSTONE_BLOCK), ModBlocks.RUBY_ORE.get().defaultBlockState())));
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> SAPPHIRE_ORE = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ModBlocks.SAPPHIRE_ORE.get().defaultBlockState())));
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> TOPAZ_ORE = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(new BlockMatchTest(Blocks.SANDSTONE), ModBlocks.TOPAZ_ORE.get().defaultBlockState())));
 
     static WeightedStateProvider weightedstateprovider = new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.JADE_VINE_PLANT.get().defaultBlockState(), 4).add(ModBlocks.JADE_VINE_PLANT.get().defaultBlockState().setValue(JadeVines.BERRIES, Boolean.valueOf(true)), 1));
     static RandomizedIntStateProvider randomizedintstateprovider = new RandomizedIntStateProvider(new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.JADE_VINE.get().defaultBlockState(), 4).add(ModBlocks.JADE_VINE.get().defaultBlockState().setValue(JadeVines.BERRIES, Boolean.valueOf(true)), 1)), JadeVineBlock.AGE, UniformInt.of(23, 25));
@@ -126,13 +113,7 @@ public class ModConfiguredFeatures {
                 FeatureUtils.simpleRandomPatchConfiguration(20, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MYCELIUM_GRASS.get())))));
 
 
-        register(context, AMBER_ROCKS_KEY, Feature.RANDOM_PATCH, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AMBER_ROCKS.get().defaultBlockState())), List.of(Blocks.END_STONE)));
-
-        register(context, PERIDOT_ORE_KEY, Feature.ORE, new OreConfiguration(PERIDOT_ORE.get(),12));
-        register(context, RQ_ORE_KEY, Feature.ORE, new OreConfiguration(RQ_ORE.get(),10));
-        register(context, RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(RUBY_ORE.get(),15));
-        register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(SAPPHIRE_ORE.get(),15));
-        register(context, TOPAZ_ORE_KEY, Feature.ORE, new OreConfiguration(TOPAZ_ORE.get(),12));
+        register(context, RQ_ORE_KEY, Feature.ORE, new OreConfiguration(RQ_ORE.get(),15));
 
         register(context, AFRICAN_DAISY_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(40, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AFRICAN_DAISY.get())))));
