@@ -11,7 +11,6 @@
     "unnamedmod:cut_bronze_stairs",
     "unnamedmod:peridot_ore",
     "unnamedmod:peridot_block",
-    "unnamedmod:rq_ore",
     "unnamedmod:rq_block",
     "unnamedmod:ruby_ore",
     "unnamedmod:ruby_block",
@@ -22,6 +21,11 @@
     "unnamedmod:moldy_end_stone_bricks",
     "unnamedmod:moldy_end_stone_brick_slab",
     "unnamedmod:moldy_end_stone_brick_stairs",
-    "unnamedmod:moldy_end_stone_brick_wall"
+    "unnamedmod:moldy_end_stone_brick_wall",
+    "unnamedmod:larvikite",
+    "unnamedmod:larvikite_bricks",
+    "unnamedmod:larvikite_brick_slab",
+    "unnamedmod:larvikite_brick_stairs",
+    "unnamedmod:larvikite_brick_wall"
   ]
 }

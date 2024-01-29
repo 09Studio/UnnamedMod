@@ -268,10 +268,6 @@ public class UnnamedMod
             event.accept(ModItems.RAW_PERIDOT);
             event.accept(ModItems.PERIDOT);
             event.accept(ModBlocks.PERIDOT_BLOCK);
-            event.accept(ModBlocks.RQ_ORE);
-            event.accept(ModItems.RAW_RQ);
-            event.accept(ModItems.RQ);
-            event.accept(ModBlocks.RQ_BLOCK);
             event.accept(ModBlocks.RUBY_ORE);
             event.accept(ModItems.RAW_RUBY);
             event.accept(ModItems.RUBY);
@@ -285,6 +281,14 @@ public class UnnamedMod
             event.accept(ModItems.TOPAZ);
             event.accept(ModBlocks.TOPAZ_BLOCK);
             event.accept(ModItems.RAW_QUARTZ);
+            event.accept(ModBlocks.LARVIKITE);
+            event.accept(ModBlocks.LARVIKITE_BRICKS);
+            event.accept(ModBlocks.LARVIKITE_BRICK_SLAB);
+            event.accept(ModBlocks.LARVIKITE_BRICK_STAIRS);
+            event.accept(ModBlocks.LARVIKITE_BRICK_WALL);
+            event.accept(ModItems.RAW_RQ);
+            event.accept(ModItems.RQ);
+            event.accept(ModBlocks.RQ_BLOCK);
         }
     }
 

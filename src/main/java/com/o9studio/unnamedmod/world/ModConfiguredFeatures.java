@@ -53,8 +53,6 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> MYCELIUM_GRASS_KEY = registerKey("mycelium_grass_key");
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> RQ_ORE_KEY = registerKey("rq_ore_key");
-
     public static final ResourceKey<ConfiguredFeature<?, ?>> AFRICAN_DAISY_KEY = registerKey("african_daisy_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK_IRIS_KEY = registerKey("black_iris_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE_JASMIN_KEY = registerKey("blue_jasmin_key");
@@ -73,9 +71,6 @@ public class ModConfiguredFeatures {
 
 
     //HELPERS
-    public static final Supplier<List<OreConfiguration.TargetBlockState>> RQ_ORE = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(new BlockMatchTest(Blocks.NETHERRACK), ModBlocks.RQ_ORE.get().defaultBlockState())));
-
     static WeightedStateProvider weightedstateprovider = new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.JADE_VINE_PLANT.get().defaultBlockState(), 4).add(ModBlocks.JADE_VINE_PLANT.get().defaultBlockState().setValue(JadeVines.BERRIES, Boolean.valueOf(true)), 1));
     static RandomizedIntStateProvider randomizedintstateprovider = new RandomizedIntStateProvider(new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.JADE_VINE.get().defaultBlockState(), 4).add(ModBlocks.JADE_VINE.get().defaultBlockState().setValue(JadeVines.BERRIES, Boolean.valueOf(true)), 1)), JadeVineBlock.AGE, UniformInt.of(23, 25));
 
@@ -112,8 +107,6 @@ public class ModConfiguredFeatures {
         register(context, MYCELIUM_GRASS_KEY, Feature.RANDOM_PATCH,
                 FeatureUtils.simpleRandomPatchConfiguration(20, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MYCELIUM_GRASS.get())))));
 
-
-        register(context, RQ_ORE_KEY, Feature.ORE, new OreConfiguration(RQ_ORE.get(),15));
 
         register(context, AFRICAN_DAISY_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(40, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.AFRICAN_DAISY.get())))));

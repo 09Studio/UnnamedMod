@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "unnamedmod:larvikite_bricks"
+  },
+  "result": "unnamedmod:larvikite_brick_slab"
+}

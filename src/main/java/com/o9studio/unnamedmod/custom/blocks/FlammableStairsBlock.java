@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class FlammableStairsBlock extends StairBlock {
     public FlammableStairsBlock(BlockState blockState, Properties properties) {
-        super(blockState, properties);
+        super(() -> blockState, properties);
     }
 
     @Override

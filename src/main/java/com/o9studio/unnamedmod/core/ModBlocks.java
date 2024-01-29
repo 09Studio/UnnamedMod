@@ -74,6 +74,23 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOUL_JACK_O_LANTERN = registerBlock("soul_jack_o_lantern",
             () -> new CarvedPumpkinBlock(BlockBehaviour.Properties.copy(Blocks.JACK_O_LANTERN)));
 
+    public static final RegistryObject<Block> LARVIKITE  = registerBlock("larvikite",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops().strength(1.25F, 4.2F).sound(SoundType.BASALT).lightLevel((blockState) -> 9)));
+
+    public static final RegistryObject<Block> LARVIKITE_BRICKS  = registerBlock("larvikite_bricks",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops().strength(1.25F, 4.2F).sound(SoundType.BASALT).lightLevel((blockState) -> 5)));
+
+    public static final RegistryObject<Block> LARVIKITE_BRICK_SLAB  = registerBlock("larvikite_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(LARVIKITE_BRICKS.get())));
+
+    public static final RegistryObject<Block> LARVIKITE_BRICK_STAIRS  = registerBlock("larvikite_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.LARVIKITE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(LARVIKITE_BRICKS.get())));
+
+    public static final RegistryObject<Block> LARVIKITE_BRICK_WALL  = registerBlock("larvikite_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(LARVIKITE_BRICKS.get())));
+
     //DUSKY BLOCKS
     public static final RegistryObject<Block> DUSKY_SAPLING = registerBlock("dusky_sapling",
             () -> new SaplingBlock(new DuskyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
@@ -282,10 +299,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> PERIDOT_ORE = registerBlock("peridot_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
                     .strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(3, 7)));
-
-    public static final RegistryObject<Block> RQ_ORE = registerBlock("rq_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.NETHER).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()
-                    .strength(30.0F, 1200.0F).sound(SoundType.NETHER_ORE).lightLevel((blockState) -> 5 )));
 
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops()

@@ -250,13 +250,6 @@
   "item.unnamedmod.peridot": "Peridot",
   "block.unnamedmod.peridot_block": "Block of Peridot",
 
-  "block.unnamedmod.rq_ore": "Rainbow Quartz Ore",
-  "item.unnamedmod.raw_rq": "Raw Rainbow Quartz",
-  "item.unnamedmod.rq": "Rainbow Quartz",
-  "block.unnamedmod.rq_block": "Block of Rainbow Quartz",
-  "tooltip.unnamedmod.rq_block_shift_on": "Right click the block to lit it",
-  "tooltip.unnamedmod.rq_block_shift_off": "Hold §6SHIFT §rfor more information.",
-
   "block.unnamedmod.ruby_ore": "Ruby Ore",
   "item.unnamedmod.raw_ruby": "Raw Ruby",
   "item.unnamedmod.ruby": "Ruby",
@@ -271,6 +264,17 @@
   "item.unnamedmod.raw_topaz": "Raw Topaz",
   "item.unnamedmod.topaz": "Topaz",
   "block.unnamedmod.topaz_block": "Block of Topaz",
+
+  "block.unnamedmod.larvikite": "Larvikite",
+  "block.unnamedmod.larvikite_bricks": "Larvikite Bricks",
+  "block.unnamedmod.larvikite_brick_slab": "Larvikite Brick Slab",
+  "block.unnamedmod.larvikite_brick_stairs": "Larvikite Brick Stairs",
+  "block.unnamedmod.larvikite_brick_wall": "Larvikite Brick Wall",
+  "item.unnamedmod.raw_rq": "Raw Rainbow Quartz",
+  "item.unnamedmod.rq": "Rainbow Quartz",
+  "block.unnamedmod.rq_block": "Block of Rainbow Quartz",
+  "tooltip.unnamedmod.rq_block_shift_on": "Right click the block to lit it",
+  "tooltip.unnamedmod.rq_block_shift_off": "Hold §6SHIFT §rfor more information.",
 
 
   "unnamedmod.advancements.all_smoothies.title": "All Smoothies",

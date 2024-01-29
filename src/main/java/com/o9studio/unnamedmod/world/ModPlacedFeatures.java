@@ -31,8 +31,6 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> MYCELIUM_GRASS_PLACED_KEY = createKey("mycelium_grass_placed");
 
-    public static final ResourceKey<PlacedFeature> RQ_ORE_PLACED_KEY = createKey("rq_ore_placed");
-
     public static final ResourceKey<PlacedFeature> AFRICAN_DAISY_PLACED_KEY = createKey("african_daisy_placed");
     public static final ResourceKey<PlacedFeature> BLACK_IRIS_PLACED_KEY = createKey("black_iris_placed");
     public static final ResourceKey<PlacedFeature> BLUE_JASMIN_PLACED_KEY = createKey("blue_jasmin_placed");
@@ -79,9 +77,6 @@ public class ModPlacedFeatures {
 
         register(context, MYCELIUM_GRASS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MYCELIUM_GRASS_KEY),
                 List.of(CountPlacement.of(15), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
-
-        register(context, RQ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RQ_ORE_KEY),
-                rareOrePlacement(30, HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(85), VerticalAnchor.belowTop(110))));
 
         register(context, AFRICAN_DAISY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.AFRICAN_DAISY_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
