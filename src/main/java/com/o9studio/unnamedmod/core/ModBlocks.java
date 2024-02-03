@@ -91,6 +91,30 @@ public class ModBlocks {
     public static final RegistryObject<Block> LARVIKITE_BRICK_WALL  = registerBlock("larvikite_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(LARVIKITE_BRICKS.get())));
 
+    public static final RegistryObject<Block> BLOODSTONE_ROCK  = registerBlock("bloodstone_rock",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops()
+                    .strength(2F).sound(SoundType.NETHER_ORE)));
+
+    public static final RegistryObject<Block> BUDDING_BLOODSTONE_ROCK  = registerBlock("budding_bloodstone_rock",
+            () -> new BuddingBloodstoneRockBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().randomTicks()
+                    .strength(2F).sound(SoundType.NETHER_ORE).pushReaction(PushReaction.DESTROY)));
+
+    public static final RegistryObject<Block> RQ_CLUSTER  = registerBlock("rq_cluster",
+            () -> new RQClusterBlock(7, 3, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).forceSolidOn().noOcclusion().randomTicks()
+                    .sound(SoundType.AMETHYST_CLUSTER).strength(3F).lightLevel((blockState) ->  10).pushReaction(PushReaction.DESTROY)));
+
+    public static final RegistryObject<Block> LARGE_RQ_CLUSTER  = registerBlock("large_rq_cluster",
+            () -> new RQClusterBlock(5, 3, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).forceSolidOn().noOcclusion().randomTicks()
+                    .sound(SoundType.LARGE_AMETHYST_BUD).strength(3F).lightLevel((blockState) ->  8).pushReaction(PushReaction.DESTROY)));
+
+    public static final RegistryObject<Block> MEDIUM_RQ_CLUSTER  = registerBlock("medium_rq_cluster",
+            () -> new RQClusterBlock(4, 3, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).forceSolidOn().noOcclusion().randomTicks()
+                    .sound(SoundType.MEDIUM_AMETHYST_BUD).strength(3F).lightLevel((blockState) ->  6).pushReaction(PushReaction.DESTROY)));
+
+    public static final RegistryObject<Block> SMALL_RQ_CLUSTER  = registerBlock("small_rq_cluster",
+            () -> new RQClusterBlock(3, 4, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).forceSolidOn().noOcclusion().randomTicks()
+                    .sound(SoundType.SMALL_AMETHYST_BUD).strength(3F).lightLevel((blockState) ->  4).pushReaction(PushReaction.DESTROY)));
+
     //DUSKY BLOCKS
     public static final RegistryObject<Block> DUSKY_SAPLING = registerBlock("dusky_sapling",
             () -> new SaplingBlock(new DuskyTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));

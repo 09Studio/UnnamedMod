@@ -31,6 +31,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> AMBER = ITEMS.register("amber", () -> new Item(new Item.Properties().fireResistant()));
 
+    public static final RegistryObject<Item> BLOODSTONE = ITEMS.register("bloodstone", () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () -> new Item(new Item.Properties()));
@@ -44,6 +46,8 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_PERIDOT = ITEMS.register("raw_peridot", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PERIDOT = ITEMS.register("peridot", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAINBOW_FRAGMENTS = ITEMS.register("rainbow_fragments", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RAW_RQ = ITEMS.register("raw_rq", () -> new Item(new Item.Properties()));
 

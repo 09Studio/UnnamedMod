@@ -26,6 +26,12 @@
     "unnamedmod:larvikite_bricks",
     "unnamedmod:larvikite_brick_slab",
     "unnamedmod:larvikite_brick_stairs",
-    "unnamedmod:larvikite_brick_wall"
+    "unnamedmod:larvikite_brick_wall",
+    "unnamedmod:bloodstone_rock",
+    "unnamedmod:budding_bloodstone_rock",
+    "unnamedmod:small_rq_cluster",
+    "unnamedmod:medium_rq_cluster",
+    "unnamedmod:large_rq_cluster",
+    "unnamedmod:rq_cluster"
   ]
 }

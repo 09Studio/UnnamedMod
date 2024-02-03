@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "unnamedmod:block/medium_rq_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "unnamedmod:block/medium_rq_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "unnamedmod:block/medium_rq_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "unnamedmod:block/medium_rq_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "unnamedmod:block/medium_rq_cluster"
+    },
+    "facing=west": {
+      "model": "unnamedmod:block/medium_rq_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -286,6 +286,14 @@ public class UnnamedMod
             event.accept(ModBlocks.LARVIKITE_BRICK_SLAB);
             event.accept(ModBlocks.LARVIKITE_BRICK_STAIRS);
             event.accept(ModBlocks.LARVIKITE_BRICK_WALL);
+            event.accept(ModBlocks.BUDDING_BLOODSTONE_ROCK);
+            event.accept(ModBlocks.BLOODSTONE_ROCK);
+            event.accept(ModItems.BLOODSTONE);
+            event.accept(ModBlocks.SMALL_RQ_CLUSTER);
+            event.accept(ModBlocks.MEDIUM_RQ_CLUSTER);
+            event.accept(ModBlocks.LARGE_RQ_CLUSTER);
+            event.accept(ModBlocks.RQ_CLUSTER);
+            event.accept(ModItems.RAINBOW_FRAGMENTS);
             event.accept(ModItems.RAW_RQ);
             event.accept(ModItems.RQ);
             event.accept(ModBlocks.RQ_BLOCK);
