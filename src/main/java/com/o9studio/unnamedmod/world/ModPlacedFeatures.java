@@ -25,6 +25,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> DUSKY_PLACED_KEY = createKey("dusky_placed");
     public static final ResourceKey<PlacedFeature> VERA_PLACED_KEY = createKey("vera_placed");
 
+    public static final ResourceKey<PlacedFeature> BLOODSTONE_GEODE_PLACED_KEY = createKey("bloodstone_geode_placed");
+
     public static final ResourceKey<PlacedFeature> BLUEBERRY_BUSH_PLACED_KEY = createKey("blueberry_bush_placed");
     public static final ResourceKey<PlacedFeature> JADE_VINES_PLACED_KEY = createKey("jade_vines_placed");
     public static final ResourceKey<PlacedFeature> STRAWBERRY_BUSH_PLACED_KEY = createKey("strawberry_bush_placed");
@@ -63,9 +65,12 @@ public class ModPlacedFeatures {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, DUSKY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.DUSKY_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.1f, 1)));
+                VegetationPlacements.treePlacement(PlacementUtils.isEmpty(), ModBlocks.DUSKY_SAPLING.get()));
         register(context, VERA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.VERA_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.isEmpty(), ModBlocks.VERA_SAPLING.get()));
+
+        register(context, BLOODSTONE_GEODE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLOODSTONE_GEODE_KEY),
+                RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT, BiomeFilter.biome());
 
         register(context, BLUEBERRY_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLUEBERRY_BUSH_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(20), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));

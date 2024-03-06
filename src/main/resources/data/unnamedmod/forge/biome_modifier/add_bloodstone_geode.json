@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:soul_sand_valley"
+  ],
+  "features": "unnamedmod:bloodstone_geode_placed",
+  "step": "underground_ores"
+}

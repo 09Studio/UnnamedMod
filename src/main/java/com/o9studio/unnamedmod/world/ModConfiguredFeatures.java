@@ -16,6 +16,7 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.IntProvider;
@@ -25,6 +26,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.PinkPetalsBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.levelgen.GeodeBlockSettings;
+import net.minecraft.world.level.levelgen.GeodeCrackSettings;
+import net.minecraft.world.level.levelgen.GeodeLayerSettings;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -46,6 +50,8 @@ public class ModConfiguredFeatures {
     //KEYS
     public static final ResourceKey<ConfiguredFeature<?, ?>> DUSKY_KEY = registerKey("dusky_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERA_KEY = registerKey("vera_key");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLOODSTONE_GEODE_KEY = registerKey("bloodstone_geode_key");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUEBERRY_BUSH_KEY = registerKey("blueberry_bush_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> JADE_VINES_KEY = registerKey("jade_vines_key");
@@ -91,6 +97,16 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.VERA_LEAVES.get()),
                 new RandomSpreadFoliagePlacer(ConstantInt.of(4), ConstantInt.of(4), ConstantInt.of(2), 70),
                 new TwoLayersFeatureSize(2, 0, 2)).build());
+
+        register(context, BLOODSTONE_GEODE_KEY, Feature.GEODE, new GeodeConfiguration(new GeodeBlockSettings(BlockStateProvider.simple(Blocks.AIR),
+                BlockStateProvider.simple(ModBlocks.BLOODSTONE_ROCK.get()), BlockStateProvider.simple(ModBlocks.BUDDING_BLOODSTONE_ROCK.get()),
+                BlockStateProvider.simple(ModBlocks.LARVIKITE.get()), BlockStateProvider.simple(Blocks.SOUL_SOIL),
+                List.of(ModBlocks.SMALL_RQ_CLUSTER.get().defaultBlockState(), ModBlocks.MEDIUM_RQ_CLUSTER.get().defaultBlockState(),
+                        ModBlocks.LARGE_RQ_CLUSTER.get().defaultBlockState(), ModBlocks.RQ_CLUSTER.get().defaultBlockState()),
+                BlockTags.FEATURES_CANNOT_REPLACE, BlockTags.GEODE_INVALID_BLOCKS), new GeodeLayerSettings(1.7D, 2.2D, 3.2D, 4.2D),
+                new GeodeCrackSettings(0.95D, 2.0D, 2), 0.35D, 0.083D, true, UniformInt.of(4, 6),
+                UniformInt.of(3, 4), UniformInt.of(1, 2), -16, 16, 0.05D, 1));
+
 
         register(context, BLUEBERRY_BUSH_KEY, Feature.RANDOM_PATCH,
                 FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.BLUEBERRY_BUSH.get().defaultBlockState()
