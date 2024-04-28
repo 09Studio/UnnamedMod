@@ -1,7 +1,5 @@
 package com.o9studio.unnamedmod.world;
 
-import com.google.common.base.Supplier;
-import com.google.common.base.Suppliers;
 import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.core.ModBlocks;
 import com.o9studio.unnamedmod.custom.blocks.BlueBerryCropBlock;
@@ -42,11 +40,11 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStatePr
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
+
     //KEYS
     public static final ResourceKey<ConfiguredFeature<?, ?>> DUSKY_KEY = registerKey("dusky_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VERA_KEY = registerKey("vera_key");
@@ -69,6 +67,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GLOOMY_SPROUT_KEY = registerKey("gloomy_sprout_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_DAYLILY_KEY = registerKey("green_daylily_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LAVENDER_KEY = registerKey("lavender_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> JACARANDAS_KEY = registerKey("jacarandas_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HIBISCUS_KEY = registerKey("hibiscus_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_ORCHID_KEY = registerKey("purple_orchid_key");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ROSE_KEY = registerKey("rose_key");
@@ -142,6 +141,8 @@ public class ModConfiguredFeatures {
                 new RandomPatchConfiguration(40, 4, 4, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.GREEN_DAYLILY.get())))));
         register(context, HIBISCUS_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(64, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.HIBISCUS.get())))));
+        register(context, JACARANDAS_KEY, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(40, 5, 5, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.JACARANDAS.get())))));
         register(context, LAVENDER_KEY, Feature.FLOWER,
                 new RandomPatchConfiguration(50, 4, 4, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.LAVENDER.get())))));
         register(context, PURPLE_ORCHID_KEY, Feature.FLOWER,

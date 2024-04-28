@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "unnamedmod:block/jacarandas"
+    },
+    "facing=south": {
+      "model": "unnamedmod:block/jacarandas",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "unnamedmod:block/jacarandas",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "unnamedmod:block/jacarandas",
+      "y": 90
+    }
+  }
+}

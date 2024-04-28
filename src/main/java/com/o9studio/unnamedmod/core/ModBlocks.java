@@ -101,19 +101,19 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RQ_CLUSTER  = registerBlock("rq_cluster",
             () -> new RQClusterBlock(7, 3, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).forceSolidOn().noOcclusion().randomTicks()
-                    .sound(SoundType.AMETHYST_CLUSTER).strength(3F).lightLevel((blockState) ->  10).pushReaction(PushReaction.DESTROY)));
+                    .sound(SoundType.AMETHYST_CLUSTER).strength(40F).lightLevel((blockState) ->  10).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> LARGE_RQ_CLUSTER  = registerBlock("large_rq_cluster",
             () -> new RQClusterBlock(5, 3, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).forceSolidOn().noOcclusion().randomTicks()
-                    .sound(SoundType.LARGE_AMETHYST_BUD).strength(3F).lightLevel((blockState) ->  8).pushReaction(PushReaction.DESTROY)));
+                    .sound(SoundType.LARGE_AMETHYST_BUD).strength(20F).lightLevel((blockState) ->  8).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> MEDIUM_RQ_CLUSTER  = registerBlock("medium_rq_cluster",
             () -> new RQClusterBlock(4, 3, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).forceSolidOn().noOcclusion().randomTicks()
-                    .sound(SoundType.MEDIUM_AMETHYST_BUD).strength(3F).lightLevel((blockState) ->  6).pushReaction(PushReaction.DESTROY)));
+                    .sound(SoundType.MEDIUM_AMETHYST_BUD).strength(10F).lightLevel((blockState) ->  6).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> SMALL_RQ_CLUSTER  = registerBlock("small_rq_cluster",
             () -> new RQClusterBlock(3, 4, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).forceSolidOn().noOcclusion().randomTicks()
-                    .sound(SoundType.SMALL_AMETHYST_BUD).strength(3F).lightLevel((blockState) ->  4).pushReaction(PushReaction.DESTROY)));
+                    .sound(SoundType.SMALL_AMETHYST_BUD).strength(5F).lightLevel((blockState) ->  4).requiresCorrectToolForDrops().pushReaction(PushReaction.DESTROY)));
 
     //DUSKY BLOCKS
     public static final RegistryObject<Block> DUSKY_SAPLING = registerBlock("dusky_sapling",
@@ -403,6 +403,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> HIBISCUS = registerBlock("hibiscus",
             () -> new FlammableFlowerBlock(() -> MobEffects.DAMAGE_RESISTANCE, 4, BlockBehaviour.Properties.copy(Blocks.POPPY)));
+
+    public static final RegistryObject<Block> JACARANDAS = registerBlock("jacarandas",
+            () -> new JacarandasBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).forceSolidOff().instabreak()
+                    .sound(SoundType.AZALEA).noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> LAVENDER = registerBlock("lavender",
             () -> new FlammableTallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.PEONY)));

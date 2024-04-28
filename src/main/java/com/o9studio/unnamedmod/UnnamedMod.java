@@ -5,23 +5,16 @@ import com.o9studio.unnamedmod.core.*;
 import com.o9studio.unnamedmod.custom.ModTabs;
 import com.o9studio.unnamedmod.custom.screens.CrystalTableScreen;
 import com.o9studio.unnamedmod.events.ItemsOnComposter;
-import com.o9studio.unnamedmod.util.BetterBrewingRecipe;
 import com.o9studio.unnamedmod.util.ModWoodTypes;
 import com.o9studio.unnamedmod.util.renderers.BoatsRenderer;
 import com.o9studio.unnamedmod.world.ModLootModifier;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.Sheets;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
-import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -46,7 +39,6 @@ public class UnnamedMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModPaintings.PAINTING_VARIANTS.register(modEventBus);
-        ModPotions.register(modEventBus);
         ModEntities.register(modEventBus);
         ModEntityBlocks.register(modEventBus);
         ModMenus.register(modEventBus);
@@ -82,30 +74,6 @@ public class UnnamedMod
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_ROSE.getId(), ModBlocks.POTTED_WHITE_ROSE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.DUSKY_SAPLING.getId(), ModBlocks.POTTED_DUSKY_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VERA_SAPLING.getId(), ModBlocks.POTTED_VERA_SAPLING);
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.THICK,
-                    Items.WITHER_ROSE, ModPotions.DECAY.get()));
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
-                    Items.GLOW_BERRIES, ModPotions.GLOW.get()));
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.GLOW.get(),
-                    Items.REDSTONE, ModPotions.LONG_GLOW.get()));
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
-                    ModItems.DARKBERRIES.get(), ModPotions.DARKNESS.get()));
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.DARKNESS.get(),
-                    Items.REDSTONE, ModPotions.LONG_DARKNESS.get()));
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
-                    ModItems.MOON_FRUIT.get(), ModPotions.LEVITATION.get()));
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.LEVITATION.get(),
-                    Items.REDSTONE, ModPotions.LONG_LEVITATION.get()));
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(ModPotions.LEVITATION.get(),
-                    Items.GLOWSTONE_DUST, ModPotions.STRONG_LEVITATION.get()));
         });
     }
 
@@ -200,6 +168,7 @@ public class UnnamedMod
             event.accept(ModBlocks.GLOOMLIGHT);
             event.accept(ModBlocks.GREEN_DAYLILY);
             event.accept(ModBlocks.HIBISCUS);
+            event.accept(ModBlocks.JACARANDAS);
             event.accept(ModBlocks.LAVENDER);
             event.accept(ModBlocks.MYCELIUM_GRASS);
             event.accept(ModBlocks.PURPLE_ORCHID);

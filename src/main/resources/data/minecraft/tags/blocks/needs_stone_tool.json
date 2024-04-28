@@ -4,9 +4,17 @@
     "unnamedmod:cut_bronze",
     "unnamedmod:cut_bronze_slab",
     "unnamedmod:cut_bronze_stairs",
+    "unnamedmod:bronze_bars",
+    "unnamedmod:copper_bars",
+    "unnamedmod:gold_bars",
     "unnamedmod:peridot_ore",
     "unnamedmod:peridot_block",
     "unnamedmod:topaz_ore",
-    "unnamedmod:topaz_block"
+    "unnamedmod:topaz_block",
+    "unnamedmod:larvikite",
+    "unnamedmod:larvikite_bricks",
+    "unnamedmod:larvikite_brick_slab",
+    "unnamedmod:larvikite_brick_stairs",
+    "unnamedmod:larvikite_brick_wall"
   ]
 }

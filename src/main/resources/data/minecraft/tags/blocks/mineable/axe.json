@@ -1,5 +1,6 @@
 {
   "values": [
+    "unnamedmod:crystal_table",
     "unnamedmod:blueberry_bush",
     "unnamedmod:darkberry_bush",
     "unnamedmod:jade_vine",
@@ -39,6 +40,7 @@
     "unnamedmod:vera_fence",
     "unnamedmod:vera_fence_gate",
     "unnamedmod:soul_jack_o_lantern",
+    "unnamedmod:jacarandas",
     "#unnamedmod:flowered_vines"
   ]
 }

@@ -44,7 +44,7 @@ public class CrystalTableEntity extends BlockEntity implements MenuProvider {
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 78;
+    private int maxProgress = 90;
 
     public CrystalTableEntity(BlockPos pos, BlockState blockState) {
         super(ModEntityBlocks.CRYSTAL_TABLE.get(), pos, blockState);

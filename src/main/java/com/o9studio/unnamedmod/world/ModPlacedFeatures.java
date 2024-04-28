@@ -43,6 +43,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GLOOMY_SPROUT_PLACED_KEY = createKey("gloomy_sprout_placed");
     public static final ResourceKey<PlacedFeature> GREEN_DAYLILY_PLACED_KEY = createKey("green_daylily_placed");
     public static final ResourceKey<PlacedFeature> HIBISCUS_PLACED_KEY = createKey("hibiscus_placed");
+    public static final ResourceKey<PlacedFeature> JACARANDAS_PLACED_KEY = createKey("jacarandas_placed");
     public static final ResourceKey<PlacedFeature> LAVENDER_PLACED_KEY = createKey("lavender_placed");
     public static final ResourceKey<PlacedFeature> PURPLE_ORCHID_PLACED_KEY = createKey("purple_orchid_placed");
     public static final ResourceKey<PlacedFeature> ROSE_PLACED_KEY = createKey("rose_placed");
@@ -103,6 +104,8 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(50), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
         register(context, HIBISCUS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.HIBISCUS_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(50), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+        register(context, JACARANDAS_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.JACARANDAS_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(20), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
         register(context, LAVENDER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LAVENDER_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
         register(context, PURPLE_ORCHID_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PURPLE_ORCHID_KEY),

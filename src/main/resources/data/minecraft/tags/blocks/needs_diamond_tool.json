@@ -1,5 +1,9 @@
 {
   "values": [
-    "unnamedmod:rq_block"
+    "unnamedmod:rq_block",
+    "unnamedmod:rq_cluster",
+    "unnamedmod:large_rq_cluster",
+    "unnamedmod:medium_rq_cluster",
+    "unnamedmod:small_rq_cluster"
   ]
 }

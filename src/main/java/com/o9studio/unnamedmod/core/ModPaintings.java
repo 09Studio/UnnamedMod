@@ -19,7 +19,7 @@ public class ModPaintings {
     public static final RegistryObject<PaintingVariant> FAILED = PAINTING_VARIANTS.register("failed",
             () -> new PaintingVariant(16, 32));
 
-    public static final RegistryObject<PaintingVariant> KIRBY = PAINTING_VARIANTS.register("pink",
+    public static final RegistryObject<PaintingVariant> PINK = PAINTING_VARIANTS.register("pink",
             () -> new PaintingVariant(32, 16));
 
     public static final RegistryObject<PaintingVariant> STRANGE = PAINTING_VARIANTS.register("strange",

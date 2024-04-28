@@ -5,6 +5,8 @@
     "unnamedmod:ruby_ore",
     "unnamedmod:ruby_block",
     "unnamedmod:sapphire_ore",
-    "unnamedmod:sapphire_block"
+    "unnamedmod:sapphire_block",
+    "unnamedmod:bloodstone_rock",
+    "unnamedmod:budding_bloodstone_rock"
   ]
 }
