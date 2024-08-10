@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " H ",
+    " C ",
+    "CCC"
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:chain"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:wind_chimes",
+    "count": 1
+  }
+}

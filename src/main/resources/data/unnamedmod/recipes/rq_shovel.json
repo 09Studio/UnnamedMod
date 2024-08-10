@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "unnamedmod:bronze_rod"
+    },
+    "X": {
+      "item": "unnamedmod:rq"
+    }
+  },
+  "result": {
+    "item": "unnamedmod:rq_shovel"
+  }
+}

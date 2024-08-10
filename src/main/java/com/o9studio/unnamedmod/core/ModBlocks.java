@@ -38,6 +38,10 @@ public class ModBlocks {
 
 
     //NORMAL BLOCKS
+    public static final RegistryObject<Block> WIND_CHIMES = registerBlock("wind_chimes",
+            () -> new WindChimesBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).requiresCorrectToolForDrops()
+                    .strength(7.0F, 8.0F).sound(SoundType.COPPER).noOcclusion().pushReaction(PushReaction.DESTROY)));
+
     public static final RegistryObject<Block> CRYSTAL_TABLE = registerBlock("crystal_table",
             () -> new CrystalTableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.5F)
                     .sound(SoundType.WOOD).ignitedByLava()));
@@ -302,7 +306,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> PERIDOT_BLOCK = registerBlock("peridot_block",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
 
-    public static final RegistryObject<Block> RQ_BLOCK = registerBlock("rq_block",
+    public static final RegistryObject<Block> RQ_BLOCK = BLOCKS.register("rq_block",
             () -> new RQBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).requiresCorrectToolForDrops().strength(50.0F, 1200.0F).sound(SoundType.GLASS).lightLevel(state -> state.getValue(RQBlock.LIT) ? 0 : 15)));
 
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",

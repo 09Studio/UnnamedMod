@@ -2,9 +2,7 @@ package com.o9studio.unnamedmod.core;
 
 import com.o9studio.unnamedmod.UnnamedMod;
 import com.o9studio.unnamedmod.custom.entities.BoatsEntities;
-import com.o9studio.unnamedmod.custom.items.BoatsItems;
-import com.o9studio.unnamedmod.custom.items.FoodItems;
-import com.o9studio.unnamedmod.custom.items.GlassJarItem;
+import com.o9studio.unnamedmod.custom.items.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -51,7 +49,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_RQ = ITEMS.register("raw_rq", () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> RQ = ITEMS.register("rq", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RQ = ITEMS.register("rq", () -> new Item(new Item.Properties().fireResistant().rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<Item> RAW_RUBY = ITEMS.register("raw_ruby", () -> new Item(new Item.Properties()));
 
@@ -159,6 +157,106 @@ public class ModItems {
     public static final RegistryObject<Item> VEGETABLE_SOUP = ITEMS.register("vegetable_soup", () -> new BowlFoodItem(new Item.Properties().food(FoodItems.VEGETABLE_SOUP)));
 
 
+    //SWORD ITEMS
+    public static final RegistryObject<Item> TOPAZ_SWORD = ITEMS.register("topaz_sword",
+            () -> new SwordItem(ModToolTiers.TOPAZ, 3, -2.4F, new Item.Properties()));
+
+    public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword",
+            () -> new SwordItem(ModToolTiers.BRONZE, 3, -2.4F, new Item.Properties()));
+
+    public static final RegistryObject<Item> PERIDOT_SWORD = ITEMS.register("peridot_sword",
+            () -> new SwordItem(ModToolTiers.PERIDOT, 3, -2.4F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",
+            () -> new SwordItem(ModToolTiers.RUBY, 3, -2.4F, new Item.Properties()));
+
+    public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword",
+            () -> new SwordItem(ModToolTiers.SAPPHIRE, 3, -2.4F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RQ_SWORD = ITEMS.register("rq_sword",
+            () -> new RQSwordItem(ModToolTiers.RQ, 3, -2.4F, new Item.Properties().fireResistant().rarity(Rarity.RARE)));
+
+
+    //AXE ITEMS
+    public static final RegistryObject<Item> TOPAZ_AXE = ITEMS.register("topaz_axe",
+            () -> new AxeItem(ModToolTiers.TOPAZ, 6.0F, -3.1F, new Item.Properties()));
+
+    public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register("bronze_axe",
+            () -> new AxeItem(ModToolTiers.BRONZE, 6.0F, -3.1F, new Item.Properties()));
+
+    public static final RegistryObject<Item> PERIDOT_AXE = ITEMS.register("peridot_axe",
+            () -> new AxeItem(ModToolTiers.PERIDOT, 6.0F, -3.1F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_AXE = ITEMS.register("ruby_axe",
+            () -> new AxeItem(ModToolTiers.RUBY, 6.0F, -3.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> SAPPHIRE_AXE = ITEMS.register("sapphire_axe",
+            () -> new AxeItem(ModToolTiers.SAPPHIRE, 6.0F, -3.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RQ_AXE = ITEMS.register("rq_axe",
+            () -> new RQAxeItem(ModToolTiers.RQ, 5.0F, -3.0F, new Item.Properties().fireResistant().rarity(Rarity.RARE)));
+
+
+    //PICKAXE ITEMS
+    public static final RegistryObject<Item> TOPAZ_PICKAXE = ITEMS.register("topaz_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.TOPAZ, 1, -2.8F, new Item.Properties()));
+
+    public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.BRONZE, 1, -2.8F, new Item.Properties()));
+
+    public static final RegistryObject<Item> PERIDOT_PICKAXE = ITEMS.register("peridot_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.PERIDOT, 1, -2.8F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.RUBY, 1, -2.8F, new Item.Properties()));
+
+    public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register("sapphire_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 1, -2.8F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RQ_PICKAXE = ITEMS.register("rq_pickaxe",
+            () -> new RQPickaxeItem(ModToolTiers.RQ, 1, -2.8F, new Item.Properties().fireResistant().rarity(Rarity.RARE)));
+
+
+    //HOE ITEMS
+    public static final RegistryObject<Item> TOPAZ_HOE = ITEMS.register("topaz_hoe",
+            () -> new HoeItem(ModToolTiers.TOPAZ, -1, -1.5F, new Item.Properties()));
+
+    public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register("bronze_hoe",
+            () -> new HoeItem(ModToolTiers.BRONZE, -2, -1.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> PERIDOT_HOE = ITEMS.register("peridot_hoe",
+            () -> new HoeItem(ModToolTiers.PERIDOT, -3, -0.5F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe",
+            () -> new HoeItem(ModToolTiers.RUBY, -3, 0.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
+            () -> new HoeItem(ModToolTiers.SAPPHIRE, -3, 0-0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RQ_HOE = ITEMS.register("rq_hoe",
+            () -> new RQHoeItem(ModToolTiers.RQ, -5, 1.0F, new Item.Properties().fireResistant().rarity(Rarity.RARE)));
+
+
+    //SHOVEL ITEMS
+    public static final RegistryObject<Item> TOPAZ_SHOVEL = ITEMS.register("topaz_shovel",
+            () -> new ShovelItem(ModToolTiers.TOPAZ, 1.5F, -3.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register("bronze_shovel",
+            () -> new ShovelItem(ModToolTiers.BRONZE, 1.5F, -3.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> PERIDOT_SHOVEL = ITEMS.register("peridot_shovel",
+            () -> new ShovelItem(ModToolTiers.PERIDOT, 1.5F, -3.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register("ruby_shovel",
+            () -> new ShovelItem(ModToolTiers.RUBY, 1.5F, -3.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> SAPPHIRE_SHOVEL = ITEMS.register("sapphire_shovel",
+            () -> new ShovelItem(ModToolTiers.SAPPHIRE, 1.5F, -3.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> RQ_SHOVEL = ITEMS.register("rq_shovel",
+            () -> new RQShovelItem(ModToolTiers.RQ, 1.5F, -3.0F, new Item.Properties().fireResistant().rarity(Rarity.RARE)));
+
+
     //BLOCK ITEMS
     public static final RegistryObject<BlockItem> AMBER_BLOCK = ITEMS.register("amber_block",
             () -> new BlockItem(ModBlocks.AMBER_BLOCK.get(), new Item.Properties().fireResistant()));
@@ -174,6 +272,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> DUSKY_HANGING_SIGN = ITEMS.register("dusky_hanging_sign",
             () -> new HangingSignItem(ModBlocks.DUSKY_HANGING_SIGN.get(), ModBlocks.DUSKY_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<BlockItem> RQ_BLOCK = ITEMS.register("rq_block",
+            () -> new BlockItem(ModBlocks.RQ_BLOCK.get(), new Item.Properties().fireResistant().rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<Item> VERA_SIGN = ITEMS.register("vera_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.VERA_SIGN.get(), ModBlocks.VERA_WALL_SIGN.get()));

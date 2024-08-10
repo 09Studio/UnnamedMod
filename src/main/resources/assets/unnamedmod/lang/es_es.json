@@ -4,6 +4,9 @@
 
   "entity.unnamedmod.mod_chest_boat": "Barca con cofre",
 
+  "block.unnamedmod.wind_chimes": "Campanas de viento",
+  "sounds.unnamedmod.wind_chimes_hit": "Campanas de viento sonando",
+
   "block.unnamedmod.copper_bars": "Barrotes de cobre",
   "block.unnamedmod.gold_bars": "Barrotes de oro",
 
@@ -24,7 +27,7 @@
   "block.unnamedmod.jade_vine": "Flor de jade",
   "block.unnamedmod.jade_vine_plant": "Jade Vine Plant",
   "item.unnamedmod.jade_vine_smoothie": "Smoothie de jade",
-  "item.unnamedmod.lettuce_seeds": "Semilla de lechuga",
+  "item.unnamedmod.lettuce_seeds": "Semillas de lechuga",
   "item.unnamedmod.lettuce": "Lechuga",
   "block.unnamedmod.lettuce_crop": "Cultivo de lechuga",
   "item.unnamedmod.moon_fruit": "Fruta de luna",
@@ -132,9 +135,9 @@
 
   "block.unnamedmod.dire_mold": "Moho terrible",
   "block.unnamedmod.moldy_end_stone_bricks": "Ladrillos de piedra del End mohosos",
-  "block.unnamedmod.moldy_end_stone_brick_slab": "Losa de ladrillos de piedra del End mohosos",
-  "block.unnamedmod.moldy_end_stone_brick_stairs": "Escaleras de ladrillos de piedra del End mohosos",
-  "block.unnamedmod.moldy_end_stone_brick_wall": "Muro de ladrillos de piedra del End mohosos",
+  "block.unnamedmod.moldy_end_stone_brick_slab": "Losa de ladrillos de piedra del End mohosa",
+  "block.unnamedmod.moldy_end_stone_brick_stairs": "Escaleras de ladrillos de piedra del End mohosas",
+  "block.unnamedmod.moldy_end_stone_brick_wall": "Muro de ladrillos de piedra del End mohoso",
 
   "block.unnamedmod.soul_jack_o_lantern": "Calabaza de almas",
 
@@ -205,6 +208,11 @@
   "block.unnamedmod.cut_bronze": "Bronce cortado",
   "block.unnamedmod.cut_bronze_slab": "Losa de bronce cortada",
   "block.unnamedmod.cut_bronze_stairs": "Escaleras de bronce cortado",
+  "item.unnamedmod.bronze_sword": "Espada de bronce",
+  "item.unnamedmod.bronze_axe": "Hacha de bronce",
+  "item.unnamedmod.bronze_pickaxe": "Pico de bronce",
+  "item.unnamedmod.bronze_hoe": "Azada de bronce",
+  "item.unnamedmod.bronze_shovel": "Pala de bronce",
 
   "item.unnamedmod.raw_emerald": "Esmeralda bruta",
   "item.unnamedmod.raw_diamond": "Diamante bruto",
@@ -214,21 +222,41 @@
   "item.unnamedmod.raw_peridot": "Peridoto bruto",
   "item.unnamedmod.peridot": "Peridoto",
   "block.unnamedmod.peridot_block": "Bloque de peridoto",
+  "item.unnamedmod.peridot_sword": "Espada de peridoto",
+  "item.unnamedmod.peridot_axe": "Hacha de peridoto",
+  "item.unnamedmod.peridot_pickaxe": "Pico de peridoto",
+  "item.unnamedmod.peridot_hoe": "Azada de peridoto",
+  "item.unnamedmod.peridot_shovel": "Pala de peridoto",
 
   "block.unnamedmod.ruby_ore": "Mena de rubí",
   "item.unnamedmod.raw_ruby": "Rubí bruto",
   "item.unnamedmod.ruby": "Rubí",
   "block.unnamedmod.ruby_block": "Bloque de rubí",
+  "item.unnamedmod.ruby_sword": "Espada de rubí",
+  "item.unnamedmod.ruby_axe": "Hacha de rubí",
+  "item.unnamedmod.ruby_pickaxe": "Pico de rubí",
+  "item.unnamedmod.ruby_hoe": "Azada de rubí",
+  "item.unnamedmod.ruby_shovel": "Pala de rubí",
 
   "block.unnamedmod.sapphire_ore": "Mena de zafiro",
   "item.unnamedmod.raw_sapphire": "Zafiro bruto",
   "item.unnamedmod.sapphire": "Zafiro",
   "block.unnamedmod.sapphire_block": "Bloque de zafiro",
+  "item.unnamedmod.sapphire_sword": "Espada de zafiro",
+  "item.unnamedmod.sapphire_axe": "Hacha de zafiro",
+  "item.unnamedmod.sapphire_pickaxe": "Pico de zafiro",
+  "item.unnamedmod.sapphire_hoe": "Azada de zafiro",
+  "item.unnamedmod.sapphire_shovel": "Pala de zafiro",
 
   "block.unnamedmod.topaz_ore": "Mena de topacio",
   "item.unnamedmod.raw_topaz": "Topacio bruto",
   "item.unnamedmod.topaz": "Topacio",
   "block.unnamedmod.topaz_block": "Bloque de topacio",
+  "item.unnamedmod.topaz_sword": "Espada de topacio",
+  "item.unnamedmod.topaz_axe": "Hacha de topacio",
+  "item.unnamedmod.topaz_pickaxe": "Pico de topacio",
+  "item.unnamedmod.topaz_hoe": "Azada de topacio",
+  "item.unnamedmod.topaz_shovel": "Pala de topacio",
 
   "block.unnamedmod.larvikite": "Larvikita",
   "block.unnamedmod.larvikite_bricks": "Ladrillos de larvikita",
@@ -248,13 +276,18 @@
   "block.unnamedmod.rq_block": "Bloque de Cuarzo Arcoiris",
   "tooltip.unnamedmod.rq_block_shift_on": "Haz click derecho al bloque para que se ilumine.",
   "tooltip.unnamedmod.rq_block_shift_off": "Mantén §6SHIFT §rpara más información.",
+  "item.unnamedmod.rq_sword": "Espada de Cuarzo Arcoiris",
+  "item.unnamedmod.rq_axe": "Hacha de Cuarzo Arcoiris",
+  "item.unnamedmod.rq_pickaxe": "Pico de Cuarzo Arcoiris",
+  "item.unnamedmod.rq_hoe": "Azada de Cuarzo Arcoiris",
+  "item.unnamedmod.rq_shovel": "Pala de Cuarzo Arcoiris",
 
 
   "unnamedmod.advancements.all_smoothies.title": "Baticido",
   "unnamedmod.advancements.all_smoothies.description": "Haz todos los smoothies.",
   "unnamedmod.advancements.cake_master.title": "Maestro de las Tartas",
   "unnamedmod.advancements.cake_master.description": "Haz todas las tartas.",
-  "unnamedmod.advancements.jewel_sites.title": "Mineria",
+  "unnamedmod.advancements.jewel_sites.title": "Minería",
   "unnamedmod.advancements.jewel_sites.description": "Explora las estaciones de mineria.",
 
   "unnamedmod.advancements.crystal_table.title": "Cristales",

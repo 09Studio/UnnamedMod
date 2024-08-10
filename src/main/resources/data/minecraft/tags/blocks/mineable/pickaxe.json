@@ -32,6 +32,7 @@
     "unnamedmod:small_rq_cluster",
     "unnamedmod:medium_rq_cluster",
     "unnamedmod:large_rq_cluster",
-    "unnamedmod:rq_cluster"
+    "unnamedmod:rq_cluster",
+    "unnamedmod:wind_chimes"
   ]
 }

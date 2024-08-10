@@ -4,6 +4,9 @@
 
   "entity.unnamedmod.mod_chest_boat": "Boat With Chest",
 
+  "block.unnamedmod.wind_chimes": "Wind Chimes",
+  "sounds.unnamedmod.wind_chimes_hit": "Wind chimes jingle",
+
   "block.unnamedmod.copper_bars": "Copper Bars",
   "block.unnamedmod.gold_bars": "Gold Bars",
 
@@ -205,6 +208,11 @@
   "block.unnamedmod.cut_bronze": "Cut Bronze",
   "block.unnamedmod.cut_bronze_slab": "Cut Bronze Slab",
   "block.unnamedmod.cut_bronze_stairs": "Cut Bronze Stairs",
+  "item.unnamedmod.bronze_sword": "Bronze Sword",
+  "item.unnamedmod.bronze_axe": "Bronze Axe",
+  "item.unnamedmod.bronze_pickaxe": "Bronze Pickaxe",
+  "item.unnamedmod.bronze_hoe": "Bronze Hoe",
+  "item.unnamedmod.bronze_shovel": "Bronze Shovel",
 
   "item.unnamedmod.raw_emerald": "Raw Emerald",
   "item.unnamedmod.raw_diamond": "Raw Diamond",
@@ -214,21 +222,41 @@
   "item.unnamedmod.raw_peridot": "Raw Peridot",
   "item.unnamedmod.peridot": "Peridot",
   "block.unnamedmod.peridot_block": "Block of Peridot",
+  "item.unnamedmod.peridot_sword": "Peridot Sword",
+  "item.unnamedmod.peridot_axe": "Peridot Axe",
+  "item.unnamedmod.peridot_pickaxe": "Peridot Pickaxe",
+  "item.unnamedmod.peridot_hoe": "Peridot Hoe",
+  "item.unnamedmod.peridot_shovel": "Peridot Shovel",
 
   "block.unnamedmod.ruby_ore": "Ruby Ore",
   "item.unnamedmod.raw_ruby": "Raw Ruby",
   "item.unnamedmod.ruby": "Ruby",
   "block.unnamedmod.ruby_block": "Block of Ruby",
+  "item.unnamedmod.ruby_sword": "Ruby Sword",
+  "item.unnamedmod.ruby_axe": "Ruby Axe",
+  "item.unnamedmod.ruby_pickaxe": "Ruby Pickaxe",
+  "item.unnamedmod.ruby_hoe": "Ruby Hoe",
+  "item.unnamedmod.ruby_shovel": "Ruby Shovel",
 
   "block.unnamedmod.sapphire_ore": "Sapphire Ore",
   "item.unnamedmod.raw_sapphire": "Raw Sapphire",
   "item.unnamedmod.sapphire": "Sapphire",
   "block.unnamedmod.sapphire_block": "Block of Sapphire",
+  "item.unnamedmod.sapphire_sword": "Sapphire Sword",
+  "item.unnamedmod.sapphire_axe": "Sapphire Axe",
+  "item.unnamedmod.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.unnamedmod.sapphire_hoe": "Sapphire Hoe",
+  "item.unnamedmod.sapphire_shovel": "Sapphire Shovel",
 
   "block.unnamedmod.topaz_ore": "Topaz Ore",
   "item.unnamedmod.raw_topaz": "Raw Topaz",
   "item.unnamedmod.topaz": "Topaz",
   "block.unnamedmod.topaz_block": "Block of Topaz",
+  "item.unnamedmod.topaz_sword": "Topaz Sword",
+  "item.unnamedmod.topaz_axe": "Topaz Axe",
+  "item.unnamedmod.topaz_pickaxe": "Topaz Pickaxe",
+  "item.unnamedmod.topaz_hoe": "Topaz Hoe",
+  "item.unnamedmod.topaz_shovel": "Topaz Shovel",
 
   "block.unnamedmod.larvikite": "Larvikite",
   "block.unnamedmod.larvikite_bricks": "Larvikite Bricks",
@@ -248,6 +276,11 @@
   "block.unnamedmod.rq_block": "Block of Rainbow Quartz",
   "tooltip.unnamedmod.rq_block_shift_on": "Right click the block to lit it",
   "tooltip.unnamedmod.rq_block_shift_off": "Hold §6SHIFT §rfor more information.",
+  "item.unnamedmod.rq_sword": "Rainbow Quartz Sword",
+  "item.unnamedmod.rq_axe": "Rainbow Quartz Axe",
+  "item.unnamedmod.rq_pickaxe": "Rainbow Quartz Pickaxe",
+  "item.unnamedmod.rq_hoe": "Rainbow Quartz Hoe",
+  "item.unnamedmod.rq_shovel": "Rainbow Quartz Shovel",
 
 
   "unnamedmod.advancements.all_smoothies.title": "All Smoothies",

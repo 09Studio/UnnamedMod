@@ -38,6 +38,7 @@ public class UnnamedMod
         ModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
         ModPaintings.PAINTING_VARIANTS.register(modEventBus);
         ModEntities.register(modEventBus);
         ModEntityBlocks.register(modEventBus);
@@ -82,6 +83,7 @@ public class UnnamedMod
         if (event.getTab() == ModTabs.GREENERY_TAB.get()){
             event.accept(ModItems.WHAT_ITEM);
             event.accept(ModBlocks.NOP_BLOCK);
+            event.accept(ModBlocks.WIND_CHIMES);
             event.accept(ModBlocks.COPPER_BARS);
             event.accept(ModBlocks.GOLD_BARS);
             event.accept(ModItems.GLASS_JAR);
@@ -231,24 +233,49 @@ public class UnnamedMod
             event.accept(ModBlocks.CUT_BRONZE);
             event.accept(ModBlocks.CUT_BRONZE_SLAB);
             event.accept(ModBlocks.CUT_BRONZE_STAIRS);
+            event.accept(ModItems.BRONZE_SWORD);
+            event.accept(ModItems.BRONZE_PICKAXE);
+            event.accept(ModItems.BRONZE_AXE);
+            event.accept(ModItems.BRONZE_SHOVEL);
+            event.accept(ModItems.BRONZE_HOE);
             event.accept(ModItems.RAW_EMERALD);
             event.accept(ModItems.RAW_DIAMOND);
             event.accept(ModBlocks.PERIDOT_ORE);
             event.accept(ModItems.RAW_PERIDOT);
             event.accept(ModItems.PERIDOT);
             event.accept(ModBlocks.PERIDOT_BLOCK);
+            event.accept(ModItems.PERIDOT_SWORD);
+            event.accept(ModItems.PERIDOT_PICKAXE);
+            event.accept(ModItems.PERIDOT_AXE);
+            event.accept(ModItems.PERIDOT_SHOVEL);
+            event.accept(ModItems.PERIDOT_HOE);
             event.accept(ModBlocks.RUBY_ORE);
             event.accept(ModItems.RAW_RUBY);
             event.accept(ModItems.RUBY);
             event.accept(ModBlocks.RUBY_BLOCK);
+            event.accept(ModItems.RUBY_SWORD);
+            event.accept(ModItems.RUBY_PICKAXE);
+            event.accept(ModItems.RUBY_AXE);
+            event.accept(ModItems.RUBY_SHOVEL);
+            event.accept(ModItems.RUBY_HOE);
             event.accept(ModBlocks.SAPPHIRE_ORE);
             event.accept(ModItems.RAW_SAPPHIRE);
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModBlocks.SAPPHIRE_BLOCK);
+            event.accept(ModItems.SAPPHIRE_SWORD);
+            event.accept(ModItems.SAPPHIRE_PICKAXE);
+            event.accept(ModItems.SAPPHIRE_AXE);
+            event.accept(ModItems.SAPPHIRE_SHOVEL);
+            event.accept(ModItems.SAPPHIRE_HOE);
             event.accept(ModBlocks.TOPAZ_ORE);
             event.accept(ModItems.RAW_TOPAZ);
             event.accept(ModItems.TOPAZ);
             event.accept(ModBlocks.TOPAZ_BLOCK);
+            event.accept(ModItems.TOPAZ_SWORD);
+            event.accept(ModItems.TOPAZ_PICKAXE);
+            event.accept(ModItems.TOPAZ_AXE);
+            event.accept(ModItems.TOPAZ_SHOVEL);
+            event.accept(ModItems.TOPAZ_HOE);
             event.accept(ModItems.RAW_QUARTZ);
             event.accept(ModBlocks.LARVIKITE);
             event.accept(ModBlocks.LARVIKITE_BRICKS);
@@ -266,6 +293,11 @@ public class UnnamedMod
             event.accept(ModItems.RAW_RQ);
             event.accept(ModItems.RQ);
             event.accept(ModBlocks.RQ_BLOCK);
+            event.accept(ModItems.RQ_SWORD);
+            event.accept(ModItems.RQ_PICKAXE);
+            event.accept(ModItems.RQ_AXE);
+            event.accept(ModItems.RQ_SHOVEL);
+            event.accept(ModItems.RQ_HOE);
         }
     }
 
